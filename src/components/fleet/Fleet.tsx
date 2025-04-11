@@ -159,9 +159,9 @@ const Fleet = () => {
             <div className=" container">
               <div data-aos="fade-up"  className="flex  mb-12 relative z-10 mb-10 justify-between">
                 <h2>Our Fleet</h2>
-                <a href="#" className="font-semibold w-fit flex gap-2 items-center">
+{/*                 <a href="#" className="font-semibold w-fit flex gap-2 items-center">
                   <span>More Fleet</span> <FiArrowUpRight />
-                </a>
+                </a> */}
               </div>
             </div>
 
