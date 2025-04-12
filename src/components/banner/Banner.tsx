@@ -74,17 +74,17 @@ const Banner: React.FC = () => {
 
     const banners = [
         {
-            backgroundImage: "/images/banner1.png",
+            backgroundImage: "/images/banner1-min.png",
             title: "Where you would you like to go?",
             subtitle: "Your professional chauffeur services",
         },
         {
-            backgroundImage: "/images/banner2.png",
+            backgroundImage: "/images/banner2-min.png",
             title: "Your journey our priority",
             subtitle: "Travel in Style & Comfort",
         },
         {
-            backgroundImage: "/images/banner3.png",
+            backgroundImage: "/images/banner3-min.png",
             title: "Experience the Difference",
             subtitle: "Reliable Chauffeur Services",
         },

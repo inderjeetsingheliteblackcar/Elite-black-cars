@@ -13,21 +13,21 @@ const servicesData = [
         title: "Airport Transfers",
         description:
             "One of the joys of intercity travel is the opportunity to witness the beauty of...",
-        image: "/images/services1.png",
+        image: "/images/services1-min.png",
     },
     {
         id: 2,
         title: "City Tours",
         description:
             "Experience the beauty and culture of your city like never before...",
-            image: "/images/services2.png",
+            image: "/images/services2-min.png",
     },
     {
         id: 3,
         title: "Corporate Travel",
         description:
             "Business trips made easy with our seamless and comfortable services...",
-            image: "/images/services3.png",
+            image: "/images/services3-min.png",
     },
 
 ];
@@ -73,7 +73,7 @@ const Services = () => {
                     <div className="center"></div>
                     <div className="end"> </div>
                 </div>
-                <div className="grid-cols-3 grid" data-aos="fade-up" >
+                <div className="md:grid-cols-3 grid gap-y-6" data-aos="fade-up" >
                 {/* <Slider  ref={sliderRef} {...sliderSettings} className="services-slider"> */}
                     {servicesData.map((service) => (
                         <div key={service.id} className="px-2">
