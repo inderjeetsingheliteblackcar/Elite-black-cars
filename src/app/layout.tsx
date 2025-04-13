@@ -3,6 +3,8 @@ import { DM_Sans, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ReactLenis } from '../lenis/Lenis'
 import ScrollProgress from "@/scrollprogress/ScrollProgress";
+import Header from "@/header/Header";
+import Footer from "@/footer/Footer";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -25,9 +27,11 @@ export default function RootLayout({
       <ReactLenis root>
         <body
           className={`${dmSans.variable} antialiased`}
-        >
+        >      <Header />
+
           <ScrollProgress />
           {children}
+          <Footer />
         </body>
       </ReactLenis>
     </html>

@@ -27,7 +27,7 @@ const servicesData = [
         title: "Corporate Travel",
         description:
             "Business trips made easy with our seamless and comfortable services...",
-            image: "/images/services3-min.png",
+            image: "/images/services3-minpng",
     },
 
 ];

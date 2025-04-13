@@ -29,7 +29,6 @@ export default function Home() {
   }, [])
   return (
     <>
-      <Header />
       <Banner />
       <Logo2 />
       <Fleet />
@@ -42,7 +41,6 @@ export default function Home() {
       {/* <News /> */}
       <Faq />
       <Toproutes />
-      <Footer />
     </>
   );
 }

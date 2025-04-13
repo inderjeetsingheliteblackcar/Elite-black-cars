@@ -8,7 +8,8 @@ const Footer = () => {
         <div className='footer bg-dark px-4  pt-14 pb-8'>
             <div className='container'>
                 <div className='footer-icon flex md:flex-row gap-10 flex-col justify-center items-center md:justify-between pb-6 border-b border-gary'>
-                    <img src="/images/logo-white.svg" className='w-[200px]' alt="" />
+                <img className="h-[60px] w-auto max-w-[196px]" src="/images/Logo_main1.svg" alt="Logo" />
+
                     <div className='icons flex gap-6 items-center text-white'>
                         <p className='body-text'><b>Follow Us</b></p>
                         <div className='icons-main flex gap-4 text-white'>

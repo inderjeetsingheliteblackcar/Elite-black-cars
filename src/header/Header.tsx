@@ -1,5 +1,6 @@
 "use client";
 import Button from "@/button/Button";
+import Link from "next/link";
 import React, { useState } from "react";
 import { FaAngleRight } from "react-icons/fa6";
 
@@ -20,10 +21,10 @@ const Header = () => {
             <header>
                 <nav className="container flex  items-center justify-between p-4 " aria-label="Global">
                     <div className="flex lg:flex-1">
-                        <a href="#" className="-m-1.5 p-1.5">
+                        <Link href="/" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
                             <img className="h-[60px] w-auto max-w-[196px]" src="/images/Logo_main1.svg" alt="Logo" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="flex lg:hidden">
                         <button
@@ -75,7 +76,7 @@ const Header = () => {
                         </div> */}
 
 {/*                         <a href="#" className="text-sm hover:text-orange font-normal">Home  </a> */}
-                        <a href="#" className="text-sm hover:text-orange font-normal">About Us  </a>
+                        <Link href="/about" className="text-sm hover:text-orange font-normal">About Us  </Link>
 {/*                         <a href="#" className="text-sm hover:text-orange font-normal">Contact Us  </a> */}
 {/*                         <div className="flex gap-2">
                             <Button text="Sign Up" bg="bg-white" color="text-dark" />
@@ -90,10 +91,10 @@ const Header = () => {
                     <div className="fixed inset-0 z-10"></div>
                     <div className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-dark px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                         <div className="flex items-center justify-between">
-                            <a href="#" className="-m-1.5 p-1.5">
+                            <Link href="/" className="-m-1.5 p-1.5">
                                 <span className="sr-only">Your Company</span>
                                 <img className="h-[60px] w-auto max-w-[196px]" src="/images/Logo_main1.svg" alt="Logo" />
-                            </a>
+                            </Link>
                             <button type="button" onClick={toggleMenu} className="-m-2.5 rounded-md p-2.5 text-white">
                                 <span className="sr-only">Close menu</span>
                                 <svg className="size-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
@@ -130,7 +131,7 @@ const Header = () => {
                                         </div>
                                     </div> */}
                                     <a href="#" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">Home</a>
-                                    <a href="#" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">About Us</a>
+                                    <Link href="/about" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">About Us</Link>
                                     <a href="#" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">Contact Us</a>
                                     <div className="flex gap-2">
                                         <Button text="Sign Up" bg="bg-white" color="text-dark" />
