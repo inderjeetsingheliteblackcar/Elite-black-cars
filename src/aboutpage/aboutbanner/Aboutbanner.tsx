@@ -16,8 +16,8 @@ const AboutBanner: React.FC = () => {
     }, []);
 
     return (
-        <div className="bg-dark overflow-hidden pt-40 md:pt-48 overflow-hidden">
-            <div className="text-white px-4 md:pb-40 pb-20 container">
+        <div className="bg-dark relative overflow-hidden md:pb-48 pb-28 pt-52 md:pt-80 overflow-hidden">
+            <div className="text-white relative z-40 px-4  container">
                 <h2>About Us</h2>
                 <p className="flex mt-4 gap-3 items-center">
                     Home <span className="text-sm">{'>'}</span> About Us
@@ -26,12 +26,14 @@ const AboutBanner: React.FC = () => {
 
             <div
                 ref={bannerRef}
-                className="w-[130%] md:h-[600px] h-[300px] bg-no-repeat bg-cover"
+                className="w-[130%]   top-0 right-0 left-0 bottom-0 absolute  bg-no-repeat bg-cover"
                 style={{
                     backgroundImage: "url('/images/banner1-min.png')",
                     backgroundPosition: '0 center',
                 }}
-            />
+            >
+            
+            </div>
         </div>
     );
 };

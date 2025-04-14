@@ -2,6 +2,8 @@
 
 import Aboutbanner from "@/aboutpage/aboutbanner/Aboutbanner";
 import Aboutcontant from "@/aboutpage/aboutcontant/aboutcontant";
+import Choose from "@/aboutpage/Choose/Choose";
+import Travelbetter from "@/aboutpage/travelbetter/Travelbetter";
 import Faq from "@/components/faq/Faq";
 import Maketrip from "@/components/maketrip/Maketrip";
 import Showcase from "@/components/showcase/Showcase";
@@ -12,11 +14,13 @@ export default function About() {
         <div>
             <Aboutbanner />
             <Aboutcontant />
+            <Travelbetter />
+            <Choose />
             <Showcase />
             <div className="md:pb-[120px] pb-[60px]">
                 <Maketrip />
             </div>
-            <Works />
+            {/* <Works /> */}
             <Faq />
 
         </div>
