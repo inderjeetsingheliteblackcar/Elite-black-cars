@@ -5,7 +5,6 @@ const Travelbetter = () => {
         <div className='Travelbetter py-20 md:py-40 relative px-4'>
             <div className='container'>
                 <div className='grid gap-10 md:grid-cols-2'>
-                    <img src="/images/banner1-min.png" className='rounded md:sticky top-40 w-full' alt="About content" />
                     <div className=''>
                         <h2>How do we make travel better?</h2>
                         <h4 className="my-4">Luxury Chauffeur Services</h4>
@@ -21,6 +20,8 @@ const Travelbetter = () => {
                         <h4 className="my-4">Special Occasion & Event Transportation</h4>
                         <p className='body-text'>Whether it’s a wedding, birthday, prom night, or a VIP event, our top-notch transportation solutionsoffer a<b>   luxury car for events</b> for the perfect blend of elegance and convenience.</p>
                     </div>
+                    <img src="/images/banner1-min.png" className='rounded md:sticky top-40 w-full' alt="About content" />
+
                 </div>
             </div>
         </div>
