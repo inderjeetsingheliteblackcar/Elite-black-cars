@@ -44,16 +44,16 @@ const Footer = () => {
                         </div>
                         <div className='Explore px-2'>
                             <h4 className='mb-6'>Services</h4>
-                            <a href="" className='mb-3 block'>Airport Transport</a>
-                            <a href="" className='mb-3 block'>City Tours </a>
-                            <a href="" className='mb-3 block'>Corporate Travel</a>
+                            <a   className='mb-3 block'>Airport Transport</a>
+                            <a   className='mb-3 block'>City Tours </a>
+                            <a   className='mb-3 block'>Corporate Travel</a>
                         </div>
                         <div className='Classes px-2'>
                             <h4 className='mb-6'>Classes</h4>
-                            <a href="" className='mb-3 block'>Business</a>
-                            <a href="" className='mb-3 block'>First</a>
-                            <a href="" className='mb-3 block'>XL</a>
-                            <a href="" className='mb-3 block'>Assistant</a>
+                            <a    className='mb-3 block'>Business</a>
+                            <a   className='mb-3 block'>First</a>
+                            <a   className='mb-3 block'>XL</a>
+                            <a   className='mb-3 block'>Assistant</a>
                         </div>
                         <div className='Recent-Posts col-span-2'>
                             <h4 className='mb-6'>Recent Posts</h4>
@@ -81,9 +81,9 @@ const Footer = () => {
                 <div className='flex text-white pt-8 justify-between'>
                     <a href="" className='mb-3 block'>© 2025 Elite Black Car</a>
                     <div className='flex gap-3'>
-                        <a href="" className='mb-3 block'>Terms</a>
-                        <a href="" className='mb-3 block'>Privacy policy</a>
-                        <a href="" className='mb-3 block'> Accessibility</a>
+                        <a   className='mb-3 block'>Terms</a>
+                        <a   className='mb-3 block'>Privacy policy</a>
+                        <a   className='mb-3 block'> Accessibility</a>
                     </div>
                 </div>
             </div>
