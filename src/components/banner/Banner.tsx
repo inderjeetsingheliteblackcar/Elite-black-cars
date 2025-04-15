@@ -125,9 +125,9 @@ const Banner: React.FC = () => {
                     <strong>{currentSlide + 1} </strong> / {banners.length}
                 </p>
             </div>
-            <div className=" md:absolute md:px-0 px-4 container bottom-10 left-0 right-0 w-full">
+            {/* <div className=" md:absolute md:px-0 px-4 container bottom-10 left-0 right-0 w-full">
                 <Bookingform />
-            </div>
+            </div> */}
         </div>
 
     );
