@@ -65,15 +65,15 @@ const Showcase = () => {
                         </div>
                         <div className="md:col-span-7 col-span-12 md:flex justify-evenly">
                             <div className="count mb-4 top-move text-center md:mb-0">
-                                <Counter target={285} duration={2000} />
+                                <Counter target={100} duration={2000} />
                                 <p className="body-text">Vehicles</p>
                             </div>
-                            <div className="count mb-4 top-move text-center md:mb-0">
+                            {/* <div className="count mb-4 top-move text-center md:mb-0">
                                 <Counter target={97} duration={2000} />
                                 <p className="body-text">Awards</p>
-                            </div>
+                            </div> */}
                             <div className="count top-move text-center">
-                                <Counter target={13000} duration={2000} />
+                                <Counter target={500} duration={2000} />
                                 <p className="body-text">Happy Customer</p>
                             </div>
                         </div>

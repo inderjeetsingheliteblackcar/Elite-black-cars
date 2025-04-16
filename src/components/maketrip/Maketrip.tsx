@@ -11,21 +11,21 @@ const Maketrip = () => {
       icon: IoShieldCheckmarkSharp,
       title: "Safety First",
       description:
-        "We believe that <b>luxury and safety </b> are closely correlated to each other. That’s why we prioritize  <b> top-tier safety standards  </b> ",
+        "We believe that luxury and safety are closely correlated to each other. That’s why we prioritize top-tier safety standards ",
     },
     {
       id: 2,
       icon: FaCommentDollar,
       title: "Prices With No Surprises",
       description:
-        "At <b> Elite B Car, </b> we believe in <b> honest pricing with no hidden fees </b>. Whether you're booking a luxury sedan for a business trip or a premium SUV",
+        "At Elite B Car, we believe in honest pricing with no hidden fees . Whether you're booking a luxury sedan for a business trip or a premium SUV",
     },
     {
       id: 3,
       icon: FaCar,
       title: "High-End Private Transfers",
       description:
-        "With Elite B car, Experience  <b>exclusive, hassle-free travel  </b> with our <b> private luxury  </b> car services to match your needs.",
+        "With Elite B car, Experience exclusive, hassle-free travel with our private luxury car services to match your needs.",
     },
   ];
 

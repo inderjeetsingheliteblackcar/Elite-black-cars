@@ -18,6 +18,7 @@ import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Toproutes from "@/components/toproutesf/Toproutes";
+import Luxyslider from "@/components/luxyslider/luxyslider";
 export default function Home() {
 
   
@@ -41,6 +42,7 @@ export default function Home() {
       {/* <News /> */}
       <Faq />
       <Toproutes />
+      <Luxyslider />
     </>
   );
 }
