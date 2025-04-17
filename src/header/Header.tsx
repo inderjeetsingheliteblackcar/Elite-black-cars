@@ -19,11 +19,11 @@ const Header = () => {
     return (
         <div  className="header py-0 bg-dark fixed top-0 w-full z-50 text-dark md:text-white">
             <header>
-                <nav className="container flex  items-center justify-between p-4 " aria-label="Global">
+                <nav className="container flex  items-center justify-between p-2 " aria-label="Global">
                     <div className="flex lg:flex-1">
                         <Link href="/" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
-                            <img className="h-[60px] w-auto max-w-[196px]" src="/images/Logo_main1.svg" alt="Logo" />
+                            <img className="h-[80px] w-auto max-w-[200px]" src="/images/Logo_main1.svg" alt="Logo" />
                         </Link>
                     </div>
                     <div className="flex lg:hidden">
@@ -93,7 +93,7 @@ const Header = () => {
                         <div className="flex items-center justify-between">
                             <Link href="/" className="-m-1.5 p-1.5">
                                 <span className="sr-only">Your Company</span>
-                                <img className="h-[60px] w-auto max-w-[196px]" src="/images/Logo_main1.svg" alt="Logo" />
+                                <img className="h-[60px] w-auto max-w-[250px]" src="/images/Logo_main1.svg" alt="Logo" />
                             </Link>
                             <button type="button" onClick={toggleMenu} className="-m-2.5 rounded-md p-2.5 text-white">
                                 <span className="sr-only">Close menu</span>

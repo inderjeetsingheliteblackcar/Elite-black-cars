@@ -47,22 +47,25 @@ const Logo2 = () => {
           </div>
           <div className="col-span-12 overflow-hidden md:col-span-8">
            
-            <Slider {...settings}>
-              <div >
+            {/* <Slider {...settings}> */}
+            <div className="flex gap-10 items-center justify-center">
+            <div >
                 <img
-                  src="/images/logo1.svg"
+                  src="/images/luxy-logo.webp"
                   alt="Partner 1"
                   className="w-[100px] mx-auto"
                 />
               </div>
               <div>
                 <img
-                  src="/images/logo2.svg"
+                  src="/images/blacklane.svg"
                   alt="Partner 2"
-                  className="w-[100px] mx-auto"
+                  className="w-[150px] mx-auto"
                 />
               </div>
-              <div>
+            </div>
+              
+              {/* <div>
                 <img
                   src="/images/logo3.svg"
                   alt="Partner 3"
@@ -75,8 +78,8 @@ const Logo2 = () => {
                   alt="Partner 4"
                   className="w-[100px] mx-auto"
                 />
-              </div>
-            </Slider>
+              </div> */}
+            {/* </Slider> */}
             
           </div>
         </div>

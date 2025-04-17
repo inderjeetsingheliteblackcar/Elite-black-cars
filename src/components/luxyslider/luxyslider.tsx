@@ -72,10 +72,10 @@ const LuxySlider: React.FC = () => {
                             <div
                                 key={index}
                                 onClick={() => setActiveIndex(index)}
-                                className={`relative snap-center h-[400px] transition-all duration-500 cursor-pointer flex-shrink-0 rounded-xl overflow-hidden ${isActive ? 'w-full md:w-[60%] bg-orange/30' : 'w-[10%] bg-orange/50'
+                                className={`relative snap-center h-[400px] transition-all duration-500 cursor-pointer flex-shrink-0 rounded-xl overflow-hidden ${isActive ? 'w-full md:w-[68%] bg-orange/30' : 'w-[10%] bg-orange/50'
                                     }`}
                             >
-                                <div className="flex flex-col md:flex-row w-[720px] h-full p-6 relative">
+                                <div className="flex flex-col md:flex-row lg:w-[810px] w-[700px] h-full p-6 relative">
                                     {/* Text Content */}
                                     <div
                                         className={`transition-opacity duration-700  ease-in-out ${isActive ? 'opacity-100' : 'opacity-0 pointer-events-none '
@@ -129,9 +129,9 @@ const LuxySlider: React.FC = () => {
 
                     <Slider  ref={sliderRef} {...sliderSettings} className="services-slider w-full">
                         {staticSlides.map((slide, index) => (
-                            <div className='px-2'>
+                            <div key={index} className='px-2'>
                                 <div
-                                    key={index}
+                                    
                                     className=" bg-orange/30 rounded-xl overflow-hidden p-4"
                                 >
                                     <div className="flex flex-col h-full">
