@@ -72,17 +72,18 @@ const LuxySlider: React.FC = () => {
                             <div
                                 key={index}
                                 onClick={() => setActiveIndex(index)}
-                                className={`relative snap-center h-[400px] transition-all duration-1000 cursor-pointer flex-shrink-0 rounded-xl overflow-hidden ${isActive ? 'w-full md:w-[60%] bg-orange/30' : 'w-[10%] bg-orange/50'
+                                className={`relative snap-center h-[400px] transition-all duration-500 cursor-pointer flex-shrink-0 rounded-xl overflow-hidden ${isActive ? 'w-full md:w-[60%] bg-orange/30' : 'w-[10%] bg-orange/50'
                                     }`}
                             >
-                                <div className="flex flex-col md:flex-row h-full p-6 relative">
+                                <div className="flex flex-col md:flex-row w-[720px] h-full p-6 relative">
                                     {/* Text Content */}
                                     <div
-                                        className={`transition-opacity duration-700 ease-in-out ${isActive ? 'opacity-100' : 'opacity-0 pointer-events-none absolute'
+                                        className={`transition-opacity duration-700  ease-in-out ${isActive ? 'opacity-100' : 'opacity-0 pointer-events-none '
                                             } w-full md:w-2/3`}
                                     >
+                                        <div className='w-[400px]'>
                                         <h3 className="text-2xl font-semibold">{slide.title}</h3>
-                                        <p className="my-4 w-[400px]">{slide.description}</p>
+                                        <p className="my-4 ">{slide.description}</p>
 
                                         {slide.features.map((feature, i) => (
                                             <p key={i} className="flex items-center gap-2 mb-2">
@@ -94,11 +95,12 @@ const LuxySlider: React.FC = () => {
                                         <button className="flex mt-6 items-center gap-2 bg-dark text-white hover:bg-orange duration-300 rounded py-3 px-6 font-semibold">
                                             View All Cities <GoArrowUpRight />
                                         </button>
+                                        </div>
                                     </div>
 
                                     {/* Image Section */}
                                     <div
-                                        className={`transition-opacity duration-700 ease-in-out ${isActive ? 'opacity-100' : 'opacity-0 pointer-events-none absolute'
+                                        className={`transition-opacity duration-700 ease-in-out ${isActive ? 'opacity-100' : 'opacity-0 pointer-events-none '
                                             } w-full md:w-1/3 mt-6 md:mt-0`}
                                     >
                                         <img
@@ -124,60 +126,60 @@ const LuxySlider: React.FC = () => {
                     ))}
                 </div>
                 <div className='lg:hidden block'>
-                    
-                    <Slider ref={sliderRef} {...sliderSettings} className="services-slider w-full">
+
+                    <Slider  ref={sliderRef} {...sliderSettings} className="services-slider w-full">
                         {staticSlides.map((slide, index) => (
                             <div className='px-2'>
-                            <div
-                                key={index}
-                                className=" bg-orange/30 rounded-xl overflow-hidden p-4"
-                            >
-                                <div className="flex flex-col h-full">
-                                    <h3 className="text-2xl font-semibold">{slide.title}</h3>
-                                    <p className="my-4">{slide.description}</p>
+                                <div
+                                    key={index}
+                                    className=" bg-orange/30 rounded-xl overflow-hidden p-4"
+                                >
+                                    <div className="flex flex-col h-full">
+                                        <h3 className="text-2xl font-semibold">{slide.title}</h3>
+                                        <p className="my-4">{slide.description}</p>
 
-                                    {slide.features.map((feature, i) => (
-                                        <p key={i} className="flex items-center gap-2 mb-2">
-                                            <img src="/images/svgviewer.svg" alt="" />
-                                            {feature}
-                                        </p>
-                                    ))}
+                                        {slide.features.map((feature, i) => (
+                                            <p key={i} className="flex items-center gap-2 mb-2">
+                                                <img src="/images/svgviewer.svg" alt="" />
+                                                {feature}
+                                            </p>
+                                        ))}
 
-                                    <div className="mt-auto">
-                                        <button className="flex mt-6 items-center gap-2 bg-dark text-white hover:bg-orange duration-300 rounded py-3 px-6 font-semibold">
-                                            View All Cities <GoArrowUpRight />
-                                        </button>
+                                        <div className="mt-auto">
+                                            <button className="flex mt-6 items-center gap-2 bg-dark text-white hover:bg-orange duration-300 rounded py-3 px-6 font-semibold">
+                                                View All Cities <GoArrowUpRight />
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div className="mt-4">
+                                        <img
+                                            src={slide.image}
+                                            alt={slide.title}
+                                            className="h-[200px] w-full object-cover rounded-xl"
+                                        />
                                     </div>
                                 </div>
-                                <div className="mt-4">
-                                    <img
-                                        src={slide.image}
-                                        alt={slide.title}
-                                        className="h-[200px] w-full object-cover rounded-xl"
-                                    />
-                                </div>
-                            </div>
                             </div>
                         ))}
                     </Slider>
                     <div className="mt-6 relative z-10 services-btn flex">
-                    <button
-                        className="w-[50px] h-[50px] me-2 border border-gray rounded-full text-white flex items-center justify-center   "
-                        onClick={() => sliderRef.current?.slickPrev()}
-                    >
-                        <GoArrowLeft className="text-dark" />
-                    </button>
-                    <button
-                        className=" w-[50px] h-[50px] rounded-full hover:orange text-white border border-gray flex items-center justify-center rounded  "
-                        onClick={() => sliderRef.current?.slickNext()}
-                    >
-                        <GoArrowRight className="text-dark" />
-                    </button>
-                </div> 
+                        <button
+                            className="w-[50px] h-[50px] me-2 border border-gray rounded-full text-white flex items-center justify-center   "
+                            onClick={() => sliderRef.current?.slickPrev()}
+                        >
+                            <GoArrowLeft className="text-dark" />
+                        </button>
+                        <button
+                            className=" w-[50px] h-[50px] rounded-full hover:orange text-white border border-gray flex items-center justify-center rounded  "
+                            onClick={() => sliderRef.current?.slickNext()}
+                        >
+                            <GoArrowRight className="text-dark" />
+                        </button>
                     </div>
                 </div>
             </div>
-        
+        </div>
+
     );
 };
 
