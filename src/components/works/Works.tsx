@@ -8,17 +8,17 @@ const Work = [
     {
         id: 1,
        
-        image: "/images/work1.png",
+        image: "/images/Work1.png",
     },
     {
         id: 2,
        
-        image: "/images/work2.png",
+        image: "/images/Work2.png",
     },
     {
         id: 3,
        
-        image: "/images/work3.png",
+        image: "/images/Work3.png",
     },
 ];
 
