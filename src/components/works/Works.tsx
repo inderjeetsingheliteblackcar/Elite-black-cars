@@ -4,24 +4,21 @@ import React, { useState, useRef } from "react";
 import Slider from "react-slick";
 import './works.css'
 
-const fleetData = [
+const Work = [
     {
         id: 1,
-        name: "Audi Q3 Sportback",
-        description: "Mercedes-Benz V-Class, Chevrolet Suburban, Cadillac",
-        image: "/images/t-1-1.png",
+       
+        image: "/images/work1.png",
     },
     {
         id: 2,
-        name: "Electric Class",
-        description: "Mercedes-Benz EQS, BMW 7 Series, Audi A8 or similar",
-        image: "/images/t-1-2.png",
+       
+        image: "/images/work2.png",
     },
     {
         id: 3,
-        name: "Luxury Class",
-        description: "Mercedes-Benz E-Class, BMW 5 Series, Cadillac XTS or similar",
-        image: "/images/t-1-3.png",
+       
+        image: "/images/work3.png",
     },
 ];
 
@@ -88,9 +85,9 @@ const Works = () => {
 
                     <div className="img-slider col-span-7">
                         <Slider ref={sliderRef} {...settings}>
-                            {fleetData.map((fleet) => (
-                                <div key={fleet.id}>
-                                    <img src={fleet.image} className="w-full top-move" alt={fleet.name} />
+                            {Work.map((Workimg) => (
+                                <div key={Workimg.id}>
+                                    <img src={Workimg.image} className="w-full top-move" alt="work image" />
                                 </div>
                             ))}
                         </Slider>

@@ -5,28 +5,28 @@ const Toproutesdata = [
         id: 1,
         City1: "JKF",
         City2: "NYC",
-        image: "/images/nyc1.jpeg"
+        image: "/images/Toproutes1.png"
 
     },
     {
         id: 2,
         City1: "NYC",
         City2: "Hamptons",
-        image: "/images/HamptonsCityBeach.jpg"
+        image: "/images/Toproutes2.png"
 
     },
     {
         id: 3,
         City1: "NYC",
         City2: "Boston",
-        image: "/images/Boston.jpeg"
+        image: "/images/Toproutes3.png"
 
     },
     {
         id: 4,
         City1: "JKF",
         City2: "Philadelphia",
-        image: "/images/Philadelphia.jpeg"
+        image: "/images/Toproutes4.png"
     }
 ]
 const Toproutes = () => {

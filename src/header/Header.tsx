@@ -26,7 +26,7 @@ const Header = () => {
                             <img className="h-[80px] w-auto max-w-[200px]" src="/images/Logo_main1.svg" alt="Logo" />
                         </Link>
                     </div>
-                    <div className="flex lg:hidden">
+                    <div className="flex lg:hidden me-4">
                         <button
                             type="button"
                             onClick={toggleMenu}
