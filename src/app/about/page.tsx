@@ -17,9 +17,9 @@ export default function About() {
             <Travelbetter />
             <Choose />
             <Showcase />
-            <div className="md:pb-[120px] pb-[60px]">
+            {/* <div className="md:pb-[120px] pb-[60px]">
                 <Maketrip />
-            </div>
+            </div> */}
             {/* <Works /> */}
             <Faq />
 

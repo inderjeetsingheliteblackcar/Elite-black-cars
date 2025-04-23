@@ -54,7 +54,7 @@ const Works = () => {
     ];
 
     return (
-        <div  className="work  text-white bg-dark md:mt-[-120px] mt-0 relative z-20  px-4">
+        <div  className="work py-20  text-white bg-dark md:mt-[-120px] mt-0 relative z-20  px-4">
             <div className="container">
                 <div data-aos="fade-up" className="md:grid md:grid-cols-12 grid-cols-1 items-center gap-10">
                     <div className="work-text md:col-span-5 col-span-5 flex flex-col justify-center">
@@ -87,7 +87,7 @@ const Works = () => {
                         <Slider ref={sliderRef} {...settings}>
                             {Work.map((Workimg) => (
                                 <div key={Workimg.id}>
-                                    <img src={Workimg.image} className="w-full top-move" alt="work image" />
+                                    <img src={Workimg.image} className="w-[70%] top-move" alt="work image" />
                                 </div>
                             ))}
                         </Slider>

@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
   overflow-x: hidden;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -38,6 +39,7 @@ h3 {
   font-weight: 600;
   line-height: 40px;
 }
+
 h4 {
   font-size: 20px;
   font-weight: 600;
@@ -88,22 +90,37 @@ h4 {
   position: relative;
   z-index: 10;
 }
+
 button.bg-orange.button:hover {
   color: #000;
   background-color: #fff;
 }
-button.bg-white.button:hover{
+
+button.bg-white.button:hover {
   color: #fff;
-  background-color:#E95440 ;
+  background-color: #E95440;
 }
-.top-move{
+
+.top-move {
   position: relative;
   transition: 0.5s all;
   bottom: 0;
 }
-.top-move:hover{
+
+.top-move:hover {
   bottom: 10px;
 }
+.maketrip-box .icon{
+transition: 0.5s all;
+}
+.maketrip-box:hover svg {
+  color: #fff;
+}
+
+.maketrip-box:hover .icon {
+  background-color: #E95440;
+}
+
 @media only screen and (max-width: 768px) {
 
   h1 {
@@ -120,6 +137,7 @@ button.bg-white.button:hover{
     font-size: 18px;
     line-height: 25px;
   }
+
   h3 {
     font-size: 20px;
     line-height: 30px;

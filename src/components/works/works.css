@@ -20,9 +20,8 @@
 .work .slick-slide:nth-child(3) img {
     width: 70%;
 }
-.work .slick-slide:nth-child(2) img {
-    width: 80%;
-}
+
+
 .work .slick-track {
     display: flex;
     align-items: center;
