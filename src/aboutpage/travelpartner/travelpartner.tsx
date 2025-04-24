@@ -3,7 +3,7 @@ import { GoArrowUpRight } from 'react-icons/go';
 
 const Travelpartner = () => {
     return (
-        <div className='travelpartner pt-20 px-4'>
+        <div className='travelpartner pt-10 md:pt-20  px-4'>
             <div className='container text-center'>
                 <div className='max-w-[900px] mx-auto'>
                     <h2 className='mb-6'>Your Trusted Travel Partner</h2>

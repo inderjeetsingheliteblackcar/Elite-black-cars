@@ -46,7 +46,7 @@ const Serve = () => {
 
     ]
     return (
-        <div className='Serve py-20 px-4'>
+        <div className='Serve py-10 md:py-20 px-4'>
             <div className='container text-center'>
                 <h2>Right We Serve</h2>
                 <p className='mt-4 mb-6 body-text max-w-[700px] mx-auto'>We offer premium private travel services with in New York City and upto 300 miles beyong, covering locations such as:</p>

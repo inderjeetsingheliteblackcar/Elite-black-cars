@@ -6,7 +6,7 @@ const Choose = () => {
         <div className='Choose md:pb-20 pb-10 px-4'>
             <div className='container'>
 
-                <div className='grid gap-10 items-center md:grid-cols-12'>
+                <div className='grid md:gap-10 gap-4 items-center md:grid-cols-12'>
                     <div className='image-choose md:col-span-5'>
                         <img src="./images/Choose.jpg" className='rounded' alt="d" />
                     </div>
