@@ -8,40 +8,40 @@ const Serve = () => {
         },
         {
             image: "/images/serve/Serve2.png",
-            text: "New York City"
+            text: "Boston "
         },
         {
             image: "/images/serve/Serve3.png",
-            text: "New York City"
+            text: "Philadelphia "
         },
         {
             image: "/images/serve/Serve4.png",
-            text: "New York City"
+            text: "Washington D.C."
         },
         {
             image: "/images/serve/Serve5.png",
-            text: "New York City"
+            text: "Baltimore "
         },
         {
             image: "/images/serve/Serve6.png",
-            text: "New York City"
+            text: "Albany "
         },
 
         {
             image: "/images/serve/Serve8.png",
-            text: "New York City"
+            text: "Hartford "
         },
         {
             image: "/images/serve/Serve9.png",
-            text: "New York City"
+            text: "Syracuse "
         },
         {
             image: "/images/serve/Serve10.png",
-            text: "New York City"
+            text: "Pittsburgh "
         },
         {
             image: "/images/serve/Serve11.png",
-            text: "New York City"
+            text: "Buffalo"
         },
 
     ]
