@@ -41,7 +41,7 @@ const Choose = () => {
 
                     </div>
                 </div>
-<div className='md:pt-40 pt-10'>              
+{/* <div className='md:pt-40 pt-10'>              
      <h2 className='mb-10'>Regions We Serve</h2>
                 <p>We offer <b> premium private travel services</b> within <b>  New York City </b>and up to <b>  300 miles beyond, </b> covering locations such as:<br /><br />
                     <b>  New York City | Boston | Philadelphia | Washington D.C. | Baltimore | Albany | Hartford | Syracuse | Pittsburgh | Buffalo</b><br /><br />
@@ -50,7 +50,7 @@ const Choose = () => {
                     At <b>  Elite B Car, </b> we take pride in offering exceptional private travel solutions that focus on comfort, elegance, and efficiency. Whether you're traveling for business, leisure, or a special event, we promise a premium, hassle-free, and luxurious ride from start to finish.<br /><br />
                     <b>  🚖Ready to experience the best in private transportation? </b> Contact us today to <b>  book your ride</b> and travel in unmatched style and comfort!
                 </p>
-            </div>
+            </div> */}
             </div> 
         </div>
     );

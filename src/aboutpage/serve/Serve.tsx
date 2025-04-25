@@ -59,6 +59,11 @@ const Serve = () => {
                     ))}
 
                 </div>
+                <p className='body-text text-left mt-10 md:mt-20'>Wherever you need to go, we ensure a safe, stylish, and hassle-free journey.<br /><br />
+                    <b>  Book Your Luxury Travel Experience Today! </b><br /><br />
+                    At <b>  Elite B Car, </b> we take pride in offering exceptional private travel solutions that focus on comfort, elegance, and efficiency. Whether you're traveling for business, leisure, or a special event, we promise a premium, hassle-free, and luxurious ride from start to finish.<br /><br />
+                    <b>  🚖Ready to experience the best in private transportation? </b> Contact us today to <b>  book your ride</b> and travel in unmatched style and comfort!
+                </p>
             </div>
 
         </div>
