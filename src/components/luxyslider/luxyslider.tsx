@@ -6,30 +6,30 @@ const LuxySlider: React.FC = () => {
 
     const staticSlides = [
         {
-            title: 'Professional Drivers',
+            title: 'Top-Tier Passengers',
             description:
-                'Make LUXY your trusted partner for getting you rides, turning singles into doubles, live dispatching, and 24/7 support...',
+                ' Our premium travel services are designed for discerning passengers who seek comfort, luxury, and efficiency at every step of their journey. Whether you`re traveling for business or leisure. We ensure you experience travel at its finest. Experience the difference with services crafted exclusively for top-tier passengers who demand nothing but the best.',
             features: ['Easy-to-Use Driver App', 'Weekly Payouts', '24/7 Support'],
             image: '/images/corporate_partners.jpg',
         },
         {
-            title: 'Corporate Travelers',
+            title: 'Elite B Passengers',
             description:
-                'LUXY is your go-to travel management solution for ground transportation. Streamline ride booking with the LUXY Concierge Dashboard...',
+                'Our Elite Passenger Services are thoughtfully designed for travellers who expect superior comfort, privacy, and personalized attention. At Elite B car, we cater to individuals and groups who value excellence in every journey. Step into a world of refined travel with elite ground transportation services designed to match your unique lifestyle and expectations.',
             features: ['Seamless Travel Management', 'Live Ride Tracking', 'Automated Receipts'],
             image: '/images/corporate_partners.jpg',
         },
         {
-            title: 'Business Executives',
+            title: 'Skilled Chauffeurs',
             description:
-                'Experience top-tier ground transportation service tailored for executive needs with LUXY.',
+                ' At Elite B Car, our highly trained chauffeurs deliver a seamless, safe, and refined travel experience. Whether you`re traveling for business, leisure, or a special occasion, our expert drivers ensure you reach your destination with comfort, professionalism, and peace of mind. Our chauffeurs are more than drivers — they are trained professionals committed to delivering an exceptional travel experience every mile of the way.',
             features: ['Executive Class Vehicles', 'Discreet Drivers', 'Real-Time Updates'],
             image: '/images/corporate_partners.jpg',
         },
         {
-            title: 'Frequent Flyers',
+            title: 'Traveling from New York?',
             description:
-                'Whether for business or leisure, LUXY simplifies airport transfers with unmatched reliability.',
+                'We`ve Got You Covered Thinking about a smooth ride to destinations beyond New York City? Elite B Car offers premium travel services to nearby cities, making it easier than ever to enjoy a quick getaway or attend important business meetings just a few hours away. Our comfortable rides, professional chauffeurs, and flexible booking options ensure a seamless journey wherever you need to go.',
             features: ['On-Time Pickup Guarantee', 'Flight Tracking', 'Flexible Scheduling'],
             image: '/images/corporate_partners.jpg',
         },
@@ -62,7 +62,7 @@ const LuxySlider: React.FC = () => {
     return (
         <div className="Luxyslider px-4 py-10">
             <div className="container">
-                <h2 className="mb-10 text-center text-3xl font-bold">Who is LUXY Ride for?</h2>
+                <h2 className="mb-10 text-center text-3xl font-bold">Who can benefit from Elite B Car?</h2>
 
                 <div className=" justify-center  lg:flex hidden space-x-2 scrollbar-hide snap-x snap-mandatory">
                     {staticSlides.map((slide, index) => {
@@ -85,12 +85,12 @@ const LuxySlider: React.FC = () => {
                                         <h3 className="text-2xl font-semibold">{slide.title}</h3>
                                         <p className="my-4 ">{slide.description}</p>
 
-                                        {slide.features.map((feature, i) => (
+                                        {/* {slide.features.map((feature, i) => (
                                             <p key={i} className="flex items-center gap-2 mb-2">
                                                 <img src="/images/svgviewer.svg" alt="" />
                                                 {feature}
                                             </p>
-                                        ))}
+                                        ))} */}
 
                                         <button className="flex mt-6 items-center gap-2 bg-dark text-white hover:bg-orange duration-300 rounded py-3 px-6 font-semibold">
                                             View All Cities <GoArrowUpRight />
