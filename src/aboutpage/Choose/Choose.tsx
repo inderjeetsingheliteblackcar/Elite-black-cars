@@ -14,7 +14,7 @@ const Choose = () => {
                         <h2 className='mb-6'>Why Choose Us?</h2>
                         <p className='body-text mb-10'>Need to travel beyond New York? Our High-end Car rental providescomfort, privacy, and flexibility for trips up to 300 miles away, including destinations like Boston, Philadelphia, Washington D.C., and more.</p>
                         <p></p>
-                        <div className='grid md:grid-cols-2  gap-y-10 gap-x-6'>
+                        <div className='grid md:grid-cols-2  gap-y-5 gap-x-6'>
                             <div className='mb-4 '>
                                 <img src="/images/check-icon.png" className='mb-6' alt="icon" />
                                  <h4> Experienced Chauffeurs </h4>
