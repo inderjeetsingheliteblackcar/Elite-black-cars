@@ -43,7 +43,7 @@ const Logo2 = () => {
       <div className="container">
         <div className="grid items-center md:grid-cols-12">
           <div className="md:col-span-4 col-span-12 mb-10 md:mb-0">
-            <h4 className="max-w-[330px] text-[24px] text-center md:text-start">The partners who sell our products</h4>
+            <h4 className="max-w-[330px] text-[24px] text-center md:text-start">Our collaboration with</h4>
           </div>
           <div className="col-span-12 overflow-hidden md:col-span-8">
            
