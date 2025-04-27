@@ -60,7 +60,8 @@ const Footer = () => {
                         <div className='Recent-Posts col-span-1'>
                             <h4 className='mb-6'>Contact</h4>
                             <a   className='mb-3 block flex gap-2 items-center'><span className='text-lg'><FaPhoneAlt /></span> 00000-00000</a>
-                            <a   className='mb-3 block flex gap-2 items-center'><span className='text-2xl'><CgMail /></span> admin@gmail.com</a>
+                            <a  href='mailto:info@elitebcar.com' className='mb-3 block flex gap-2 items-center'><span className='text-2xl'><CgMail /></span> info@elitebcar.com</a>
+                            <a href='mailto:reservation@elitebcar.com'  className='mb-3 block flex gap-2 items-center'><span className='text-2xl'><CgMail /></span> info@elitebcar.com</a>
 
                            
                         </div>

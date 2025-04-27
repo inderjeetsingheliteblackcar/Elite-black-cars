@@ -28,7 +28,7 @@ const AboutBanner: React.FC = () => {
                 ref={bannerRef}
                 className="w-[130%]   top-0 right-0 left-0 bottom-0 absolute  bg-no-repeat bg-cover"
                 style={{
-                    backgroundImage: "url('/images/banner1-min.png')",
+                    backgroundImage: "url('/images/About.jpg')",
                     backgroundPosition: '0 center',
                 }}
             >

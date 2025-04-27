@@ -46,9 +46,10 @@ const Region: React.FC = () => {
                     <div className="region-text md:ps-20">
                         <h2>From the region, for the region </h2>
                         <p className="my-6">
-                        We provide <b>premium travel services</b> across <b> New York City and up to 300 miles beyond,</b> ensuring <b>luxury, comfort, and reliability</b> for every journey. Whether you need a<b> private chauffeur, long-distance cab, corporate travel, or airport transfer,</b> we cover key locations, including:
-                       <br/><br/> New York City | Philadelphia | Boston | Washington D.C. | Baltimore | Albany | Hartford | Syracuse | Pittsburgh | Buffalo
-                        </p>
+                        At Elite B Car, we take you beyond city limits to explore the rich culture, history, and beauty of New York and neighbouring cities. Whether you’re craving a quick city escape, a scenic countryside drive, or an unforgettable weekend getaway, our tours are crafted to deliver memorable experiences close to home.
+                        <br/>We provide premium travel services across New York City and accessible destinations, ensuring luxury, comfort, and reliability for every journey. Whether you need a private chauffeur, long-distance cab, corporate travel, or airport transfer, we cover key locations, including:
+                        <br/><br/>
+                       <b> New York City | Philadelphia | Boston | Washington D.C. | Baltimore | Albany | Hartford | Syracuse | Pittsburgh | Buffalo | Winchester| Biddeford| Richmond| Fredericksburg| Burlington </b> </p>
                         <button className="flex items-center gap-2 bg-dark text-white hover:bg-orange ease-in duration-300 rounded py-4 px-8 font-semibold">
                             View All Cities <GoArrowUpRight />
                         </button>

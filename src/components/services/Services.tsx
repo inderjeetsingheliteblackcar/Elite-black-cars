@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef, useState } from "react";
-import { GoArrowRight, GoArrowLeft } from "react-icons/go";
+import { GoArrowRight, GoArrowLeft, GoArrowUpRight } from "react-icons/go";
 import Slider from "react-slick";
 import { FiArrowUpRight } from "react-icons/fi";
 import ServicesCard from "./ServicesCard";
@@ -12,14 +12,14 @@ const servicesData = [
         title: "Airport Transfers",
         description: "One of the joys of intercity travel is the opportunity to witness the beauty of...",
         image: "/images/services1-min.png",
-        popupdescription :"One of the joys of intercity travel is the opportunity to witness the beauty of One of the joys of intercity travel is the opportunity to witness the beauty of"
+        popupdescription :"At Elite B Car, we believe that luxury travel should be more than just a ride—an experience. That's why we've embraced innovative technology to ensure your black car journey is as smooth, efficient, and luxurious as possible."
     },
     {
         id: 2,
         title: "City Tours",
         description: "Experience the beauty and culture of your city like never before...",
         image: "/images/services2-min.png",
-        popupdescription :"One of the joys of intercity travel is the opportunity to witness the beauty of One of the joys of intercity travel is the opportunity to witness the beauty of"
+        popupdescription :"Discover the best city tours with Elite B car! Whether you're planning a quick weekend getaway or a full-day adventure, our curated city tours cover top destinations.Enjoy comfortable transportation, expert guides, flexible timings, and affordable pricing."
 
     },
     {
@@ -27,7 +27,7 @@ const servicesData = [
         title: "Corporate Travel",
         description: "Business trips made easy with our seamless and comfortable services...",
         image: "/images/services3-min.png",
-        popupdescription :"One of the joys of intercity travel is the opportunity to witness the beauty of One of the joys of intercity travel is the opportunity to witness the beauty of"
+        popupdescription :"Experience executive-class travel with our luxury fleet, ensuring punctual, comfortable, and professional rides for business meetings, conferences, and corporate events."
 
     },
 ];
@@ -102,7 +102,7 @@ const Services = () => {
             </div>
             {popupData && (
                 <div className="fixed inset-0 bg-black p-4 bg-opacity-50 flex items-center justify-center z-50">
-                    <div className="relative bg-white p-8 rounded-lg max-w-2xl w-full">
+                    <div className="relative bg-white p-8 rounded-lg max-w-[900px] w-full">
                         <button
                             onClick={closePopup}
                             className="absolute top-0 right-2 text-orange hover:text-black leading-none	 text-[40px]"
@@ -110,13 +110,15 @@ const Services = () => {
                             ×
                         </button>
                         <div className="grid md:gap-10 gap-6 md:grid-cols-12">
-                            <div className="md:col-span-5">
+                            <div className="md:col-span-6">
                             <img src={popupData.image} className="rounded-xl" alt="" />
                             </div>
-                            <div className="md:col-span-7 ">
+                            <div className="md:col-span-6 ">
                                 <h2 className="text-2xl font-semibold mb-4">{popupData.title}</h2>
-                                <div dangerouslySetInnerHTML={{ __html: popupData.popupdescription }} className="text-gray-700"></div>
-
+                                <div dangerouslySetInnerHTML={{ __html: popupData.popupdescription }} className="text-gray-700 mb-10"></div>
+<button className="flex items-center gap-2 bg-dark text-white hover:bg-orange ease-in duration-300 rounded py-4 px-8 font-semibold">
+                            View All Cities <GoArrowUpRight />
+                        </button>
                             </div>
                         </div>
                     </div>
