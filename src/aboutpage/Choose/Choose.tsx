@@ -10,7 +10,7 @@ const Choose = () => {
                     <div className='image-choose md:col-span-5'>
                         <img src="./images/aboutuslogo.jpg" className='rounded' alt="d" />
                     </div>
-                    <div className='body-text md:col-span-7 mt-10'>
+                    <div className='body-text md:col-span-7 '>
                         <h2 className='mb-6'>Why Choose Us?</h2>
                         <p className='body-text mb-10'>Need to travel beyond New York? Our High-end Car rental providescomfort, privacy, and flexibility for trips up to 300 miles away, including destinations like Boston, Philadelphia, Washington D.C., and more.</p>
                         <p></p>
