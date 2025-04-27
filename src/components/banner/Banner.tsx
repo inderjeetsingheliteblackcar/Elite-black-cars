@@ -79,7 +79,7 @@ const Banner: React.FC = () => {
             subtitle: "Your professional chauffeur services",
         },
         {
-            backgroundImage: "/images/slider-1.jpg",
+            backgroundImage: "/images/banner-min.jpg",
             title: "Your journey our priority",
             subtitle: "Travel in Style & Comfort",
         },
