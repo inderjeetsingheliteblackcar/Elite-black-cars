@@ -72,7 +72,7 @@ const LuxySlider: React.FC = () => {
                             <div
                                 key={index}
                                 onClick={() => setActiveIndex(index)}
-                                className={`relative snap-center h-[400px] transition-all duration-500 cursor-pointer flex-shrink-0 rounded-xl overflow-hidden ${isActive ? 'w-full md:w-[68%] bg-orange/30' : 'w-[10%] bg-orange/50'
+                                className={`relative snap-center h-[400px] transition-all duration-500 cursor-pointer flex-shrink-0 rounded-xl overflow-hidden ${isActive ? 'w-full md:w-[68%] bg-orange/10' : 'w-[10%] bg-orange/30'
                                     }`}
                             >
                                 <div className="flex flex-col md:flex-row lg:w-[810px] w-[700px] h-full p-6 relative">

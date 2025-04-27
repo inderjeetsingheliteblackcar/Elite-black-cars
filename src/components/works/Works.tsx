@@ -87,7 +87,7 @@ const Works = () => {
                         <Slider ref={sliderRef} {...settings}>
                             {Work.map((Workimg) => (
                                 <div key={Workimg.id}>
-                                    <img src={Workimg.image} className="w-[70%] top-move" alt="work image" />
+                                    <img src={Workimg.image} className="w-[90%] mx-auto top-move" alt="work image" />
                                 </div>
                             ))}
                         </Slider>

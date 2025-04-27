@@ -16,9 +16,9 @@
     opacity: 0;
 }
 
-.services .slick-list {
+/* .services .slick-list {
     overflow: visible;
-}
+} */
 
 .card-info {
     transition: 0.5s all;

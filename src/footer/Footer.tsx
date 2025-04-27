@@ -2,6 +2,8 @@ import React from 'react';
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { TiSocialSkype } from "react-icons/ti";
 import './footer.css'
+import { FaPhoneAlt } from "react-icons/fa";
+import { CgMail } from "react-icons/cg";
 
 const Footer = () => {
     return (
@@ -20,7 +22,7 @@ const Footer = () => {
                     </div>
                 </div> */}
                 <div className='footer-links border-b  border-gary py-14'>
-                    <div className='grid text-white gap-10 md:grid-cols-5'>
+                    <div className='grid text-white gap-10 md:grid-cols-4'>
                         {/* <div className='Company '>
                             <h4 className='mb-6'>Company</h4>
                             <a href="" className='mb-3 block'>About us</a>
@@ -55,26 +57,12 @@ const Footer = () => {
                             <a   className='mb-3 block'>XL</a>
                             <a   className='mb-3 block'>Assistant</a>
                         </div>
-                        <div className='Recent-Posts col-span-2'>
-                            <h4 className='mb-6'>Recent Posts</h4>
-                            <div className='footer-post flex gap-4 items-center'>
-                                <div className=''>
-                                    <img src="/images/news1.jpg" className='w-[90px]' alt="" />
-                                </div>
-                                <div className='flex-1'>
-                                    <p className='body-text-small'>April 18, 2024</p>
-                                    <p className='body-text'>Escaping London for a relaxing long weekend</p>
-                                </div>
-                            </div>
-                            <div className='footer-post my-4 flex gap-4 items-center'>
-                                <div className=''>
-                                    <img src="/images/news1.jpg" className='w-[90px]' alt="" />
-                                </div>
-                                <div className='flex-1'>
-                                    <p className='body-text-small'>April 18, 2024</p>
-                                    <p className='body-text'>Escaping London for a relaxing long weekend</p>
-                                </div>
-                            </div>
+                        <div className='Recent-Posts col-span-1'>
+                            <h4 className='mb-6'>Contact</h4>
+                            <a   className='mb-3 block flex gap-2 items-center'><span className='text-lg'><FaPhoneAlt /></span> 00000-00000</a>
+                            <a   className='mb-3 block flex gap-2 items-center'><span className='text-2xl'><CgMail /></span> admin@gmail.com</a>
+
+                           
                         </div>
                     </div>
                 </div>

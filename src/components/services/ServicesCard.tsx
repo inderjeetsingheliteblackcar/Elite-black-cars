@@ -5,13 +5,15 @@ type ServicesCardProps = {
   title: string;
   description: string;
   image: string;
+  onClick: () => void;
 };
 
-const ServicesCard: React.FC<ServicesCardProps> = ({ title, description, image }) => {
+const ServicesCard: React.FC<ServicesCardProps> = ({ title, description, image, onClick }) => {
   return (
     <div
-      className="h-[400px] relative flex justify-end items-end services-card bg-cover rounded-md"
+      className="h-[400px] relative flex justify-end items-end services-card bg-cover rounded-md cursor-pointer"
       style={{ backgroundImage: `url(${image})` }}
+      onClick={onClick}
     >
       <div className="hover-bg absolute top-0 left-0 right-0 bottom-0 rounded-md"></div>
       <div className="card-text text-white p-4 relative z-10">

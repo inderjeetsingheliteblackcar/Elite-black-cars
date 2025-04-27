@@ -1,7 +1,6 @@
 "use client";
 import React, { useRef, useState } from "react";
-import { GoArrowRight } from "react-icons/go";
-import { GoArrowLeft } from "react-icons/go";
+import { GoArrowRight, GoArrowLeft } from "react-icons/go";
 import Slider from "react-slick";
 import { FiArrowUpRight } from "react-icons/fi";
 import ServicesCard from "./ServicesCard";
@@ -11,29 +10,40 @@ const servicesData = [
     {
         id: 1,
         title: "Airport Transfers",
-        description:
-            "One of the joys of intercity travel is the opportunity to witness the beauty of...",
+        description: "One of the joys of intercity travel is the opportunity to witness the beauty of...",
         image: "/images/services1-min.png",
+        popupdescription :"One of the joys of intercity travel is the opportunity to witness the beauty of One of the joys of intercity travel is the opportunity to witness the beauty of"
     },
     {
         id: 2,
         title: "City Tours",
-        description:
-            "Experience the beauty and culture of your city like never before...",
-            image: "/images/services2-min.png",
+        description: "Experience the beauty and culture of your city like never before...",
+        image: "/images/services2-min.png",
+        popupdescription :"One of the joys of intercity travel is the opportunity to witness the beauty of One of the joys of intercity travel is the opportunity to witness the beauty of"
+
     },
     {
         id: 3,
         title: "Corporate Travel",
-        description:
-            "Business trips made easy with our seamless and comfortable services...",
-            image: "/images/services3-min.png",
-    },
+        description: "Business trips made easy with our seamless and comfortable services...",
+        image: "/images/services3-min.png",
+        popupdescription :"One of the joys of intercity travel is the opportunity to witness the beauty of One of the joys of intercity travel is the opportunity to witness the beauty of"
 
+    },
 ];
 
 const Services = () => {
     const sliderRef = useRef<Slider>(null);
+    const [popupData, setPopupData] = useState<{ title: string; popupdescription: string, image: string } | null>(null);
+
+    const openPopup = (title: string, popupdescription: string, image: string) => {
+        setPopupData({ title, popupdescription, image });
+    };
+
+    const closePopup = () => {
+        setPopupData(null);
+    };
+
     const sliderSettings = {
         dots: false,
         infinite: true,
@@ -60,48 +70,59 @@ const Services = () => {
     };
 
     return (
-        <div className="services  relative overflow-hidden  py-14 px-4">
-            <div className="container">
-                <div data-aos="fade-up"  className="flex relative z-10 mb-10 justify-between">
-                    <h2>Our Services</h2>
-{/*                     <a href="#" className="font-semibold w-fit flex gap-2 items-center">
-                        <span>More Fleet</span> <FiArrowUpRight />
-                    </a> */}
+        <>
+            <div className="services relative overflow-hidden py-14 px-4">
+                <div className="container">
+                    <div data-aos="fade-up" className="flex relative z-10 mb-10 justify-between">
+                        <h2>Our Services</h2>
+                    </div>
+
+                    <div className="slider-over">
+                        <div className="start"></div>
+                        <div className="center"></div>
+                        <div className="end"></div>
+                    </div>
+
+                    <div className="md:grid-cols-3 grid gap-y-6" data-aos="fade-up">
+                        {servicesData.map((service) => (
+                            <div key={service.id} className="px-2">
+                                <ServicesCard
+                                    title={service.title}
+                                    description={service.description}
+                                    image={service.image}
+                                    onClick={() => openPopup(service.title, service.popupdescription, service.image)}
+                                />
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Popup */}
+
                 </div>
-                <div className="slider-over">
-                    <div className="start"></div>
-                    <div className="center"></div>
-                    <div className="end"> </div>
-                </div>
-                <div className="md:grid-cols-3 grid gap-y-6" data-aos="fade-up" >
-                {/* <Slider  ref={sliderRef} {...sliderSettings} className="services-slider"> */}
-                    {servicesData.map((service) => (
-                        <div key={service.id} className="px-2">
-                            <ServicesCard
-                                title={service.title}
-                                description={service.description}
-                                image={service.image}
-                            />
-                        </div>
-                    ))}
-                {/* </Slider> */}
-                </div>
-                {/* <div className="mt-10 relative z-10 services-btn flex">
-                    <button
-                        className="w-[50px] h-[50px] me-2 border border-gray rounded-full text-white flex items-center justify-center   "
-                        onClick={() => sliderRef.current?.slickPrev()}
-                    >
-                        <GoArrowLeft className="text-dark" />
-                    </button>
-                    <button
-                        className=" w-[50px] h-[50px] rounded-full hover:orange text-white border border-gray flex items-center justify-center rounded  "
-                        onClick={() => sliderRef.current?.slickNext()}
-                    >
-                        <GoArrowRight className="text-dark" />
-                    </button>
-                </div> */}
             </div>
-        </div>
+            {popupData && (
+                <div className="fixed inset-0 bg-black p-4 bg-opacity-50 flex items-center justify-center z-50">
+                    <div className="relative bg-white p-8 rounded-lg max-w-2xl w-full">
+                        <button
+                            onClick={closePopup}
+                            className="absolute top-0 right-2 text-orange hover:text-black leading-none	 text-[40px]"
+                        >
+                            ×
+                        </button>
+                        <div className="grid md:gap-10 gap-6 md:grid-cols-12">
+                            <div className="md:col-span-5">
+                            <img src={popupData.image} className="rounded-xl" alt="" />
+                            </div>
+                            <div className="md:col-span-7 ">
+                                <h2 className="text-2xl font-semibold mb-4">{popupData.title}</h2>
+                                <div dangerouslySetInnerHTML={{ __html: popupData.popupdescription }} className="text-gray-700"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+        </>
     );
 };
 
