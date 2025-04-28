@@ -24,7 +24,7 @@ const LuxySlider: React.FC = () => {
             description:
                 ' At Elite B Car, our highly trained chauffeurs deliver a seamless, safe, and refined travel experience. Whether you`re traveling for business, leisure, or a special occasion, our expert drivers ensure you reach your destination with comfort, professionalism, and peace of mind. Our chauffeurs are more than drivers — they are trained professionals committed to delivering an exceptional travel experience every mile of the way.',
             features: ['Executive Class Vehicles', 'Discreet Drivers', 'Real-Time Updates'],
-            image: '/images/corporate_partners.jpg',
+            image: '/images/luxyslider3.jpg',
         },
         {
             title: 'Traveling from New York?',
