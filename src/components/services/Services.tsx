@@ -6,6 +6,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import ServicesCard from "./ServicesCard";
 import "./Services.css";
 
+
 const servicesData = [
     {
         id: 1,
