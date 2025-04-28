@@ -1,6 +1,7 @@
 import React from 'react';
 import "./aboutcontant.css";
 import { GoArrowUpRight } from 'react-icons/go';
+import Button from '@/button/Button';
 
 const aboutContentData = [
     {
@@ -27,9 +28,9 @@ const Aboutcontant = () => {
                         <div className='md:w-1/2'>
                             <h2 className='mb-6'>{item.title}</h2>
                             <p className='body-text mb-6' dangerouslySetInnerHTML={{ __html: item.description }} />
-                            <button className="flex items-center gap-2 bg-dark text-white hover:bg-orange ease-in duration-300 rounded py-4 px-8 font-semibold">
-                                View All Cities <GoArrowUpRight />
-                            </button>
+                         
+                            <Button text="View All Cities" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" />
+
                         </div>
                     </div>
                 ))}

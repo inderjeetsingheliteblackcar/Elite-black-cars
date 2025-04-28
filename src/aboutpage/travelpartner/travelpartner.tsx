@@ -1,3 +1,4 @@
+import Button from '@/button/Button';
 import React from 'react';
 import { GoArrowUpRight } from 'react-icons/go';
 
@@ -12,9 +13,11 @@ const Travelpartner = () => {
                         <br /><br />
                         From New York to destinations up to 300 miles away, our service is known for punctuality, professionalism, and customer satisfaction. With a team of highly trained drivers, well-maintained vehicles, and 24/7 availability, we guarantee that every journey is smooth, reliable, and enjoyable.
                     </p>
-                    <button className="flex items-center mx-auto gap-2 bg-dark text-white hover:bg-orange ease-in duration-300 rounded py-4 px-8 font-semibold">
-                        View All Cities <GoArrowUpRight />
-                    </button>
+                    <div className='text-center flex justify-center'>
+                    <Button text="View All Cities" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" />
+
+                    </div>
+
                 </div>
             </div>
 

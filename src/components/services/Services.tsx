@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import { FiArrowUpRight } from "react-icons/fi";
 import ServicesCard from "./ServicesCard";
 import "./Services.css";
+import Button from "@/button/Button";
 
 
 const servicesData = [
@@ -117,9 +118,8 @@ const Services = () => {
                             <div className="md:col-span-6 ">
                                 <h2 className="text-2xl font-semibold mb-4">{popupData.title}</h2>
                                 <div dangerouslySetInnerHTML={{ __html: popupData.popupdescription }} className="text-gray-700 mb-10"></div>
-<button className="flex items-center gap-2 bg-dark text-white hover:bg-orange ease-in duration-300 rounded py-4 px-8 font-semibold">
-                            View All Cities <GoArrowUpRight />
-                        </button>
+
+                        <Button text="Book Now" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" />
                             </div>
                         </div>
                     </div>

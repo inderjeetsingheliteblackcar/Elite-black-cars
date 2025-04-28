@@ -1,3 +1,4 @@
+import Button from '@/button/Button';
 import React from 'react';
 import { GoArrowUpRight } from 'react-icons/go';
 
@@ -9,9 +10,9 @@ const Comfort = () => {
                     <div className=''>
                         <h2 className='mb-6'>Travel in Style & Comfort with Elite B Car</h2>
                         <p className='body-text mb-6' >hassle-free as possible. Whether you're heading to an important business meeting, a weekend retreat, or an airport transfer, our executive travel solutions ensure you reach your destination in comfort and style. Enjoy stress-free, personalized travel, where your comfort is our priority. Whether for business or leisure, let us make your next journey an experience to remember.</p>
-                        <button className="flex items-center gap-2 bg-white text-dark hover:bg-orange ease-in duration-300 rounded py-4 px-8 font-semibold">
-                            View All Cities <GoArrowUpRight />
-                        </button>
+                     
+                        <Button text="View All Cities" color="text-dark" bg="bg-white" hoverbg="hover:bg-orange" />
+
                     </div>
                     <div className=''>
                         <img src="/images/aboutusservice.jpg" className='rounded w-full' alt="About content" />

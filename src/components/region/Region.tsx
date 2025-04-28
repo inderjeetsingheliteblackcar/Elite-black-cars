@@ -1,4 +1,5 @@
 "use client"
+import Button from "@/button/Button";
 import React, { useEffect, useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 
@@ -50,9 +51,9 @@ const Region: React.FC = () => {
                         <br/>We provide premium travel services across New York City and accessible destinations, ensuring luxury, comfort, and reliability for every journey. Whether you need a private chauffeur, long-distance cab, corporate travel, or airport transfer, we cover key locations, including:
                         <br/><br/>
                        <b> New York City | Philadelphia | Boston | Washington D.C. | Baltimore | Albany | Hartford | Syracuse | Pittsburgh | Buffalo | Winchester| Biddeford| Richmond| Fredericksburg| Burlington </b> </p>
-                        <button className="flex items-center gap-2 bg-dark text-white hover:bg-orange ease-in duration-300 rounded py-4 px-8 font-semibold">
-                            View All Cities <GoArrowUpRight />
-                        </button>
+                      
+                        <Button text="View All Cities" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" />
+
                     </div>
                 </div>
             </div>

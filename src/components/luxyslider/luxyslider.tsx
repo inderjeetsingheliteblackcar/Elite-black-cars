@@ -1,3 +1,4 @@
+import Button from '@/button/Button';
 import React, { useState, useRef } from 'react';
 import { GoArrowLeft, GoArrowRight, GoArrowUpRight } from 'react-icons/go';
 import Slider from "react-slick";
@@ -92,9 +93,9 @@ const LuxySlider: React.FC = () => {
                                             </p>
                                         ))} */}
 
-                                        <button className="flex mt-6 items-center gap-2 bg-dark text-white hover:bg-orange duration-300 rounded py-3 px-6 font-semibold">
-                                            View All Cities <GoArrowUpRight />
-                                        </button>
+                                     
+                                        <Button text="View All Cities" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" />
+
                                         </div>
                                     </div>
 
