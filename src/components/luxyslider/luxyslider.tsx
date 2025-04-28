@@ -17,7 +17,7 @@ const LuxySlider: React.FC = () => {
             description:
                 'Our Elite Passenger Services are thoughtfully designed for travellers who expect superior comfort, privacy, and personalized attention. At Elite B car, we cater to individuals and groups who value excellence in every journey. Step into a world of refined travel with elite ground transportation services designed to match your unique lifestyle and expectations.',
             features: ['Seamless Travel Management', 'Live Ride Tracking', 'Automated Receipts'],
-            image: '/images/corporate_partners.jpg',
+            image: '/images/luxyslider2.jpg',
         },
         {
             title: 'Skilled Chauffeurs',
