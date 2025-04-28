@@ -10,7 +10,7 @@ const LuxySlider: React.FC = () => {
             description:
                 ' Our premium travel services are designed for discerning passengers who seek comfort, luxury, and efficiency at every step of their journey. Whether you`re traveling for business or leisure. We ensure you experience travel at its finest. Experience the difference with services crafted exclusively for top-tier passengers who demand nothing but the best.',
             features: ['Easy-to-Use Driver App', 'Weekly Payouts', '24/7 Support'],
-            image: '/images/corporate_partners.jpg',
+            image: '/images/luxyslider1.jpg',
         },
         {
             title: 'Elite B Passengers',
