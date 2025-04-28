@@ -31,7 +31,7 @@ const LuxySlider: React.FC = () => {
             description:
                 'We`ve Got You Covered Thinking about a smooth ride to destinations beyond New York City? Elite B Car offers premium travel services to nearby cities, making it easier than ever to enjoy a quick getaway or attend important business meetings just a few hours away. Our comfortable rides, professional chauffeurs, and flexible booking options ensure a seamless journey wherever you need to go.',
             features: ['On-Time Pickup Guarantee', 'Flight Tracking', 'Flexible Scheduling'],
-            image: '/images/corporate_partners.jpg',
+            image: '/images/luxyslider4.jpg',
         },
     ];
     const sliderRef = useRef<Slider>(null);
