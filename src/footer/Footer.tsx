@@ -34,7 +34,7 @@ const Footer = () => {
                         </div> */}
                         <div className='Top-cities  px-2'>
                             <img className="h-[60px] w-auto max-w-[196px]" src="/images/Logo_main1.svg" alt="Logo" />
-                            <p className='body-text-small my-4'>Escaping London for a relaxing long weekend</p>
+                            {/* <p className='body-text-small my-4'>Escaping London for a relaxing long weekend</p> */}
                             <div className='icons flex flex-col gap-3 items-start    text-white'>
                         <p className='body-text'><b>Follow Us</b></p>
                         <div className='icons-main flex gap-4 text-white'>

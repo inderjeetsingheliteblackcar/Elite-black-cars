@@ -73,7 +73,7 @@ const Showcase = () => {
                                 <p className="body-text">Awards</p>
                             </div> */}
                             <div className="count top-move text-center">
-                                <Counter target={500} duration={2000} />
+                                <Counter target={5000} duration={2000} />
                                 <p className="body-text">Happy Customer</p>
                             </div>
                         </div>
