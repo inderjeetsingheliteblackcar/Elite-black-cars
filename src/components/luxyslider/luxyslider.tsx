@@ -107,7 +107,7 @@ const LuxySlider: React.FC = () => {
                                         <img
                                             src={slide.image}
                                             alt={slide.title}
-                                            className="h-full w-full object-cover rounded-xl"
+                                            className="h-full w-full object-cover object-left rounded-xl"
                                         />
                                     </div>
                                 </div>
