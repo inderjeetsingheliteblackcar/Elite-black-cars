@@ -11,7 +11,7 @@ const Travelpartner = () => {
                     <p className='body-text mb-6' >
                         At Elite B Car, we specialize in high-end, private travel solutions tailored for individuals who value safety, efficiency, and elegance. Whether you're a corporate traveller, leisure explorer, or VIP guest, we ensure a flagship service with our luxury sedans, SUVs, and premium chauffeur-driven cars. With a fleet of premium vehicles, professional chauffeurs, and 24/7 service, we offer a first-class travel experience tailored to your needs. From long-distance private rides to VIP event transportation, our commitment to punctuality, safety, and elegance sets us apart.
                         <br /><br />
-                        From New York to destinations up to 300 miles away, our service is known for punctuality, professionalism, and customer satisfaction. With a team of highly trained drivers, well-maintained vehicles, and 24/7 availability, we guarantee that every journey is smooth, reliable, and enjoyable.
+                        Our service is known for punctuality, professionalism, and customer satisfaction. With a team of highly trained drivers, well-maintained vehicles, and 24/7 availability, we guarantee that every journey is smooth, reliable, and enjoyable.
                     </p>
                     <div className='text-center flex justify-center'>
                     <Button text="View All Cities" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" />
