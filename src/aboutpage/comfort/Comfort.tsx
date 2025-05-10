@@ -9,8 +9,8 @@ const Comfort = () => {
                 <div className='grid md:gap-20 gap-10 items-center md:grid-cols-2'>
                     <div className=''>
                         <h2 className='mb-6'>Travel in Style & Comfort with Elite B Car</h2>
-                        <p className='body-text mb-6' >hassle-free as possible. Whether you're heading to an important business meeting, a weekend retreat, or an airport transfer, our executive travel solutions ensure you reach your destination in comfort and style. Enjoy stress-free, personalized travel, where your comfort is our priority. Whether for business or leisure, let us make your next journey an experience to remember.</p>
-                     
+                        <p className='body-text mb-6' >At Elite B Car, we believe that every journey should be as luxurious and hassle-free as possible. Whether you're heading to an important business meeting, a weekend retreat, or an airport transfer, our executive travel solutions ensure you reach your destination in comfort and style.</p>
+                     <p className='body-text mb-6'>Enjoy stress-free, personalized travel, where your comfort is our priority. Whether for business or leisure, let us make your next journey an experience to remember.</p>
                         <Button text="View All Cities" color="text-dark" bg="bg-white" hoverbg="hover:bg-orange" />
 
                     </div>
