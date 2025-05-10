@@ -27,6 +27,9 @@ export default function RootLayout({
       <head>
         <meta name="google-site-verification" content="M_wYaV_WQaXzDlBStbdhT2zr_kFrQ_wGZOwQekhF_Ck" />
       <link rel="icon" type="image/png" href="/images/Logo_main1.svg" />
+        Meta Title:- Elite Car –Luxury car service NYC, Events & Corporate Travel.
+Meta Descriptions:- Elite Car offers premium luxury car rentals and chauffeur services for weddings, corporate events, airport transfers, and special occasions. Experience comfort, class, and elegance with our curated fleet of high-end vehicles.
+Meta Keywords:- luxury car rental, wedding car hire, chauffeur service, elite car rentals, Exclusive car service NYC, LGA black car service, Long Island limo service, NYC airport executive ride, Elite luxury vehicle transport.
       </head>
       <ReactLenis root>
         <body
