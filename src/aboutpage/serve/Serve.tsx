@@ -48,8 +48,9 @@ const Serve = () => {
     return (
         <div className='Serve py-10 md:py-20 px-4'>
             <div className='container text-center'>
-                <h2>Right We Serve</h2>
-                <p className='mt-4 mb-6 body-text max-w-[700px] mx-auto'>We offer premium private travel services with in New York City and upto 300 miles beyong, covering locations such as:</p>
+                <h2>Regions We Serve</h2>
+                <p className='mt-4 mb-6 body-text max-w-[700px] mx-auto'>We offer premium private travel services within New York City and well-connected locations, covering locations such as:
+</p>
                 <div className='flex gap-4 flex-wrap justify-center items-center'>
                     {ServeList.map((Servedata,index) => (
                         <div key={index} className='flex gap-2 bg-orange/10 items-center pr-4 p-2   rounded-full'>
@@ -60,8 +61,10 @@ const Serve = () => {
 
                 </div>
                 <p className='body-text text-center mt-10 md:mt-20'>Wherever you need to go, we ensure a safe, stylish, and hassle-free journey.<br /><br />
-                    <b>  Book Your Luxury Travel Experience Today! </b><br /><br />
-                    At <b>  Elite B Car, </b> we take pride in offering exceptional private travel solutions that focus on comfort, elegance, and efficiency. Whether you're traveling for business, leisure, or a special event, we promise a premium, hassle-free, and luxurious ride from start to finish.<br /><br />
+                    <b>  Book Your Luxury Travel Experience Today!
+ </b><br /><br />
+                    At <b>  At Elite B Car, we offer exceptional private travel solutions focusing on comfort, elegance, and efficiency. Whether you're traveling for business, leisure, or a special event, we promise a premium, hassle-free, and luxurious ride from start to finish.
+<br /><br />
                     <b>  🚖Ready to experience the best in private transportation? </b> Contact us today to <b>  book your ride</b> and travel in unmatched style and comfort!
                 </p>
             </div>
