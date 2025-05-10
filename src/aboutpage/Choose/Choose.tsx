@@ -19,22 +19,22 @@ const Choose = () => {
                             <div className='mb-4 '>
                                 <img src="/images/check-icon.png" className='mb-6' alt="icon" />
                                  <h4> Experienced Chauffeurs </h4>
-                                <p >– Professional drivers who are courteous and well-trained.</p>
+                                <p >Professional drivers who are courteous and well-trained.</p>
                             </div>
                             <div className='mb-4 '>
                                 <img src="/images/check-icon.png" className='mb-6' alt="icon" />
                                  <h4>Safe & Reliable</h4>
-                                <p > – Punctual service with well-maintained vehicles</p>
+                                <p >Punctual service with well-maintained vehicles</p>
                             </div>
                             <div className='mb-4 '>
                                 <img src="/images/check-icon.png" className='mb-6' alt="icon" />
                                  <h4>Round-the-clock availability </h4>
-                                <p >– Your ride, ready whenever and wherever you need it.</p>
+                                <p >Your ride, ready whenever and wherever you need it.</p>
                             </div>
                             <div className='mb-4 '>
                                 <img src="/images/check-icon.png" className='mb-6' alt="icon" />
                                  <h4> Elite Service, accessible pricing</h4>
-                                <p >– No gimmicks. Just luxury made affordable.</p>
+                                <p >No gimmicks. Just luxury made affordable.</p>
                             </div>
 
                         </div>
