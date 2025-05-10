@@ -12,7 +12,8 @@ const Choose = () => {
                     </div>
                     <div className='body-text md:col-span-7 '>
                         <h2 className='mb-6'>Why Choose Us?</h2>
-                        <p className='body-text mb-10'>Need to travel beyond New York? Our High-end Car rental providescomfort, privacy, and flexibility for trips up to 300 miles away, including destinations like Boston, Philadelphia, Washington D.C., and more.</p>
+                       <p className="font-bold">Need to travel beyond New York?</p>
+                        <p className='body-text mb-10'> Our High-end Car rental providescomfort, privacy, and flexibility for trips up to 300 miles away, including destinations like Boston, Philadelphia, Washington D.C., and more.</p>
                         <p></p>
                         <div className='grid md:grid-cols-2  gap-y-5 gap-x-6'>
                             <div className='mb-4 '>
