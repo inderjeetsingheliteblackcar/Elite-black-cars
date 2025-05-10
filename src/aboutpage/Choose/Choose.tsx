@@ -15,24 +15,39 @@ const Choose = () => {
                        <p className="font-bold">Need to travel beyond New York?</p>
                         <p className='body-text mb-10'> Our High-end Car rental providescomfort, privacy, and flexibility for trips up to 300 miles away, including destinations like Boston, Philadelphia, Washington D.C., and more.</p>
                         <p></p>
+                          <p className="font-bold">Here’s why travellers choose us:</p>
                         <div className='grid md:grid-cols-2  gap-y-5 gap-x-6'>
-                            <div className='mb-4 '>
-                                <img src="/images/check-icon.png" className='mb-6' alt="icon" />
+                            <div className='mb4 '>
+                                <img src="/images/check-icon.png" className='mb-2' alt="icon" />
                                  <h4> Experienced Chauffeurs </h4>
                                 <p >Professional drivers who are courteous and well-trained.</p>
                             </div>
+
+                            
+                             <div className='mb-4 '>
+                                <img src="/images/check-icon.png" className='mb-2' alt="icon" />
+                                 <h4>Luxury Fleet  </h4>
+                                <p>Choose from our top-of-the-line sedans, SUVs, and executive vehicles.</p>
+                            </div>
+                             <div className='mb-4 '>
+                                <img src="/images/check-icon.png" className='mb-2' alt="icon" />
+                                 <h4> Personalized Experience  </h4>
+                                <p >Tailored services to match your unique travel needs.</p>
+                            </div>
+
+                            
                             <div className='mb-4 '>
-                                <img src="/images/check-icon.png" className='mb-6' alt="icon" />
+                                <img src="/images/check-icon.png" className='mb-2' alt="icon" />
                                  <h4>Safe & Reliable</h4>
                                 <p >Punctual service with well-maintained vehicles</p>
                             </div>
                             <div className='mb-4 '>
-                                <img src="/images/check-icon.png" className='mb-6' alt="icon" />
+                                <img src="/images/check-icon.png" className='mb-2' alt="icon" />
                                  <h4>Round-the-clock availability </h4>
                                 <p >Your ride, ready whenever and wherever you need it.</p>
                             </div>
                             <div className='mb-4 '>
-                                <img src="/images/check-icon.png" className='mb-6' alt="icon" />
+                                <img src="/images/check-icon.png" className='mb-2' alt="icon" />
                                  <h4> Elite Service, accessible pricing</h4>
                                 <p >No gimmicks. Just luxury made affordable.</p>
                             </div>
