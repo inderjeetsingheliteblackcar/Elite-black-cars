@@ -25,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="M_wYaV_WQaXzDlBStbdhT2zr_kFrQ_wGZOwQekhF_Ck" />
       <link rel="icon" type="image/png" href="/images/Logo_main1.svg" />
       </head>
       <ReactLenis root>
