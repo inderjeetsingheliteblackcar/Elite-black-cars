@@ -6,7 +6,7 @@ import Button from '@/button/Button';
 const aboutContentData = [
     {
         title: "Luxury Travel Solutions for Comfort & Convenience",
-        description: `Welcome to <b>Elite B Car</b>, where we redefine travel with our <b>premium private transportation services</b>. Whether you're looking for a <b>luxury chauffeur service, airport transfer, and long-distance private car rental, or executive business travel</b>, we provide the best black car service for a seamless, stress-free, and comfortable journey tailored to your needs.`,
+        description: `Welcome to <b>Elite B Car</b>, where we redefine travel with our premium private transportation services. Whether you're looking for a luxury chauffeur service, airport transfer, or executive business travel, we provide the best black car service for a seamless, stress-free, and comfortable journey tailored to your needs.`,
         image: "/images/Aboutcontant.png"
     },
 
