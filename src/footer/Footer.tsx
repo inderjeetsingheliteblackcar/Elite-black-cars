@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { TiSocialSkype } from "react-icons/ti";
 import './footer.css'
 import { FaPhoneAlt } from "react-icons/fa";
@@ -38,9 +39,15 @@ const Footer = () => {
                             <div className='icons flex flex-col gap-3 items-start    text-white'>
                         <p className='body-text'><b>Follow Us</b></p>
                         <div className='icons-main flex gap-4 text-white'>
-                            <FaFacebookF />
+                             <a href="https://https://www.facebook.com/elitebcar" target="_blank" rel="noopener noreferrer">
+                                <FaFacebookF />
+                              </a>
+                          <a href="https://https://www.instagram.com/p/DJZpVJxy1N2/" target="_blank" rel="noopener noreferrer">
                             <FaInstagram />
-                            <TiSocialSkype />
+                          </a>
+                           <a href="https://x.com/elitebcar/status/1920529259770028092" target="_blank" rel="noopener noreferrer">
+                            <FaXTwitter />
+                          </a>
                         </div>
                     </div>
                         </div>
