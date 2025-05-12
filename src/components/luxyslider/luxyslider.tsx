@@ -94,7 +94,7 @@ const LuxySlider: React.FC = () => {
                                         ))} */}
 
                                      
-                                        <Button text="View All Cities" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" />
+                                        <Button text="Reserve Your Elite Experience" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" />
 
                                         </div>
                                     </div>
