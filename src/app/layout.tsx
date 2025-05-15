@@ -25,12 +25,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="google-site-verification" content="M_wYaV_WQaXzDlBStbdhT2zr_kFrQ_wGZOwQekhF_Ck" />
+      <meta name="google-site-verification" content="M_wYaV_WQaXzDlBStbdhT2zr_kFrQ_wGZOwQekhF_Ck" />
+      <link rel="canonical" href="https://www.elitebcar.com/" />
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9GWNTSX1LX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9GWNTSX1LX');
+</script>
       <link rel="icon" type="image/png" href="/images/Logo_main1.svg" />
-        Meta Title:- Elite B Car – Luxury Chauffeur NYC, Events & Corporate Travel.
-        Meta Descriptions:- Elite B Car offers premium luxury chauffeur services for weddings, corporate events, airport transfers, and special occasions. Experience comfort, class, and elegance with our curated fleet of high-end vehicles.
-        Meta Keywords:- luxury car rental, wedding car hire, chauffeur service, elite car rentals, Exclusive car service NYC, LGA black car service, Long Island limo service, NYC airport executive ride, 
-                        Elite luxury vehicle transport.
+        Meta Title:- Elite B Car –Luxury car service NYC, Events & Corporate Travel.
+        Meta Descriptions:- Elite B Car offers luxury chauffeur services in New York City and accessible destinations for weddings, corporate events, airport transfers & more—comfort and elegance.
+        Meta Keywords:- Luxury car service NYC, wedding car hire, Luxury transportation Connecticut, Corporate black car service, Exclusive car service NYC, LGA black car service, Long Island limo service, NYC airport executive ride, Elite luxury vehicle transport, JFK airport luxury transfer.
       </head>
       <ReactLenis root>
         <body
