@@ -30,6 +30,7 @@ export default function RootLayout({
         Meta Title:- Elite B Car –Luxury car service NYC, Events & Corporate Travel.
         Meta Descriptions:- Elite B Car offers luxury chauffeur services in New York City and accessible destinations for weddings, corporate events, airport transfers & more—comfort and elegance.
         Meta Keywords:- Luxury car service NYC, wedding car hire, Luxury transportation Connecticut, Corporate black car service, Exclusive car service NYC, LGA black car service, Long Island limo service, NYC airport executive ride, Elite luxury vehicle transport, JFK airport luxury transfer.
+        <link rel="canonical" href="https://www.elitebcar.com/" />
       </head>
       <ReactLenis root>
         <body
