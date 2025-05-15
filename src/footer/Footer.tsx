@@ -42,10 +42,10 @@ const Footer = () => {
                              <a href="https://www.facebook.com/elitebcar" target="_blank" rel="noopener noreferrer">
                                 <FaFacebookF />
                               </a>
-                          <a href="https://www.instagram.com/p/DJZpVJxy1N2/" target="_blank" rel="noopener noreferrer">
+                          <a href="https://www.instagram.com/elitebcar13/" target="_blank" rel="noopener noreferrer">
                             <FaInstagram />
                           </a>
-                           <a href="https://x.com/elitebcar/status/1920529259770028092" target="_blank" rel="noopener noreferrer">
+                           <a href="https://x.com/elitebcar/" target="_blank" rel="noopener noreferrer">
                             <FaXTwitter />
                           </a>
                         </div>
