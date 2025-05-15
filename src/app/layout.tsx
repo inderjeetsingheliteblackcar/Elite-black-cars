@@ -25,9 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <meta name="google-site-verification" content="M_wYaV_WQaXzDlBStbdhT2zr_kFrQ_wGZOwQekhF_Ck" />
-      <link rel="canonical" href="https://www.elitebcar.com/" />
-      
+      <meta name="google-site-verification" content="M_wYaV_WQaXzDlBStbdhT2zr_kFrQ_wGZOwQekhF_Ck" />     
       <link rel="icon" type="image/png" href="/images/Logo_main1.svg" />
         Meta Title:- Elite B Car –Luxury car service NYC, Events & Corporate Travel.
         Meta Descriptions:- Elite B Car offers luxury chauffeur services in New York City and accessible destinations for weddings, corporate events, airport transfers & more—comfort and elegance.
