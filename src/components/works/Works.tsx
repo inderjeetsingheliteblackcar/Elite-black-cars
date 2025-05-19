@@ -50,7 +50,7 @@ const Works = () => {
     const dotTexts = [
         { title: "Create Your Route", description: "Plan your journey just the way you like. Select your starting point, preferred stops, and final destination, or the number of hours you need to book a ride" },
        {"title": "Choose a Vehicle For You",
-  "description": "Ride in unmatched style and comfort with our <a href=\"/about\">luxury car services in JFK</a>, offering top-tier vehicles like Mercedes, BMW, and GMC. Our high-end sedans, SUVs, and limousines make every journey a first-class experience."}
+  "description": "Ride in unmatched style and comfort with our luxury car services in JFK, offering top-tier vehicles like Mercedes, BMW, and GMC. Our high-end sedans, SUVs, and limousines make every journey a first-class experience."}
         { title: "Enjoy The Journey", description: "Finalize your booking and enjoy a hassle-free ride with our luxury black car service CT." },
     ];
 
