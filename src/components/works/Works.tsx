@@ -50,11 +50,11 @@ const Works = () => {
         },
         { 
             title: "Choose a Vehicle For You", 
-            description: "Ride in unmatched style and comfort with our luxury car services in JFK, offering top-tier vehicles like Mercedes, BMW, and GMC. Our high-end sedans, SUVs, and limousines make every journey a first-class experience." 
+            description: `Ride in unmatched style and comfort with our <a href="/about" class="text-orange"> luxury car services in JFK,</a> offering top-tier vehicles like Mercedes, BMW, and GMC. Our high-end sedans, SUVs, and limousines make every journey a first-class experience.`
         },
         { 
             title: "Enjoy The Journey", 
-            description: "Finalize your booking and enjoy a hassle-free ride with our luxury black car service CT." 
+            description: `Finalize your booking and enjoy a hassle-free ride with our  <a href="/about" class="text-orange"> luxury black car service CT.</a>` 
         },
     ];
 
@@ -80,7 +80,7 @@ const Works = () => {
                                         </div>
                                         <div>
                                             <h4 className="mb-3">{dot.title}</h4>
-                                            <span className="body-text">{dot.description}</span>
+                                            <span className="body-text" dangerouslySetInnerHTML={{ __html: dot.description }}></span>
                                         </div>
                                     </div>
                                 </button>
