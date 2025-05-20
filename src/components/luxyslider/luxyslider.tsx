@@ -157,8 +157,11 @@ const LuxySlider: React.FC = () => {
                                             </p>
                                         ))}
                                         <div className="mt-auto" onClick={() => openPopup(slide.title, slide.description, slide.image)}>
-                                            <Button text={slide.buttontext} color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" />
+                                            <Button text={slide.buttontext} color={`text-white ${slide.class}`} bg="bg-dark" hoverbg="hover:bg-orange" />
                                         </div>
+                                          <Link href="/about">
+                                                <Button text={slide.buttontext} id='goAbout' color={`text-white ${slide.classhide}`} bg="bg-dark" hoverbg="hover:bg-orange" />
+                                            </Link>
                                     </div>
                                     <div className="mt-4">
                                         <img src={slide.image} alt={slide.title} className="h-[200px] w-full object-cover rounded-xl" />

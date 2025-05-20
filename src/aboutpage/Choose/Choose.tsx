@@ -8,7 +8,7 @@ const Choose = () => {
 
                 <div className='grid md:gap-10 gap-4 items-center md:grid-cols-12'>
                     <div className='image-choose md:col-span-5'>
-                        <img src="./images/aboutuslogo.jpg" className='rounded' alt="d" />
+                        <img src="./images/aboutuslogo1.jpeg" className='rounded' alt="d" />
                     </div>
                     <div className='body-text md:col-span-7 '>
                         <h2 className='mb-6'>Why Choose Us?</h2>
