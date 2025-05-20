@@ -170,7 +170,12 @@ transition: 0.5s all;
   transform: translateY(-4px);
   transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
 }
-
+.show{
+  display: none;
+}
+.hide{
+  display: none;
+}
 @media (min-width: 768px) {
   .button-1-front {
     font-size: 16px;
