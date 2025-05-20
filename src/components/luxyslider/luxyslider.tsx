@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import Slider from "react-slick";
 import { GoArrowLeft, GoArrowRight } from 'react-icons/go';
 import Button from '@/button/Button';
+import Link from 'next/link';
 
 const LuxySlider: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -31,7 +32,7 @@ const LuxySlider: React.FC = () => {
             features: ['Seamless Travel Management', 'Live Ride Tracking', 'Automated Receipts'],
             image: '/images/luxyslider2.jpg',
             buttontext: 'Book Your Ride',
-                classhide: 'hide'
+            classhide: 'hide'
         },
         {
             title: 'Skilled Chauffeurs',
@@ -113,8 +114,9 @@ const LuxySlider: React.FC = () => {
                                             <div onClick={() => openPopup(slide.title, slide.description, slide.image)}>
                                                 <Button text={slide.buttontext} color={`text-white ${slide.class}`} bg="bg-dark" hoverbg="hover:bg-orange" />
                                             </div>
-                                            <Button text={slide.buttontext} color={`text-white ${slide.classhide}`} bg="bg-dark" hoverbg="hover:bg-orange" />
-
+                                            <Link href="/about">
+                                                <Button text={slide.buttontext} id='goAbout' color={`text-white ${slide.classhide}`} bg="bg-dark" hoverbg="hover:bg-orange" />
+                                            </Link>
                                         </div>
                                     </div>
 
