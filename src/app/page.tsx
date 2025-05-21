@@ -19,6 +19,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Toproutes from "@/components/toproutesf/Toproutes";
 import Luxyslider from "@/components/luxyslider/luxyslider";
+import Blogs from "@/components/blogs/blogs";
 export default function Home() {
 
   
@@ -42,6 +43,7 @@ export default function Home() {
       {/* <News /> */}
       <Faq />
       <Toproutes />
+      <Blogs />
       <Luxyslider />
     </>
   );
