@@ -1,8 +1,9 @@
-// src/app/blog/[slug]/page.tsx
 import blogs from '../../../Blogsdata.json';
 
 interface BlogPageProps {
-  params: { slug: string };
+  params: {
+    slug: string;
+  };
 }
 
 export function generateStaticParams() {
@@ -12,7 +13,9 @@ export function generateStaticParams() {
 }
 
 export default async function BlogPost({ params }: BlogPageProps) {
-  const post = blogs.find((item) => item.slug === params.slug);
+  const { slug } = await params;  // <-- await here
+
+  const post = blogs.find((item) => item.slug === slug);
 
   if (!post) {
     return <p className="p-10 text-red-600">Blog post not found.</p>;
