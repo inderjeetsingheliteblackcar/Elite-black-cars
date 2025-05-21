@@ -13,8 +13,7 @@ export function generateStaticParams() {
 }
 
 export default async function BlogPost({ params }: BlogPageProps) {
-  const { slug } = await params;  // <-- await here
-
+  const { slug } = await params; // ✅ FIXED: no 
   const post = blogs.find((item) => item.slug === slug);
 
   if (!post) {
