@@ -1,10 +1,5 @@
 import blogs from '../../../Blogsdata.json';
 
-interface BlogPageProps {
-  params: {
-    slug: string;
-  };
-}
 
 export function generateStaticParams() {
   return  blogs.map((post) =>({
@@ -12,8 +7,14 @@ export function generateStaticParams() {
   }));
 }
 
-export default async function BlogPost({ params }: BlogPageProps) {
-  const { slug } = await Promise.resolve(params); 
+export default async function BlogPost({
+  params: _params,
+}: {
+  params: Promise<{
+    slug: string
+  }>
+}) {
+  const { slug } = await _params; 
   const post = blogs.find((item) => item.slug === slug);
 
   if (!post) {
