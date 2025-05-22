@@ -19,7 +19,7 @@ export default async function BlogPost({ params: _params, }: { params: Promise<{
     );
   }
   return (
-    <div className="pt-40 pb-20 px-4 max-w-5xl mx-auto">
+    <div className="pt-40 pb-10 md:pb-20 px-4 max-w-5xl mx-auto">
       <h2 className="mb-6">{post.title}</h2>
       <img
         src={post.image}
@@ -32,7 +32,7 @@ export default async function BlogPost({ params: _params, }: { params: Promise<{
       <h4 className="my-6">{post.heading}</h4>
       <p className="mb-2">{post.content}</p>
       <p className='font-bold'>{post.heading2}</p>
-      <div className='grid py-10 gap-10 grid-cols-2'>
+      <div className='grid py-10 gap-10 md:grid-cols-2'>
         {post.features.map((feature) => (
           <div>
             <h4 className='mb-2'>{feature.title}</h4>
@@ -40,7 +40,7 @@ export default async function BlogPost({ params: _params, }: { params: Promise<{
           </div>
         ))}
       </div>
-      <div className='grid py-10 grid-cols-2  gap-10'>
+      <div className='grid md:py-10 md:grid-cols-2  gap-10'>
         {
           post.section.map((secdata) => (
 
@@ -58,7 +58,7 @@ export default async function BlogPost({ params: _params, }: { params: Promise<{
 
           ))
         }  </div>
-      <div className='grid py-10 grid-cols-2  gap-10'>
+      <div className='grid py-10 md:grid-cols-2  gap-10'>
         <img src="/images/services1-min.png" className='h-[250px] w-full object-cover' alt="" />
         <div className='text'>
           <h2 className='mb-4'>{post.heading5}</h2>
