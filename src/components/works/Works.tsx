@@ -59,7 +59,7 @@ const Works = () => {
     ];
 
     return (
-        <div className="work py-20 text-white bg-dark md:mt-[-120px] mt-0 relative z-20 px-4">
+        <div className="work py-20 text-white bg-dark  mt-0 relative z-20 px-4">
             <div className="container">
                 <div data-aos="fade-up" className="md:grid md:grid-cols-12 grid-cols-1 items-center gap-10">
                     <div className="work-text md:col-span-5 col-span-1 flex flex-col justify-center">

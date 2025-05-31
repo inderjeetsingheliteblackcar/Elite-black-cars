@@ -18,8 +18,8 @@ const fleetData = [
   },
   {
     id: 2,
-    name: "Cadilac XT6",
-    description: "Small SUV",
+    name: "Small SUV",
+    description: "Cadilac XT6 ",
     image: "/images/Ourfleet2-min.png",
     passengers: 4,
     luggage: 4,
@@ -114,13 +114,27 @@ const Fleet = () => {
   const sliderRef = useRef<Slider>(null);
   const sliderSettings = {
     dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    arrows: false,
-    autoplaySpeed: 3000,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
 
   };
 
@@ -151,17 +165,15 @@ const Fleet = () => {
 
   return (
     <div className="" >
+          {/* h-[200vh] */}
 
-      <div ref={sectionRef} className=" md:block hidden fleet-main pt-20 ">
+      {/* <div ref={sectionRef} className=" md:block hidden fleet-main pt-20 ">
         <div className="h-[100vh] relative">
-        {/* h-[200vh] */}
           <div className="fleet sticky top-40 h-screen px-4 ">
             <div className=" container">
-              <div data-aos="fade-up"  className="flex  mb-12 relative z-10 mb-10 justify-between">
+              <div data-aos="fade-up" className="flex  mb-12 relative z-10 mb-10 justify-between">
                 <h2>Our Fleet</h2>
-{/*  <a href="#" className="font-semibold w-fit flex gap-2 items-center">
-                  <span>More Fleet</span> <FiArrowUpRight />
-                </a> */}
+               
               </div>
             </div>
 
@@ -176,10 +188,10 @@ const Fleet = () => {
 
                   className="flex gap-3  container  ps-2 transition-all duration-500 ease-in-out"
                   style={{
-                    transition: "all 1s ease-in-out", // Smooth transition effect
+                    transition: "all 1s ease-in-out", 
                   }}
                 >
-                  <div data-aos="fade-up"  className="relative flex gap-3 ">
+                  <div data-aos="fade-up" className="relative flex gap-3 ">
 
                     {fleetData.map((fleet) => (
                       <CardFleet
@@ -197,8 +209,15 @@ const Fleet = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="md:hidden py-10 px-4 block">
+      </div> */}
+      <div className="container px-4">
+        <div className="relative">
+              <div className="slider-over">
+                <div className="start"></div>
+                <div className="center"></div>
+                <div className="end"></div>
+              </div>
+             < div className=" py-10  block">
         <div className="flex relative z-10 mb-10 justify-between">
           <h2>Our Fleet</h2>
           <a href="#" className="font-semibold w-fit flex gap-2 items-center">
@@ -233,6 +252,8 @@ const Fleet = () => {
             </button>
           </div>
         </div>
+      </div>
+      </div>
       </div>
     </div>
   );
