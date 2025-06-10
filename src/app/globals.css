@@ -92,8 +92,8 @@ h4 {
 }
 
 button.bg-orange.button:hover {
-  color: #000;
-  background-color: #fff;
+  color: #ffffff;
+  background-color: #000000;
 }
 
 button.bg-white.button:hover {

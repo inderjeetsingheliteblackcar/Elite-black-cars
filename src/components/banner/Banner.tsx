@@ -6,6 +6,7 @@ import { GoArrowLeft } from "react-icons/go";
 import Slider from "react-slick";
 import './banner.css';
 import Bookingform from "./Bookingform";
+import Button from "@/button/Button";
 
 interface BannerProps {
     backgroundImage: string;
@@ -32,6 +33,10 @@ const TopBanner: React.FC<BannerProps & { isActive: boolean }> = ({
                 >
                     {title}
                 </h1>
+                <div className="flex gap-4">
+ <Button text="Book Now" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" /> 
+  <Button text="Contact Us" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" />
+  </div>
             </div>
         </div>
     </div>

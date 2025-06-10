@@ -1,6 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 
-const AboutBanner: React.FC = () => {
+type BannersallProps = {
+  pagename : string,
+  bgimage:string
+
+}
+const Bannersall: React.FC<BannersallProps> = ({pagename,bgimage}) => {
     const bannerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -18,9 +23,9 @@ const AboutBanner: React.FC = () => {
     return (
         <div className="bg-dark relative overflow-hidden md:pb-48 pb-28 pt-52 md:pt-80 overflow-hidden">
             <div className="text-white relative z-40 px-4  container">
-                <h2>About Us</h2>
+                <h2>{pagename}</h2>
                 <p className="flex mt-4 gap-3 items-center">
-                    Home <span className="text-sm">{'>'}</span> About Us
+                    Home <span className="text-sm">{'>'}</span> {pagename}
                 </p>
             </div>
 
@@ -28,7 +33,7 @@ const AboutBanner: React.FC = () => {
                 ref={bannerRef}
                 className="w-[130%]   top-0 right-0 left-0 bottom-0 absolute  bg-no-repeat bg-cover"
                 style={{
-                    backgroundImage: "url('/images/aboutusbanner.jpg')",
+                    backgroundImage: `url(${bgimage})`,
                     backgroundPosition: '0 center',
                 }}
             >
@@ -38,4 +43,4 @@ const AboutBanner: React.FC = () => {
     );
 };
 
-export default AboutBanner;
+export default Bannersall;

@@ -39,8 +39,8 @@ const Header = () => {
                         </button>
                     </div> */}
 
-                    <div className=" items-center flex gap-x-12">
-                    {/* <div className="hidden items-center lg:flex lg:gap-x-12"> */}
+                    <div className=" items-center flex gap-x-12 mt-2">
+                        {/* <div className="hidden items-center lg:flex lg:gap-x-12"> */}
                         {/* <div className="relative">
                             <button
                                 type="button"
@@ -77,10 +77,13 @@ const Header = () => {
                         </div> */}
 
                         {/*                         <a href="#" className="text-sm hover:text-orange font-normal">Home  </a> */}
-                        <Link href="/about" className="button-1">  <span className="button-1-shadow"></span>
+                        <Link href="/about" className="button-1">
+                            About Us
+                        </Link>
+                        <Link href="/" className="button-1">  <span className="button-1-shadow"></span>
                             <span className="button-1-edge"></span>
                             <span className="button-1-front text">
-                                About Us
+                                Book Now
                             </span>  </Link>
 
 
