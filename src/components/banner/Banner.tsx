@@ -34,8 +34,8 @@ const TopBanner: React.FC<BannerProps & { isActive: boolean }> = ({
                     {title}
                 </h1>
                 <div className="flex gap-4">
- <Button text="Book Now" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" /> 
-  <Button text="Contact Us" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" />
+ <Button text="Book Now" color="text-white hover:text-dark" bg="bg-orange" hoverbg="hover:bg-white" /> 
+  <Button text="Contact Us" color="text-dark hover:text-white" bg="bg-white" hoverbg="hover:bg-orange" />
   </div>
             </div>
         </div>
