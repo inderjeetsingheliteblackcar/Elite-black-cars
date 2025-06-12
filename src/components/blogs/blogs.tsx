@@ -18,7 +18,7 @@ const Blogs = () => {
             </div>
             <div className="p-6 flex flex-col justify-center">
               <h3 className="text-2xl font-semibold">{post.title}</h3>
-              <p className="my-4 text-gray-700">{post.introduction}</p>
+              <p className="my-4 text-gray-700" dangerouslySetInnerHTML={{__html : post.introduction}}></p>
               <Link
                 href={`/blog/${post.slug}`}
                 className="text-orange flex items-center gap-2"
