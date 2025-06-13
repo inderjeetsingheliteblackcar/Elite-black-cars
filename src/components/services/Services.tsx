@@ -6,33 +6,34 @@ import { FiArrowUpRight } from "react-icons/fi";
 import ServicesCard from "./ServicesCard";
 import "./Services.css";
 import Button from "@/button/Button";
+import servicesDatamain from './servicesData.json';
 
 
-const servicesData = [
-    {
-        id: 1,
-        title: "Airport Transfers",
-        description: "One of the joys of intercity travel is the opportunity to witness the beauty of...",
-        image: "/images/services1-min.png",
-        popupdescription :"At Elite B Car, we believe that luxury travel should be more than just a ride—an experience. That's why we've embraced innovative technology to ensure your black car journey is as smooth, efficient, and luxurious as possible."
-    },
-    {
-        id: 2,
-        title: "City Tours",
-        description: "Experience the beauty and culture of your city like never before...",
-        image: "/images/services2-min.png",
-        popupdescription :"Discover the best city tours with Elite B car! Whether you're planning a quick weekend getaway or a full-day adventure, our curated city tours cover top destinations.Enjoy comfortable transportation, expert guides, flexible timings, and affordable pricing."
+// const servicesData = [
+//     {
+//         id: 1,
+//         title: "Airport Transfers",
+//         description: "One of the joys of intercity travel is the opportunity to witness the beauty of...",
+//         image: "/images/services1-min.png",
+//         popupdescription :"At Elite B Car, we believe that luxury travel should be more than just a ride—an experience. That's why we've embraced innovative technology to ensure your black car journey is as smooth, efficient, and luxurious as possible."
+//     },
+//     {
+//         id: 2,
+//         title: "City Tours",
+//         description: "Experience the beauty and culture of your city like never before...",
+//         image: "/images/services2-min.png",
+//         popupdescription :"Discover the best city tours with Elite B car! Whether you're planning a quick weekend getaway or a full-day adventure, our curated city tours cover top destinations.Enjoy comfortable transportation, expert guides, flexible timings, and affordable pricing."
 
-    },
-    {
-        id: 3,
-        title: "Corporate Travel",
-        description: "Business trips made easy with our seamless and comfortable services...",
-        image: "/images/services3-min.png",
-        popupdescription :"Experience executive-class travel with our luxury fleet, ensuring punctual, comfortable, and professional rides for business meetings, conferences, and corporate events."
+//     },
+//     {
+//         id: 3,
+//         title: "Corporate Travel",
+//         description: "Business trips made easy with our seamless and comfortable services...",
+//         image: "/images/services3-min.png",
+//         popupdescription :"Experience executive-class travel with our luxury fleet, ensuring punctual, comfortable, and professional rides for business meetings, conferences, and corporate events."
 
-    },
-];
+//     },
+// ];
 
 const Services = () => {
     const sliderRef = useRef<Slider>(null);
@@ -86,7 +87,7 @@ const Services = () => {
                     </div>
 
                     <div className="md:grid-cols-3 grid gap-y-6" data-aos="fade-up">
-                        {servicesData.map((service) => (
+                        {servicesDatamain.map((service) => (
                             <div key={service.id} className="px-2">
                                 <ServicesCard
                                     title={service.title}

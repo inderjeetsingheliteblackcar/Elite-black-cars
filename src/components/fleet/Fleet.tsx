@@ -10,8 +10,8 @@ import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 const fleetData = [
   {
     id: 1,
-    name: "Cadillac Escalade",
-    description: "Premium Luxury SUV",
+    name: "Premium Luxury SU",
+    description: "Cadillac Escalade ",
     image: "/images/Ourfleet1-min.png",
     passengers: 6,
     luggage: 6,
@@ -26,8 +26,8 @@ const fleetData = [
   },
   {
     id: 3,
-    name: "Mercedes",
-    description: "Luxury Sedan",
+    name: "Luxury Sedan",
+    description: "Mercedes ",
     image: "/images/Ourfleet3-min.png",
     passengers: 3,
     luggage: 2,
@@ -167,7 +167,7 @@ const Fleet = () => {
     <div className="" >
           {/* h-[200vh] */}
 
-      {/* <div ref={sectionRef} className=" md:block hidden fleet-main pt-20 ">
+      <div ref={sectionRef} className=" md:block hidden fleet-main pt-20 ">
         <div className="h-[100vh] relative">
           <div className="fleet sticky top-40 h-screen px-4 ">
             <div className=" container">
@@ -209,8 +209,8 @@ const Fleet = () => {
             </div>
           </div>
         </div>
-      </div> */}
-      <div className="container px-4">
+      </div>
+      <div className="container md:hidden block px-4">
         <div className="relative">
               <div className="slider-over">
                 <div className="start"></div>
