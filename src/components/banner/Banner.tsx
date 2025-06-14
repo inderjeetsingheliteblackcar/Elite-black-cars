@@ -7,6 +7,7 @@ import Slider from "react-slick";
 import './banner.css';
 import Bookingform from "./Bookingform";
 import Button from "@/button/Button";
+import Link from "next/link";
 
 interface BannerProps {
     backgroundImage: string;
@@ -34,9 +35,10 @@ const TopBanner: React.FC<BannerProps & { isActive: boolean }> = ({
                     {title}
                 </h1>
                 <div className="flex gap-4">
- <Button text="Book Now" color="text-white hover:text-dark" bg="bg-orange" hoverbg="hover:bg-white" /> 
-  <Button text="Contact Us" color="text-dark hover:text-white" bg="bg-white" hoverbg="hover:bg-orange" />
-  </div>
+                    <Button text="Book Now" color="text-white hover:text-dark" bg="bg-orange" hoverbg="hover:bg-white" />
+                    <Link href="/contact" >  <Button text="Contact Us" color="text-dark hover:text-white" bg="bg-white" hoverbg="hover:bg-orange" />
+                    </Link>
+                </div>
             </div>
         </div>
     </div>
