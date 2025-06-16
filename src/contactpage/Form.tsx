@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { FaRegUser } from "react-icons/fa";
 import { MdOutlinePhone } from "react-icons/md";
 import { MdOutlineEmail } from "react-icons/md";
-
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
 const Form = () => {
-    const [formdata, setformdata] = useState({ name: "", lName: "", email: "", phone: "", radio: "Option 1" });
+    const [formdata, setformdata] = useState({ name: "",  email: "", phone: "", radio: "Option 1" });
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setformdata({ ...formdata, [e.target.name]: e.target.value });
@@ -12,7 +13,7 @@ const Form = () => {
     };
     const SubmitForm = (e: React.FormEvent) => {
         e.preventDefault();
-        const dataToSend = { Name: formdata.name, lastName: formdata.lName, Email: formdata.email, Phone: formdata.phone, SelectedOption: formdata.radio, }
+        const dataToSend = { Name: formdata.name,  Email: formdata.email, Phone: formdata.phone, SelectedOption: formdata.radio, }
         console.log(dataToSend)
     }
     return (
@@ -35,16 +36,19 @@ const Form = () => {
 
 
                     <label htmlFor="phone" className="block text-sm font-medium text-dark mb-1">Phone No.</label>
-                    <input
-                        type="tel"
-                        value={formdata.phone}
-                        onChange={handleChange}
-                        name="phone"
-                        placeholder="Phone No."
-                        className="w-full border border-gray bg-white/70  ps-10 backdrop-blur-sm placeholder:text-gray-500 px-4 py-2 rounded-lg focus:outline-none "
-                    />
-                    <MdOutlinePhone className='absolute text-orange bottom-[10px] text-[20px] left-3' />
-
+                  <PhoneInput
+        country={'in'} 
+        value={formdata.phone}
+        inputProps={{
+          name: 'phone',
+          required: true,
+        }}
+        inputStyle={{
+          width: '100%',
+          height: '41px',
+          fontSize: '16px',
+        }}
+      />
                 </div>
                 <div className='relative mb-6'>
                     <label htmlFor="email" className="block text-sm font-medium text-dark mb-1">Email</label>
