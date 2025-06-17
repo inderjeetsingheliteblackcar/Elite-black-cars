@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <>
       <Banner />
-      <Logo2 />
+      {/* <Logo2 /> */}
       <Fleet />
       <Works />
       <Maketrip />
