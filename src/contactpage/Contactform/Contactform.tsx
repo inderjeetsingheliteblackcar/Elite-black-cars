@@ -1,6 +1,8 @@
 import React from 'react';
 import Form from '../Form';
 import { FaPhoneAlt, FaInstagramSquare, FaFacebookF, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import { BsTwitterX } from "react-icons/bs";
+
 import { CgMail } from 'react-icons/cg';
 
 const Contactform = () => {
@@ -20,22 +22,22 @@ const Contactform = () => {
                                 <a href='mailto:info@elitebcar.com' className=' block  py-4 px-4   backdrop-blur-sm bg-white/70 flex gap-2 items-center'><span className='text-2xl'><CgMail /></span> info@elitebcar.com</a>
                                 <a href='mailto:reservation@elitebcar.com' className=' block col-span-2 flex py-4 px-4   backdrop-blur-sm bg-white/70 gap-2 items-center'><span className='text-2xl'><CgMail /></span> reservation@elitebcar.com</a>
                             </div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109744.05905737827!2d76.68831051322431!3d30.732401984935624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed0be66ec96b%3A0xa5ff67f9527319fe!2sChandigarh!5e0!3m2!1sen!2sin!4v1749801643092!5m2!1sen!2sin" width="100%" height="400" loading="lazy" ></iframe>
-
+                            {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109744.05905737827!2d76.68831051322431!3d30.732401984935624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed0be66ec96b%3A0xa5ff67f9527319fe!2sChandigarh!5e0!3m2!1sen!2sin!4v1749801643092!5m2!1sen!2sin" width="100%" height="400" loading="lazy" ></iframe> */}
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d774444.7429774877!2d-75.16232047586209!3d40.69214824303657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1750333606360!5m2!1sen!2sin" width="100%" height="400"  loading="lazy" ></iframe>
                         </div>
                         <div className='p-6 shadow-2xl border border-gray grid grid-cols-2 mt-4 rounded gap-3 bg-white/20'>
                             <h4 className='col-span-2 mb-4'>Follow Us on Social Media:</h4>
                             <div className='bg-white px-3 py-2 bg-white border border-orange rounded '>
-                                <p className='flex items-center justify-center gap-4'>Instagram <FaInstagramSquare /></p>
+                                <a href='https://www.instagram.com/elitebcar13/' target='blank' className='flex items-center justify-center gap-4'>Instagram <FaInstagramSquare /></a>
                             </div>
                             <div className='bg-white px-3 py-2 bg-white border border-orange rounded '>
-                                <p className='flex items-center justify-center gap-4'>Facebook <FaFacebookF /></p>
+                                <a href='https://www.facebook.com/elitebcar' target='blank' className='flex items-center justify-center gap-4'>Facebook <FaFacebookF /></a>
                             </div>
-                            <div className='bg-white px-3 py-2 bg-white border border-orange rounded '>
+                            {/* <div className='bg-white px-3 py-2 bg-white border border-orange rounded '>
                                 <p className='flex items-center justify-center gap-4'>Linkedin <FaLinkedinIn /></p>
-                            </div>
+                            </div> */}
                             <div className='bg-white px-3 py-2 bg-white border border-orange rounded '>
-                                <p className='flex items-center justify-center gap-4'>YouTube <FaYoutube /></p>
+                                <a href='https://x.com/elitebcar/' target='blank' className='flex items-center justify-center gap-4'>Twitter <BsTwitterX /></a>
                             </div>
                         </div>
                     </div>

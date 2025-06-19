@@ -23,7 +23,7 @@ const TopBanner: React.FC<BannerProps & { isActive: boolean }> = ({
 }) => (
     <div>
         <div
-            className="banner relative px-4 pb-[60px] flex align-center pb-0 bg-cover bg-center h-[400px] xl:h-[100vh] md:h-[120vh]  pt-[300px] md:pt-[300px] bg-cover"
+            className="banner relative px-4 pb-[60px] flex align-center pb-0 bg-cover bg-center h-[500px] xl:h-[120vh] md:h-[120vh]  pt-[300px] md:pt-[300px] bg-cover"
             style={{ backgroundImage: `url(${backgroundImage})` }}
         >
             <div className="container relative z-10 text-white">
@@ -98,7 +98,7 @@ const Banner: React.FC = () => {
     ];
 
     return (
-        <div className="overflow-hidden bg-dark relative">
+        <div className="overflow-hidden  relative">
 
             <Slider ref={sliderRef} {...settings}>
                 {banners.map((banner, index) => (
@@ -132,9 +132,9 @@ const Banner: React.FC = () => {
                     <strong>{currentSlide + 1} </strong> / {banners.length}
                 </p>
             </div>
-            {/* <div className=" md:absolute md:px-0 px-4 container bottom-10 left-0 right-0 w-full">
+            <div className=" md:absolute md:px-0 px-4 container bottom-10 left-0 right-0 w-full">
                 <Bookingform />
-            </div> */}
+            </div>
         </div>
 
     );
