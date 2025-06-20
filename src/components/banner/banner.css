@@ -33,11 +33,17 @@
 .btns-slider button {
     background-color: #ffffff58;
 }
-
+@media screen and (min-width: 1350px) {
+    .banner-form{
+        bottom: 60px;
+    }
+   
+}
 @media screen and (max-width: 1350px) {
     .banner {
-        height: 120vh;
+        height: 130vh;
     }
+   
 }
 
 @media only screen and (max-width: 768px) {
@@ -48,6 +54,6 @@
     }
 
     .banner {
-        height: 600px;
+        height: 530px;
     }
 }
