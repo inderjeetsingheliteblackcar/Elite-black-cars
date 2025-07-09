@@ -1,140 +1,145 @@
+'use client';
+
 import React, { useState } from 'react';
 import { FaRegUser } from "react-icons/fa";
-import { MdOutlinePhone } from "react-icons/md";
-import { MdOutlineEmail } from "react-icons/md";
+import { MdOutlinePhone, MdOutlineEmail } from "react-icons/md";
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
+
 const Form = () => {
-    const [formdata, setformdata] = useState({ name: "",  email: "", phone: "", radio: "Option 1" });
+  const [formData, setFormData] = useState({
+    firstname: '',
+    email: '',
+    phoneNumber: '',
+    radioOption: '',
+    message: '',
+  });
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setformdata({ ...formdata, [e.target.name]: e.target.value });
+  const [status, setStatus] = useState('');
 
-    };
-    const SubmitForm = (e: React.FormEvent) => {
-        e.preventDefault();
-        const dataToSend = { Name: formdata.name,  Email: formdata.email, Phone: formdata.phone, SelectedOption: formdata.radio, }
-        console.log(dataToSend)
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleRadioChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({ ...formData, radioOption: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('Submitting...');
+
+    const res = await fetch('/api/subscribe', {
+      method: 'POST',
+      body: JSON.stringify(formData),
+    });
+
+    if (res.ok) {
+      setStatus('🎉 Subscribed successfully!');
+      setFormData({ firstname: '', email: '', phoneNumber: '', radioOption: '', message: '' });
+    } else {
+      const data = await res.json();
+      setStatus(`❌ Error: ${data.error?.title || 'Submission failed'}`);
     }
-    return (
-        <div className="p-8 rounded-xl bg-white/20 shadow-2xl  backdrop-blur-md border border-gray max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-semibold  text-dark mb-8">Let's Start a Conversation</h2>
-            <form onSubmit={SubmitForm} className="grid grid-cols-1 ">
-                <div className='relative mb-6'>
-                    <label htmlFor="firstname" className="block text-sm font-medium text-dark mb-1">First Name</label>
-                    <input
-                        type="text"
-                        value={formdata.name}
-                        onChange={handleChange}
-                        name="name"
-                        placeholder="First Name"
-                        className="w-full border border-gray bg-white/70  backdrop-blur-sm placeholder:text-gray-500 ps-10 px-4 py-2 rounded-lg focus:outline-none "
-                    /><FaRegUser className='absolute text-orange bottom-[10px] text-[20px] left-3' />
+  };
 
-                </div>
-                <div className='relative mb-6'>
-
-
-                    <label htmlFor="phone" className="block text-sm font-medium text-dark mb-1">Phone No.</label>
-                  <PhoneInput
-        country={'in'} 
-        value={formdata.phone}
-        inputProps={{
-          name: 'phone',
-          required: true,
-        }}
-        inputStyle={{
-          width: '100%',
-          height: '41px',
-          fontSize: '16px',
-        }}
-      />
-                </div>
-                <div className='relative mb-6'>
-                    <label htmlFor="email" className="block text-sm font-medium text-dark mb-1">Email</label>
-                    <input
-                        type="email"
-                        name="email"
-                        value={formdata.email}
-                        onChange={handleChange}
-                        placeholder="Email"
-                        className="w-full border border-gray bg-white/70  backdrop-blur-sm ps-10 placeholder:text-gray-500 px-4 py-2 rounded-lg focus:outline-none "
-                    />
-                    <MdOutlineEmail className='absolute text-orange bottom-[10px] text-[20px] left-3' />
-
-                </div>
-                <div className="checkboxs grid grid-cols-2 gap-4 mb-6">
-                    <div className={`cursor-pointer px-4 py-2 flex items-center rounded-md text-sm font-medium 
-        ${formdata.radio === 'Option 1' ? 'bg-orange text-white' : 'bg-gray-200 text-black'}`}>
-                        <input
-                            id="option1"
-                            type="radio"
-                            name="radioGroup"
-                            value="Option 1"
-                            checked={formdata.radio === 'Option 1'}
-                            onChange={(e) => setformdata({ ...formdata, radio: e.target.value })}
-                            className="me-2  accent-white"
-                        />
-                        <label htmlFor="option1"> HELP WITH RIDE</label>
-                    </div>
-                    <div className={`cursor-pointer flex items-center  px-4 py-2 rounded-md text-sm font-medium 
-        ${formdata.radio === 'Option 2' ? 'bg-orange text-white' : 'bg-gray-200 text-black'}`}>
-                        <input
-                            id="option2"
-                            type="radio"
-                            name="radioGroup"
-                            value="Option 2"
-                            checked={formdata.radio === 'Option 2'}
-                            onChange={(e) => setformdata({ ...formdata, radio: e.target.value })}
-                            className="me-2  accent-white"
-                        />
-                        <label htmlFor="option2"  > DRIVER PARTNER</label>
-                    </div>
-                    <div className={`cursor-pointer flex items-center  px-4 py-2 rounded-md text-sm font-medium 
-        ${formdata.radio === 'Option 3' ? 'bg-orange text-white' : 'bg-gray-200 text-black'}`}>
-                        <input
-                            id="option3"
-                            type="radio"
-                            name="radioGroup"
-                            value="Option 3"
-                            checked={formdata.radio === 'Option 3'}
-                            onChange={(e) => setformdata({ ...formdata, radio: e.target.value })}
-                            className="me-2 accent-white"
-                        />
-                        <label htmlFor="option3"  > CORPORATE</label>
-                    </div>
-                    <div className={`cursor-pointer flex items-center  px-4 py-2 rounded-md text-sm font-medium 
-        ${formdata.radio === 'Option 4' ? 'bg-orange text-white' : 'bg-gray-200 text-black'}`}>
-                        <input
-                            id="option4"
-                            type="radio"
-                            name="radioGroup"
-                            value="Option 4"
-                            checked={formdata.radio === 'Option 4'}
-                            onChange={(e) => setformdata({ ...formdata, radio: e.target.value })}
-                            className="me-2  accent-white"
-                        />
-                        <label htmlFor="option4"  >TRAVEL AGENT</label>
-                    </div>
-                </div>
-                <label htmlFor="message" className="block text-sm font-medium text-dark mb-1">Message</label>
-                <textarea
-                    name="message"
-                    id="message"
-                    placeholder="Type your message..."
-                    rows={2}
-                    className="w-full border border-gray bg-white/70 mb-6 backdrop-blur-sm placeholder:text-gray-500 px-4 py-2 rounded-lg focus:outline-none "
-                ></textarea>
-
-                <button
-                    type="submit"
-                    className="px-6 py-3 bg-orange text-white font-medium rounded-lg hover:bg-dark transition-all duration-300"
-                >
-                    Submit
-                </button>
-            </form>
+  return (
+    <div className="p-8 rounded-xl bg-white/20 shadow-2xl backdrop-blur-md border border-gray max-w-4xl mx-auto">
+      <h2 className="text-2xl md:text-3xl font-semibold text-dark mb-8">Let's Start a Conversation</h2>
+      <form onSubmit={handleSubmit} className="grid grid-cols-1">
+        <div className='relative mb-6'>
+          <label htmlFor="firstname" className="block text-sm font-medium text-dark mb-1">First Name</label>
+          <input
+            type="text"
+            value={formData.firstname}
+            onChange={handleChange}
+            name="firstname"
+            placeholder="First Name"
+            className="w-full border border-gray bg-white/70 backdrop-blur-sm placeholder:text-gray-500 ps-10 px-4 py-2 rounded-lg focus:outline-none"
+          />
+          <FaRegUser className='absolute text-orange bottom-[10px] text-[20px] left-3' />
         </div>
-    );
+
+        <div className='relative mb-6'>
+          <label htmlFor="phone" className="block text-sm font-medium text-dark mb-1">Phone No.</label>
+          <PhoneInput
+            country={'in'}
+            value={formData.phoneNumber}
+            onChange={(phone) => setFormData({ ...formData, phoneNumber: phone })}
+            inputProps={{
+              name: 'phone',
+              required: true,
+            }}
+            inputStyle={{
+              width: '100%',
+              height: '41px',
+              fontSize: '16px',
+            }}
+          />
+        </div>
+
+        <div className='relative mb-6'>
+          <label htmlFor="email" className="block text-sm font-medium text-dark mb-1">Email</label>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="Email"
+            className="w-full border border-gray bg-white/70 backdrop-blur-sm ps-10 placeholder:text-gray-500 px-4 py-2 rounded-lg focus:outline-none"
+          />
+          <MdOutlineEmail className='absolute text-orange bottom-[10px] text-[20px] left-3' />
+        </div>
+
+        <div className="mb-6">
+          <label className="block mb-2 font-semibold text-dark">Who are you?</label>
+          <div className="grid grid-cols-2 gap-4">
+            {['HELP WITH RIDE', 'DRIVER PARTNER', 'CORPORATE', 'TRAVEL AGENT'].map((option) => {
+              const isSelected = formData.radioOption === option;
+              return (
+                <label
+                  key={option}
+                  className={`flex items-center justify-start gap-2 px-4 py-2 border rounded-lg bg-orange cursor-pointer transition-all
+                        ${isSelected ? 'bg-orange-500 text-white border-orange-600' : 'bg-white text-dark border-gray-300 hover:bg-gray-100'}
+                    `}
+                >
+                  <input
+                    type="radio"
+                    name="radioOption"
+                    value={option}
+                    checked={isSelected}
+                    onChange={handleRadioChange}
+                    className="appearance-none h-4 w-4 rounded-full border-2 border-gray-400 checked:border-white checked:bg-white "
+                  />
+                  <span className="text-sm font-medium">{option}</span>
+                </label>
+              );
+            })}
+          </div>
+        </div>
+
+
+        <label htmlFor="message" className="block text-sm font-medium text-dark mb-1">Message</label>
+        <textarea
+          name="message"
+          id="message"
+          value={formData.message}
+          onChange={handleChange}
+          placeholder="Type your message..."
+          rows={2}
+          className="w-full border border-gray bg-white/70 mb-6 backdrop-blur-sm placeholder:text-gray-500 px-4 py-2 rounded-lg focus:outline-none"
+        ></textarea>
+
+        <button
+          type="submit"
+          className="px-6 py-3 bg-orange text-white font-medium rounded-lg hover:bg-dark transition-all duration-300"
+        >
+          Submit
+        </button>
+        {status && <p className="mt-4 text-sm text-dark">{status}</p>}
+      </form>
+    </div>
+  );
 };
 
 export default Form;
