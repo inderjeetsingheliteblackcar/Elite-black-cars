@@ -31,16 +31,16 @@ const Region: React.FC = () => {
             <div className="container" data-aos="fade-up" >
                 <div className="grid items-center gap-10 grid-cols-1 md:grid-cols-2">
                     <div
-                        className={`region-images flex gap-4 transition-transform duration-500 `}
+                        className={`region-images flex gap-4 transition-transform duration-500 h-[500px] md:h-[700px] `}
                     >
                         <div className="flex-1 w-full overflow-hidden rounded">
                             <img src="/images/region1.png " className={` object-cover rounded transition-transform duration-500 h-full ${scrollDirection === "down" ? "translate-y-5" : "-translate-y-5"
                                 }`} alt="d" />
                         </div>
                         <div className="region-image2 flex gap-4 overflow-hidden rounded flex-col flex-1">
-                            <img src="/images/region2.png" className={` object-cover rounded transition-transform duration-500 h-full ${scrollDirection === "down" ? "translate-y-5" : "-translate-y-5"
+                            <img src="/images/region2.png" className={` object-cover rounded transition-transform duration-500 h-full max-h-[50%] ${scrollDirection === "down" ? "translate-y-5" : "-translate-y-5"
                                 }`} alt="d" />
-                            <img src="/images/region3.png" className={` object-cover rounded transition-transform duration-500 h-full ${scrollDirection === "down" ? "translate-y-5" : "-translate-y-5"
+                            <img src="/images/region3.png" className={` object-cover rounded transition-transform duration-500 h-full max-h-[50%] ${scrollDirection === "down" ? "translate-y-5" : "-translate-y-5"
                                 }`} alt="d" />
                         </div>
                     </div>
