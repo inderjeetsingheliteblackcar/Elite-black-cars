@@ -7,7 +7,7 @@ import axios from 'axios';
 const MAILCHIMP_API_KEY = process.env.MAILCHIMP_API_KEY || "b05226fb9d8fe2c5299c140315a8604d-us1";
 const AUDIENCE_ID = process.env.MAILCHIMP_AUDIENCE_ID! || "6509663bea";
 const SERVER_PREFIX = MAILCHIMP_API_KEY.split('-')[1]; // e.g., 'us21'
- 
+
 export async function POST(req: NextRequest) {
   const { firstname, email, phoneNumber, radioOption, message } = await req.json();
   if (!firstname || !email || !phoneNumber || !radioOption || !message) {
@@ -17,10 +17,10 @@ export async function POST(req: NextRequest) {
     email_address: email,
     status: 'subscribed',
     merge_fields: {
-        FULLNAME: firstname,
-        PHONE: phoneNumber,
-        WHOYOU: radioOption,
-        MESSAGE: message,
+      FULLNAME: firstname,
+      PHONE: phoneNumber,
+      WHOYOU: radioOption,
+      MESSAGE: message,
     },
   };
 
@@ -38,10 +38,11 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ message: 'Subscribed successfully', data: response.data }, { status: 200 });
   } catch (error: any) {
-    console.error('MAILCHIMP ERROR:', error.response?.data || error.message);
+    console.error('MAILCHIMP ERROR:', error.message); // Avoid logging full response
+
     return NextResponse.json(
-      { message: 'Mailchimp error', error: error.response?.data || error.message },
-      { status: error.response?.status || 500 }
+      { message: 'Something went wrong. Please try again later.' },
+      { status: 500 }
     );
   }
 
