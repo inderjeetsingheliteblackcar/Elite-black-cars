@@ -141,7 +141,7 @@ const Form = () => {
         {status && <p className="mt-4 text-sm text-dark">{status}</p>}
       </form>
       {/* <div className={`${hideform}`}> */}
-        <div className={`absolute  inset-0 flex rounded-xl items-center flex-col text-center justify-center  bg-white`}>
+        <div className={`absolute ${hideform} inset-0 flex rounded-xl items-center flex-col text-center justify-center  bg-white`}>
 <LottieNoInstall />
         <p>🎉 Subscribed successfully!</p>
       </div>
