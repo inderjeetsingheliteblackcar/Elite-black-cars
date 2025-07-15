@@ -16,7 +16,7 @@ const Form = () => {
   });
 
   const [status, setStatus] = useState('');
-
+ const [hideform, sethideform] = useState('hideform');
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -36,6 +36,7 @@ const Form = () => {
 
     if (res.ok) {
       setStatus('🎉 Subscribed successfully!');
+      sethideform("")
       setFormData({ firstname: '', email: '', phoneNumber: '', radioOption: '', message: '' });
     } else {
       const data = await res.json();
@@ -46,7 +47,7 @@ const Form = () => {
   return (
     <div className="p-8 rounded-xl bg-white/20 shadow-2xl backdrop-blur-md border border-gray max-w-4xl mx-auto">
       <h2 className="text-2xl md:text-3xl font-semibold text-dark mb-8">Let's Start a Conversation</h2>
-      <form onSubmit={handleSubmit} className="grid grid-cols-1">
+      <form onSubmit={handleSubmit} className={`grid grid-cols-1 `}>
         <div className='relative mb-6'>
           <label htmlFor="firstname" className="block text-sm font-medium text-dark mb-1">First Name</label>
           <input
@@ -138,6 +139,11 @@ const Form = () => {
         </button>
         {status && <p className="mt-4 text-sm text-dark">{status}</p>}
       </form>
+      {/* <div className={`${hideform}`}> */}
+        <div className={`absolute ${hideform} inset-0 flex rounded-xl items-center flex-col text-center justify-center  bg-white`}>
+        <img src="/images/Ourfleet3-min1.jpeg" alt="" className='max-w-[300px] mx-auto mb-6' />
+        <p>🎉 Subscribed successfully!</p>
+      </div>
     </div>
   );
 };

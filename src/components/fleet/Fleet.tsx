@@ -28,7 +28,7 @@ const fleetData = [
     id: 3,
     name: "Luxury Sedan",
     description: "Cadilac XTS ",
-    image: "/images/Ourfleet3-min.jpeg",
+    image: "/images/Ourfleet3-min1.jpeg",
     passengers: 3,
     luggage: 2,
   },
