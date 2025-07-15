@@ -49,13 +49,13 @@ const Form = () => {
       <h2 className="text-2xl md:text-3xl font-semibold text-dark mb-8">Let's Start a Conversation</h2>
       <form onSubmit={handleSubmit} className={`grid grid-cols-1 `}>
         <div className='relative mb-6'>
-          <label htmlFor="firstname" className="block text-sm font-medium text-dark mb-1">First Name</label>
+          <label htmlFor="firstname" className="block text-sm font-medium text-dark mb-1">Full Name</label>
           <input
             type="text"
             value={formData.firstname}
             onChange={handleChange}
             name="firstname"
-            placeholder="First Name"
+            placeholder="Full Name"
             className="w-full border border-gray bg-white/70 backdrop-blur-sm placeholder:text-gray-500 ps-10 px-4 py-2 rounded-lg focus:outline-none"
           />
           <FaRegUser className='absolute text-orange bottom-[10px] text-[20px] left-3' />
