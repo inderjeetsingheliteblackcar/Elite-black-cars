@@ -5,6 +5,7 @@ import { FaRegUser } from "react-icons/fa";
 import { MdOutlinePhone, MdOutlineEmail } from "react-icons/md";
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
+import LottieNoInstall from './Lottie';
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -140,8 +141,8 @@ const Form = () => {
         {status && <p className="mt-4 text-sm text-dark">{status}</p>}
       </form>
       {/* <div className={`${hideform}`}> */}
-        <div className={`absolute ${hideform} inset-0 flex rounded-xl items-center flex-col text-center justify-center  bg-white`}>
-        <img src="/images/Ourfleet3-min1.jpeg" alt="" className='max-w-[300px] mx-auto mb-6' />
+        <div className={`absolute  inset-0 flex rounded-xl items-center flex-col text-center justify-center  bg-white`}>
+<LottieNoInstall />
         <p>🎉 Subscribed successfully!</p>
       </div>
     </div>
