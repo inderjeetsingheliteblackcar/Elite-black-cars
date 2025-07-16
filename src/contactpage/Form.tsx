@@ -65,7 +65,7 @@ const Form = () => {
         <div className='relative mb-6'>
           <label htmlFor="phone" className="block text-sm font-medium text-dark mb-1">Phone No.</label>
           <PhoneInput
-            country={'in'}
+            country={'us'}
             value={formData.phoneNumber}
             onChange={(phone) => setFormData({ ...formData, phoneNumber: phone })}
             inputProps={{
