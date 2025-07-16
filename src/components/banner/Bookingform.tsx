@@ -40,7 +40,7 @@ const Bookingform = () => {
                     </div>
                     <div className=''>
                         <p className='font-semibold'>Drop Location</p>
-                        <input type="email" placeholder='London City Blackheath' className='focus:outline-none w-full border-none bg-white' />
+                        <input type="email" placeholder='New York  and JFK ' className='focus:outline-none w-full border-none bg-white' />
                     </div>
                 </div>
                 <button className='button bg-dark text-white rounded-full'> Submit</button>

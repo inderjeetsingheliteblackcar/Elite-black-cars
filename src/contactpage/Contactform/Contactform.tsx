@@ -18,7 +18,7 @@ const Contactform = () => {
                         <div className='relative'>
                             <h4 className=' mb-4'>Contact info:</h4>
                             <div className='md:grid  gap-2 grid-cols-2 absolute bottom-[10px] left-4 right-4'>
-                                <a className=' block flex gap-2 text-dark items-center py-4 px-4   backdrop-blur-sm bg-white/70'><span className='text-lg'><FaPhoneAlt /></span>8668351313</a>
+                                <a href="tel:+1 (866) - 835 - 1313" className=' block flex gap-2 text-dark items-center py-4 px-4   backdrop-blur-sm bg-white/70'><span className='text-lg'><FaPhoneAlt /></span>+1 (866) - 835 - 1313</a>
                                 <a href='mailto:info@elitebcar.com' className=' block  py-4 px-4   backdrop-blur-sm bg-white/70 flex gap-2 items-center'><span className='text-2xl'><CgMail /></span> info@elitebcar.com</a>
                                 <a href='mailto:reservation@elitebcar.com' className=' block col-span-2 flex py-4 px-4   backdrop-blur-sm bg-white/70 gap-2 items-center'><span className='text-2xl'><CgMail /></span> reservation@elitebcar.com</a>
                             </div>
