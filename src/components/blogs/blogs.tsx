@@ -4,7 +4,7 @@ import blogs from '../../Blogsdata.json';
 
 const Blogs = () => {
   return (
-    <div className='py-20 px-4'>
+    <div className='pt-20 px-4'>
       <div className='max-w-6xl mx-auto'>
         <h2 className="text-3xl font-bold mb-10">Blogs</h2>
         {blogs.map((post) => (

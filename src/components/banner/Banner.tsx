@@ -23,7 +23,7 @@ const TopBanner: React.FC<BannerProps & { isActive: boolean }> = ({
 }) => (
     <div>
         <div
-            className="banner relative px-4 pb-[60px] flex align-center pb-0 bg-cover bg-center h-[500px] xl:h-[110vh] md:h-[110vh]  pt-[250px] md:pt-[250px] bg-cover"
+            className="banner relative px-4 pb-[60px] flex align-center pb-0 bg-cover bg-center h-[500px]  xl:h-[100vh] lg:h-[110vh] md:h-[100vh]  pt-[250px] md:pt-[250px] bg-cover"
             style={{ backgroundImage: `url(${backgroundImage})` }}
         >
             <div className="container relative z-10 text-white">
@@ -34,11 +34,11 @@ const TopBanner: React.FC<BannerProps & { isActive: boolean }> = ({
                 >
                     {title}
                 </h1>
-                <div className="flex gap-4">
+                {/* <div className="flex gap-4">
                     <Button text="Book Now" color="text-white hover:text-dark" bg="bg-orange" hoverbg="hover:bg-white" />
                     <Link href="/contact" >  <Button text="Contact Us" color="text-dark hover:text-white" bg="bg-white" hoverbg="hover:bg-orange" />
                     </Link>
-                </div>
+                </div> */}
             </div>
         </div>
     </div>
@@ -113,7 +113,7 @@ const Banner: React.FC = () => {
             </Slider>
 
 
-            <div className="absolute container px-4 md:px-0  pt-[180px] md:pt-[170px]  top-1 left-0 right-0 flex items-center  gap-4">
+            {/* <div className="absolute container px-4 md:px-0  pt-[180px] md:pt-[170px]  top-1 left-0 right-0 flex items-center  gap-4">
                 <div className="btns-slider flex">
                     <button
                         className="w-[40px] h-[40px] me-2 rounded-full text-white flex items-center justify-center rounded shadow "
@@ -131,8 +131,15 @@ const Banner: React.FC = () => {
                 <p className="text-white block">
                     <strong>{currentSlide + 1} </strong> / {banners.length}
                 </p>
-            </div>
-            <div className=" md:absolute md:px-0 px-4 container banner-form  bottom-20 left-0 right-0 w-full">
+            </div> */}
+            <div className="absolute container px-4 md:px-0  pt-[150px] md:pt-[170px]  top-[250px] left-0 right-0 flex items-center  gap-4">
+                  <div className="flex gap-4">
+                    <Button text="Book Now" color="text-white hover:text-dark" bg="bg-orange" hoverbg="hover:bg-white" />
+                    <Link href="/contact" >  <Button text="Contact Us" color="text-dark hover:text-white" bg="bg-white" hoverbg="hover:bg-orange" />
+                    </Link>
+                </div>
+            </div> 
+            <div className=" md:absolute md:px-0 px-4 container banner-form  bottom-10 left-0 right-0 w-full">
                 <Bookingform />
             </div>
         </div>
