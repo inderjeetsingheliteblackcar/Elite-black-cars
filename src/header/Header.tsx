@@ -83,7 +83,7 @@ const Header = () => {
                         <Link href="/contact" className="button-1 mb-2 text-white">
                             Contact Us
                         </Link>
-                        <Link href="/" className="button-1">  <span className="button-1-shadow"></span>
+                        <Link href="/book-now" className="button-1">  <span className="button-1-shadow"></span>
                             <span className="button-1-edge"></span>
                             <span className="button-1-front text">
                                 Book Now

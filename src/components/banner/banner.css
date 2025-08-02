@@ -8,7 +8,9 @@
     background: #000;
     opacity: 0.4;
 }
-
+.Bookingform iframe {
+    height: 537px !important;
+}
 @keyframes slideIn {
     from {
         transform: translateX(-100%);

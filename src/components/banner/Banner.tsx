@@ -132,16 +132,17 @@ const Banner: React.FC = () => {
                     <strong>{currentSlide + 1} </strong> / {banners.length}
                 </p>
             </div> */}
-            <div className="absolute container px-4 md:px-0  pt-[150px] md:pt-[170px]  top-[250px] left-0 right-0 flex items-center  gap-4">
-                  <div className="flex gap-4">
-                    <Button text="Book Now" color="text-white hover:text-dark" bg="bg-orange" hoverbg="hover:bg-white" />
+            <div className="absolute container  w-[50%] px-4   pt-[150px] md:pt-[170px]  top-[250px] left-0 right-0 flex items-center  gap-4">
+                <div className="flex gap-4">
+                  <Link href="/book-now">  <Button text="Book Now" color="text-white hover:text-dark" bg="bg-orange" hoverbg="hover:bg-white" /> </Link>
                     <Link href="/contact" >  <Button text="Contact Us" color="text-dark hover:text-white" bg="bg-white" hoverbg="hover:bg-orange" />
                     </Link>
                 </div>
-            </div> 
-            <div className=" md:absolute md:px-0 px-4 container banner-form  bottom-10 left-0 right-0 w-full">
-                <Bookingform />
+                {/* <div className=" md:absolute  md:px-0 px-4  banner-form  bottom-10 top-[-130px]  right-4 ">
+                    <Bookingform />
+                </div> */}
             </div>
+
         </div>
 
     );

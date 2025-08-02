@@ -1,4 +1,5 @@
 import Button from '@/button/Button';
+import Link from 'next/link';
 import React from 'react';
 import { GoArrowUpRight } from 'react-icons/go';
 
@@ -14,7 +15,7 @@ const Travelpartner = () => {
                         Our service is known for punctuality, professionalism, and customer satisfaction. With a team of highly trained drivers, well-maintained vehicles, and 24/7 availability, we guarantee that every journey is smooth, reliable, and enjoyable.
                     </p>
                     <div className='text-center flex justify-center'>
-                    <Button text="Book Now" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" />
+                 <Link href="/book-now">   <Button text="Book Now" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" /></Link>
 
                     </div>
 

@@ -1,5 +1,6 @@
 "use client"
 import Button from "@/button/Button";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 
@@ -52,7 +53,7 @@ const Region: React.FC = () => {
                         <br/><br/>
                        <b> New York City | Philadelphia | Boston | Washington D.C. | Baltimore | Albany | Hartford | Syracuse | Pittsburgh | Buffalo | Winchester| Biddeford| Richmond| Fredericksburg| Burlington </b> </p>
                       
-                        <Button text="Book Now" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" />
+                      <Link href="/book-now">   <Button text="Book Now" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" /></Link>
 
                     </div>
                 </div>
