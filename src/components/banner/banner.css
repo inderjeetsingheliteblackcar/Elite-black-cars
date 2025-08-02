@@ -41,13 +41,16 @@
     }
    
 }
-@media screen and (max-width: 1350px) {
+/*@media screen and (max-width: 1350px) {
     .banner {
         height: 130vh;
     }
    
-}
-
+}*/
+ .banner {
+        height: 120vh;
+    }
+   
 @media only screen and (max-width: 768px) {
     .Bookingform {
         margin: 20px 0;
