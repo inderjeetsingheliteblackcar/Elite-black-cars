@@ -11,7 +11,7 @@ const fleetData = [
   {
     id: 1,
     name: "Premium Luxury SUV",
-    description: "Cadillac Escalade ",
+    description: "Chevrolet Suburban",
     image: "/images/subarban.png",
     passengers: 6,
     luggage: 6,
