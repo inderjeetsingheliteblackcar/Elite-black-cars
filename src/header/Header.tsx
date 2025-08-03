@@ -26,7 +26,12 @@ const Header = () => {
                             <img className="h-[80px] w-auto max-w-[200px]" src="/images/Logo_main1.svg" alt="Logo" />
                         </Link>
                     </div>
-                    {/* <div className="flex lg:hidden me-4">
+                    <div className="flex items-center gap-8 lg:hidden me-4">
+                            <Link href="/book-now" className="button-1">  <span className="button-1-shadow"></span>
+                            <span className="button-1-edge"></span>
+                            <span className="button-1-front text">
+                                Book Now
+                            </span>  </Link>
                         <button
                             type="button"
                             onClick={toggleMenu}
@@ -37,10 +42,11 @@ const Header = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                             </svg>
                         </button>
-                    </div> */}
+                    
+                    </div>
 
-                    <div className=" items-center flex gap-x-3 md:gap-x-12 mt-2">
-                        {/* <div className="hidden items-center lg:flex lg:gap-x-12"> */}
+                    {/* <div className=" items-center flex gap-x-3 md:gap-x-12 mt-2"> */}
+                    <div className="hidden items-center lg:flex lg:gap-x-12">
                         {/* <div className="relative">
                             <button
                                 type="button"
@@ -49,7 +55,7 @@ const Header = () => {
                                 aria-expanded={isVisible ? "true" : "false"}
                             >
                                 Product
-                                 
+
                             </button>
 
                             <div
@@ -100,7 +106,7 @@ const Header = () => {
                 </nav>
 
                 {/* Mobile menu */}
-                {/* <div className={`lg:hidden ${isMenuOpen ? "block" : "hidden"}`} role="dialog" aria-modal="true">
+                <div className={`lg:hidden ${isMenuOpen ? "block" : "hidden"}`} role="dialog" aria-modal="true">
                     <div className="fixed inset-0 z-10"></div>
                     <div className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-dark px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                         <div className="flex items-center justify-between">
@@ -114,6 +120,7 @@ const Header = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                                 </svg>
                             </button>
+                            
                         </div>
                         <div className="mt-6 flow-root">
                             <div className="-my-6 divide-y divide-gray-500/10">
@@ -143,18 +150,20 @@ const Header = () => {
                                             ))}
                                         </div>
                                     </div>
-                                    <a href="#" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">Home</a>
+                                    <Link href="#" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">Home</Link>
                                     <Link href="/about" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">About Us</Link>
-                                    <a href="#" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">Contact Us</a>
-                                    <div className="flex gap-2">
+                                    <Link href="/contact" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">
+                                        Contact Us
+                                    </Link>
+                                    {/* <div className="flex gap-2">
                                         <Button text="Sign Up" bg="bg-white" color="text-dark" />
                                         <Button text="Book now" bg="bg-orange" color="text-white" />
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> */}
+                </div>
             </header>
         </div>
     );

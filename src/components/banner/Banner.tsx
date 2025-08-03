@@ -138,11 +138,13 @@ const Banner: React.FC = () => {
                     <Link href="/contact" >  <Button text="Contact Us" color="text-dark hover:text-white" bg="bg-white" hoverbg="hover:bg-orange" />
                     </Link>
                 </div>
-                 <div className=" md:absolute  md:px-0 px-4  banner-form  bottom-10 top-[-130px]  right-4 ">
+                 <div className=" md:absolute md:block hidden md:px-0 px-4  banner-form  bottom-10 top-[-130px]  right-4 ">
                     <Bookingform />
                 </div> 
             </div>
-
+ <div className="   px-4 md:hidden  block banner-form   ">
+                    <Bookingform />
+                </div> 
         </div>
 
     );
