@@ -2,6 +2,7 @@ import React from 'react';
 import "./aboutcontant.css";
 import { GoArrowUpRight } from 'react-icons/go';
 import Button from '@/button/Button';
+import Link from 'next/link';
 
 const aboutContentData = [
     {
@@ -29,7 +30,7 @@ const Aboutcontant = () => {
                             <h2 className='mb-6'>{item.title}</h2>
                             <p className='body-text mb-6' dangerouslySetInnerHTML={{ __html: item.description }} />
                          
-                            <Button text="Book Now" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" />
+                        <Link href="/book-now">    <Button text="Book Now" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" /></Link> 
 
                         </div>
                     </div>
