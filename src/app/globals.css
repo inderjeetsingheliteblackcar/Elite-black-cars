@@ -240,5 +240,7 @@ transition: 0.5s all;
     font-size: 20px;
     line-height: 30px;
   }
-
+.button-1-front{
+  padding: 11px 15px;
+}
 }

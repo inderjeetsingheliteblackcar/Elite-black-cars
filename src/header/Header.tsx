@@ -43,12 +43,15 @@ const Header = () => {
                         <button
                             type="button"
                             onClick={toggleMenu}
-                            className="-m-2.5 bg-orange rounded-md inline-flex items-center justify-center p-2.5 text-gray-700"
+                            className="button-1"
                         >
-                            <span className="sr-only">Open main menu</span>
+                             <span className="button-1-shadow"></span>
+                            <span className="button-1-edge"></span>
+                            <span className="button-1-front text">
                             <svg className="size-6 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                             </svg>
+                            </span>
                         </button>
                     </div>
 
