@@ -41,7 +41,8 @@ const Form = () => {
       setFormData({ firstname: '', email: '', phoneNumber: '', radioOption: '', message: '' });
     } else {
       const data = await res.json();
-      setStatus(`❌ Error: ${data.error?.title || 'Submission failed'}`);
+     // setStatus(`❌ Error: ${data.error?.title || 'Submission failed'}`);
+       setStatus(`❌ Error: ${data.message || 'Submission failed'}`);
     }
   };
 
