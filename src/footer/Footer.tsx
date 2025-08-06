@@ -101,7 +101,7 @@ const Footer = () => {
                   dangerouslySetInnerHTML={{ __html: popupData.popupdescription }}
                   className="text-gray-700 mb-10"
                 />
-                <Button text="Book Now" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" />
+              <Link href="book-now"    onClick={closePopup}>  <Button text="Book Now" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" /></Link>
               </div>
             </div>
           </div>

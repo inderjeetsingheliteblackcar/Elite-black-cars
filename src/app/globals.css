@@ -244,3 +244,26 @@ transition: 0.5s all;
   padding: 11px 15px;
 }
 }
+@media (max-height: 750px) {
+.Bookingform {
+    overflow-y: scroll;
+    height: 500px;
+}
+}
+.Bookingform::-webkit-scrollbar {
+  width: 2px;
+}
+
+.Bookingform::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+.Bookingform::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.Bookingform::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

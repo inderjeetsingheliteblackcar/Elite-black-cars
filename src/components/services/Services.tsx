@@ -7,6 +7,7 @@ import ServicesCard from "./ServicesCard";
 import "./Services.css";
 import Button from "@/button/Button";
 import servicesDatamain from './servicesData.json';
+import Link from "next/link";
 
 
 // const servicesData = [
@@ -120,7 +121,7 @@ const Services = () => {
                                 <h2 className="text-2xl font-semibold mb-4">{popupData.title}</h2>
                                 <div dangerouslySetInnerHTML={{ __html: popupData.popupdescription }} className="text-gray-700 mb-10"></div>
 
-                        <Button text="Book Now" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" />
+                      <Link href="/book-now">  <Button text="Book Now" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" /></Link>
                             </div>
                         </div>
                     </div>
