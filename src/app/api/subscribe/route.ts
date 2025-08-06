@@ -37,13 +37,15 @@ export async function POST(req: NextRequest) {
     );
 
     return NextResponse.json({ message: 'Subscribed successfully', data: response.data }, { status: 200 });
-  } catch (error: any) {
-    console.error('MAILCHIMP ERROR:', error.message); // Avoid logging full response
+ } catch (error: any) {
+  console.error('MAILCHIMP ERROR:', error.response?.data);
 
-    return NextResponse.json(
-      { message: 'Something went wrong. Please try again later.' },
-      { status: 500 }
-    );
-  }
+  const mailchimpError = error.response?.data?.title || 'Something went wrong. Please try again later.';
+
+  return NextResponse.json(
+    { message: mailchimpError },
+    { status: error.response?.status || 500 }
+  );
+}
 
 }
