@@ -220,9 +220,9 @@ const Fleet = () => {
              < div className=" py-10  block">
         <div className="flex relative z-10 mb-10 justify-between">
           <h2>Our Fleet</h2>
-          <a href="#" className="font-semibold w-fit flex gap-2 items-center">
+          {/* <a href="#" className="font-semibold w-fit flex gap-2 items-center">
             <span>More Fleet</span> <FiArrowUpRight />
-          </a>
+          </a> */}
         </div>
         <div className="">
           <Slider ref={sliderRef} {...sliderSettings} className="services-slider">

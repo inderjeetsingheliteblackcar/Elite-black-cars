@@ -244,7 +244,7 @@ transition: 0.5s all;
   padding: 11px 15px;
 }
 }
-@media (max-height: 750px) {
+@media (max-height: 650px) {
 .Bookingform {
     overflow-y: scroll;
     height: 500px;

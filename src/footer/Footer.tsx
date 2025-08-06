@@ -76,7 +76,7 @@ const Footer = () => {
           <div className='md:flex gap-3'>
             <Link href='/terms_conditions' className='mb-3 block'>Terms</Link>
             <Link href='/privacy_policy' className='mb-3 block'>Privacy policy</Link>
-            <a className='mb-3 block'>Accessibility</a>
+            {/* <a className='mb-3 block'>Accessibility</a> */}
           </div>
         </div>
       </div>
