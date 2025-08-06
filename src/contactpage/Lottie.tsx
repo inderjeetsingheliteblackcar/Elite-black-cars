@@ -13,7 +13,7 @@ export default function LottieNoInstall() {
         (window as any).lottie.loadAnimation({
           container,
           renderer: 'svg',
-          loop: true,
+          loop: false,
           autoplay: true,
           path: '/images/animations/Success.json', 
         });
@@ -24,7 +24,7 @@ export default function LottieNoInstall() {
 
   return (
     <div>
-      <div id="lottie-container" style={{ width: 200, height: 200 }} />
+      <div id="lottie-container" style={{ width: 100, height: 100 }} />
     </div>
   );
 }
