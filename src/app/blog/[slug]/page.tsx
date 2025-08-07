@@ -1,5 +1,5 @@
 import blogs from '../../../Blogsdata.json';
-
+import Bormblog from '../../../components/blogform/Bormblog'
 
 export function generateStaticParams() {
   return blogs.map((post) => ({
@@ -19,24 +19,24 @@ export default async function BlogPost({ params: _params, }: { params: Promise<{
     );
   }
   return (
-    <div  className="pt-40 pb-10 md:pb-20 px-4 max-w-5xl mx-auto">
+    <div className="pt-40 pb-10 md:pb-20 px-4 max-w-5xl mx-auto">
       <h2 className="mb-6">{post.title}</h2>
       <img
         src={post.image}
         alt={post.title}
         className="w-full h-[400px] object-cover mb-6 rounded"
       />
-      <p className="mb-2" dangerouslySetInnerHTML={{__html : post.introduction}}></p>
-      <p className="mb-2" dangerouslySetInnerHTML={{__html : post.overview}}></p>
-      <p className="mb-2" dangerouslySetInnerHTML={{__html : post.expanded_service}}></p>
+      <p className="mb-2" dangerouslySetInnerHTML={{ __html: post.introduction }}></p>
+      <p className="mb-2" dangerouslySetInnerHTML={{ __html: post.overview }}></p>
+      <p className="mb-2" dangerouslySetInnerHTML={{ __html: post.expanded_service }}></p>
       <h4 className="my-6">{post.heading}</h4>
-      <p className="mb-2"  dangerouslySetInnerHTML={{__html : post.content}}></p>
+      <p className="mb-2" dangerouslySetInnerHTML={{ __html: post.content }}></p>
       <p className='font-bold'>{post.heading2}</p>
       <div className='grid py-10 gap-10 md:grid-cols-2'>
         {post.features.map((feature) => (
           <div>
             <h4 className='mb-2'>{feature.title}</h4>
-            <p dangerouslySetInnerHTML={{__html : feature.description}}></p>
+            <p dangerouslySetInnerHTML={{ __html: feature.description }}></p>
           </div>
         ))}
       </div>
@@ -65,6 +65,7 @@ export default async function BlogPost({ params: _params, }: { params: Promise<{
           <p dangerouslySetInnerHTML={{ __html: post.content2 }} ></p>
         </div>
       </div>
+      <Bormblog />
     </div>
   );
 }
