@@ -1,5 +1,5 @@
 import blogs from '../../../Blogsdata.json';
-import Bormblog from '../../../components/blogform/Bormblog'
+// import Bormblog from '../../../components/blogform/Bormblog'
 
 export function generateStaticParams() {
   return blogs.map((post) => ({
@@ -65,7 +65,7 @@ export default async function BlogPost({ params: _params, }: { params: Promise<{
           <p dangerouslySetInnerHTML={{ __html: post.content2 }} ></p>
         </div>
       </div>
-      <Bormblog />
+      {/* <Bormblog /> */}
     </div>
   );
 }
