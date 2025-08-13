@@ -133,6 +133,40 @@ const Form = () => {
           className="w-full border border-gray bg-white/70 mb-6 backdrop-blur-sm placeholder:text-gray-500 px-4 py-2 rounded-lg focus:outline-none"
         ></textarea>
 
+      {/* Consent Checkbox */}
+<div className="flex items-start mb-6">
+  <input
+    type="checkbox"
+    id="consent"
+    required
+    className="mt-1 h-4 w-4 text-orange border-gray-300 rounded focus:ring-orange"
+  />
+  <label htmlFor="consent" className="ml-2 text-sm text-dark leading-5">
+    By checking this box, I consent to receive text messages related to
+    (message type) from (company name). You can reply “STOP” at any time to
+    opt-out. Message and data rates may apply. Message frequency may vary,
+    text HELP for assistance. For more information, please visit our{" "}
+    <a
+      href="/privacy-policy"
+      className="text-blue-600 hover:underline"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Privacy Policy
+    </a>{" "}
+    and{" "}
+    <a
+      href="/sms-terms"
+      className="text-blue-600 hover:underline"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      SMS Terms and Conditions
+    </a>
+    .
+  </label>
+</div>
+
         <button
           type="submit"
           className="px-6 py-3 bg-orange text-white font-medium rounded-lg hover:bg-dark transition-all duration-300"
