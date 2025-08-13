@@ -147,8 +147,9 @@ const Form = () => {
     opt-out. Message and data rates may apply. Message frequency may vary,
     text HELP for assistance. For more information, please visit our{" "}
     <a
-      href="/privacy-policy"
-      className="text-blue-600 hover:underline"
+      href="/privacy_policy"
+      className="hover:underline"
+      style={{ color: "#e95440" }}
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -156,8 +157,9 @@ const Form = () => {
     </a>{" "}
     and{" "}
     <a
-      href="/sms-terms"
-      className="text-blue-600 hover:underline"
+      href="/terms_conditions"
+      className="hover:underline"
+      style={{ color: "#e95440" }}
       target="_blank"
       rel="noopener noreferrer"
     >
