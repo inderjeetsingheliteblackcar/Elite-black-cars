@@ -46,10 +46,9 @@ const Conditions = () => {
                     <li className='list-disc mb-2'>Appointment reminders</li>
                     <li className='list-disc mb-2'>Follow-up messages</li>
                     <li className='list-disc mb-2'> Billing inquiries</li>
-                    <li className='list-disc mb-2'>  Promotions or special offers (if applicable)</li>
                 </ul>
 
-
+    
 
 
                 <br /><br /><b>Example:</b><br /><br />
@@ -65,9 +64,7 @@ const Conditions = () => {
                 <h4 className='my-4'><i>5. Opt-In Methods</i></h4>
                 <p>To receive SMS updates, you can authorize us by:</p>
                 <ul className='ps-6 mt-4'>
-                    <li className='list-disc mb-2'> Verbally agreeing during a conversation with our representative</li>
                     <li className='list-disc mb-2'>  Submitting an online form</li>
-                    <li className='list-disc mb-2'>  Filling out a paper form</li>
                 </ul>
                 <h4 className='my-4'><i>6. Opt-Out Instructions</i></h4>
                 <p> You have the option to unsubscribe from SMS messages at any time by</p>
