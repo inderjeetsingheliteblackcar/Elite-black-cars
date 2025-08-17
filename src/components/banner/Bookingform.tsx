@@ -62,7 +62,7 @@ const Bookingform = () => {
                     href="https://book.mylimobiz.com/v4/eliteblackcar"
                     data-ores-widget="quickres"
                     data-ores-alias="eliteblackcar"
-                    data-redirect-url="/book-now"
+                    data-redirect-url="https://book.mylimobiz.com/v4/(S(3hk1vayurwuluomiaun0a0w1))/eliteblackcar"
                 >
                     Online Reservations
                 </a>

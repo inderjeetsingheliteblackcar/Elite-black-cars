@@ -205,7 +205,7 @@ const LuxySlider: React.FC = () => {
                             <div className="md:col-span-6">
                                 <h2 className="text-2xl font-semibold mb-4">{popupData.title}</h2>
                                 <p className="text-gray-700 mb-4">{popupData.description}</p>
-                              <Link href="/book-now">  <Button text="Book Now" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" /></Link>
+                              <Link href="https://book.mylimobiz.com/v4/(S(3hk1vayurwuluomiaun0a0w1))/eliteblackcar">  <Button text="Book Now" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" /></Link>
                             </div>
                         </div>
                     </div>

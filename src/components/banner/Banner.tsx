@@ -134,7 +134,7 @@ const Banner: React.FC = () => {
             </div> */}
             <div className="absolute container  w-[50%] px-4   pt-[150px] md:pt-[170px]  top-[250px] left-0 right-0 flex items-center  gap-4">
                 <div className="flex gap-4">
-                  <Link href="/book-now">  <Button text="Book Now" color="text-white hover:text-dark" bg="bg-orange" hoverbg="hover:bg-white" /> </Link>
+                  <Link href="https://book.mylimobiz.com/v4/(S(3hk1vayurwuluomiaun0a0w1))/eliteblackcar">  <Button text="Book Now" color="text-white hover:text-dark" bg="bg-orange" hoverbg="hover:bg-white" /> </Link>
                     <Link href="/contact" >  <Button text="Contact Us" color="text-dark hover:text-white" bg="bg-white" hoverbg="hover:bg-orange" />
                     </Link>
                 </div>

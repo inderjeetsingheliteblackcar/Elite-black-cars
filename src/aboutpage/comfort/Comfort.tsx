@@ -12,7 +12,7 @@ const Comfort = () => {
                         <h2 className='mb-6'>Travel in Style & Comfort with Elite B Car</h2>
                         <p className='body-text mb-6' >At Elite B Car, we believe that every journey should be as luxurious and hassle-free as possible. Whether you're heading to an important business meeting, a weekend retreat, or an airport transfer, our executive travel solutions ensure you reach your destination in comfort and style.</p>
                      <p className='body-text mb-6'>Enjoy stress-free, personalized travel, where your comfort is our priority. Whether for business or leisure, let us make your next journey an experience to remember.</p>
-                         <Link href="/book-now"><Button text="Book Now" color="text-dark" bg="bg-white" hoverbg="hover:bg-orange" /></Link>
+                         <Link href="https://book.mylimobiz.com/v4/(S(3hk1vayurwuluomiaun0a0w1))/eliteblackcar"><Button text="Book Now" color="text-dark" bg="bg-white" hoverbg="hover:bg-orange" /></Link>
 
                     </div>
                     <div className=''>
