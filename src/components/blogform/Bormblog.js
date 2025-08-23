@@ -54,7 +54,7 @@ export default function Bormblog() {
       }
 
       // Save to Airtable (via your API route)
-      const airtableResponse = await axios.post('/api/upload', {
+      const airtableResponse = await axios.post('@/app/blog/route', {
         name: formData.name,
         description: formData.description,
         content: formData.content,
