@@ -3,15 +3,15 @@ import { HiArrowRight } from "react-icons/hi";
 
 export default async function Blogs() {
   const res = await fetch("https://www.elitebcar.com/blog/airtable-get", {
-    cache: "no-store", 
+    cache: "no-store", // always fetch fresh data
   });
-  const blogs = await res?.data;
-console.log(blogs)
+  const response = await res.json();
+  const blog = response.data
   return (
     <div className="pt-20 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-10">Blogs</h2>
-        {/* {blogs.map((post: any) => (
+        {blog.map((post: any) => (
           <div
             key={post.id}
             className="grid md:grid-cols-2 gap-6 mb-16 bg-orange/20 rounded overflow-hidden"
@@ -37,7 +37,7 @@ console.log(blogs)
               </Link>
             </div>
           </div>
-        ))} */}
+        ))}
       </div>
     </div>
   );
