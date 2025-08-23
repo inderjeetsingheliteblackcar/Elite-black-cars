@@ -10,9 +10,8 @@ export async function GET() {
         Authorization: `Bearer ${API_KEY}`,
         "Content-Type": "application/json",
       },
-      // In Next.js API routes, `next: { revalidate }` is only valid in server actions / fetch in components, not here.
-      // If you're using App Router, keep this. If not, remove it.
-      next: { revalidate: 3600 }, // Optional: cache for 1 hour
+
+      next: { revalidate: 3600 }, 
     });
 
     if (!response.ok) {
