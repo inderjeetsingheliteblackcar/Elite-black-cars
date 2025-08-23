@@ -3,9 +3,9 @@ import { HiArrowRight } from "react-icons/hi";
 
 export default async function Blogs() {
   const res = await fetch("https://www.elitebcar.com/blog/airtable-get", {
-    cache: "no-store", // always fetch fresh data
+    cache: "no-store", 
   });
-  const blogs = await res.json();
+  const blogs = await res?.data;
 console.log(blogs)
   return (
     <div className="pt-20 px-4">
