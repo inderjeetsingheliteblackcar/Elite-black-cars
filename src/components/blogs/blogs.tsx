@@ -54,7 +54,7 @@ export default function Blogs() {
   const [blogs, setBlogs] = useState<Blog[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/blog/airtable-get")
+    fetch("https://www.elitebcar.com/blog/airtable-get")
       .then((res) => res.json())
       .then((data) => setBlogs(data.data))
       .catch((err) => console.error("Error fetching blogs:", err));
