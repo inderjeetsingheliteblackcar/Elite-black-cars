@@ -57,7 +57,8 @@ export default async function BlogPost({
       )}
 
       <div
-        className="prose"
+        //className="prose"
+         className="prose prose-h1:mt-8 prose-h1:mb-4 prose-p:mb-6 prose-h2:mt-6 prose-h2:mb-3"
         dangerouslySetInnerHTML={{ __html: post.fields.Content || "" }}
       />
     </div>
