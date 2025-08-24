@@ -1,20 +1,63 @@
 "use client";
-import { useContext } from "react";
+
 import Link from "next/link";
 import { HiArrowRight } from "react-icons/hi2";
-import ApiDataContext from "@/context/ApiDataContext";
+import { useEffect, useState } from "react";
+
+
+export type BlogResponse = {
+  success: boolean;
+  data: Blog[];
+};
+
+export type Blog = {
+  id: string;
+  createdTime: string; // ISO date string
+  fields: {
+    Name: string;
+    Description: string;
+    Content: string;
+    Image: BlogImage[];
+  };
+};
+
+export type BlogImage = {
+  id: string;
+  width: number;
+  height: number;
+  url: string;
+  filename: string;
+  size: number;
+  type: string;
+  thumbnails: {
+    small: Thumbnail;
+    large: Thumbnail;
+    full: Thumbnail;
+  };
+};
+
+export type Thumbnail = {
+  url: string;
+  width: number;
+  height: number;
+};
+
 
 export default function Blogs() {
-  const { data, loading, error } = useContext(ApiDataContext);
+  const [blogs, setBlogs] = useState<Blog[]>([]);
 
-  if (loading) return <p>Loading blogs...</p>;
-  if (error) return <p>{error}</p>;
+  useEffect(() => {
+    fetch("https://www.elitebcar.com/blog/airtable-get")
+      .then((res) => res.json())
+      .then((data) => setBlogs(data.data))
+      .catch((err) => console.error("Error fetching blogs:", err));
+  }, []);
 
   return (
     <div className="pt-20 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-10">Blogs</h2>
-        {data.map((post) => (
+        {blogs.map((post) => (
           <div
             key={post.id}
             className="grid md:grid-cols-2 gap-6 mb-16 bg-orange/20 rounded overflow-hidden"
@@ -32,13 +75,12 @@ export default function Blogs() {
                 className="my-4 text-gray-700"
                 dangerouslySetInnerHTML={{ __html: post.fields.Description }}
               />
-             <Link
-  href={`/blog/${post.slug}`} // ✅ now TypeScript won’t complain
-  className="text-orange flex items-center gap-2"
->
-  Read More <HiArrowRight />
-</Link>
-
+              <a
+                // href={`/blog/${slugify(post.fields.Name, { lower: true })}`}
+                className="text-orange flex items-center gap-2"
+              >
+                Read More <HiArrowRight />
+              </a>
             </div>
           </div>
         ))}
