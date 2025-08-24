@@ -5,7 +5,9 @@ import { ReactLenis } from "../lenis/Lenis";
 import ScrollProgress from "@/scrollprogress/ScrollProgress";
 import Header from "@/header/Header";
 import Footer from "@/footer/Footer";
-
+import { useState, useEffect } from "react";
+import ApiDataContext from "../context/ApiDataContext";
+import { ApiDataProvider } from "@/context/provider";
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
   subsets: ["latin"],
@@ -68,8 +70,10 @@ export default function RootLayout({
       <ReactLenis root>
         <body className={`${dmSans.variable} antialiased`}>
           <Header />
+           <ApiDataProvider>
           <ScrollProgress />
           {children}
+          </ApiDataProvider>
           <Footer />
         </body>
       </ReactLenis>
