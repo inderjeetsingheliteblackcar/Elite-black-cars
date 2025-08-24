@@ -1,71 +1,69 @@
-import blogs from '../../../Blogsdata.json';
-// import Bormblog from '../../../components/blogform/Bormblog'
+// src/app/blog/[slug]/page.tsx
+import { notFound } from "next/navigation";
 
-export function generateStaticParams() {
-  return blogs.map((post) => ({
-    slug: post.slug,
-  }));
+// Blog type (simplify if you already have it elsewhere)
+type Blog = {
+  id: string;
+  fields: {
+    Name: string;
+    Description?: string;
+    Content?: string;
+    Image?: { url: string }[];
+  };
+};
+
+// ✅ Helper function to generate slugs
+function toSlug(text: string): string {
+  return text
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-");
 }
 
-export default async function BlogPost({ params: _params, }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await _params;
-  const post = blogs.find((item) => item.slug === slug);
+export default async function BlogPost({
+  params,
+}: {
+  params: Promise<{ slug: string }>; // 👈 make params async
+}) {
+  const { slug } = await params; // 👈 await params here
+
+  // Fetch blogs from your API route
+  const res = await fetch("https://www.elitebcar.com/blog/airtable-get", {
+    cache: "no-store", // always fresh
+  });
+
+  if (!res.ok) {
+    notFound();
+  }
+
+  const data = await res.json();
+  const blogs: Blog[] = data.data || [];
+
+  // Match blog by slug
+  const post = blogs.find((item) => toSlug(item.fields.Name) === slug);
 
   if (!post) {
-    return (
-      <div className="p-10 text-red-600">
-        Blog post not found.
-      </div>
-    );
+    notFound();
   }
+
   return (
     <div className="pt-40 pb-10 md:pb-20 px-4 max-w-5xl mx-auto">
-      <h2 className="mb-6">{post.title}</h2>
-      <img
-        src={post.image}
-        alt={post.title}
-        className="w-full h-[400px] object-cover mb-6 rounded"
+      <h1 className="text-4xl font-bold mb-6">{post.fields.Name}</h1>
+
+      {post.fields.Image?.[0]?.url && (
+        <img
+          src={post.fields.Image[0].url}
+          alt={post.fields.Name}
+          className="w-full h-[400px] object-cover mb-6 rounded"
+        />
+      )}
+
+      <div
+        className="prose"
+        dangerouslySetInnerHTML={{ __html: post.fields.Content || "" }}
       />
-      <p className="mb-2" dangerouslySetInnerHTML={{ __html: post.introduction }}></p>
-      <p className="mb-2" dangerouslySetInnerHTML={{ __html: post.overview }}></p>
-      <p className="mb-2" dangerouslySetInnerHTML={{ __html: post.expanded_service }}></p>
-      <h4 className="my-6">{post.heading}</h4>
-      <p className="mb-2" dangerouslySetInnerHTML={{ __html: post.content }}></p>
-      <p className='font-bold'>{post.heading2}</p>
-      <div className='grid py-10 gap-10 md:grid-cols-2'>
-        {post.features.map((feature) => (
-          <div>
-            <h4 className='mb-2'>{feature.title}</h4>
-            <p dangerouslySetInnerHTML={{ __html: feature.description }}></p>
-          </div>
-        ))}
-      </div>
-      <div className='grid md:py-10 md:grid-cols-2  gap-10'>
-        {
-          post.section.map((secdata) => (
-
-            <div className='text' >
-              <h3 className='mb-4'>{secdata.heading3}</h3>
-              <ol className='ps-3 '>
-                {secdata.services.map((list, index) => (
-                  <div key={index}>
-                    <li dangerouslySetInnerHTML={{ __html: list }} className='list-disc mb-2'></li>
-                  </div>
-                ))}
-                <p className='mt-4'><i>{secdata.note}</i></p>
-              </ol>
-            </div>
-
-          ))
-        }  </div>
-      <div className='grid py-10 md:grid-cols-2  gap-10'>
-        <img src="/images/services1-min.png" className='h-[250px] w-full object-cover' alt="" />
-        <div className='text'>
-          <h2 className='mb-4'>{post.heading5}</h2>
-          <p dangerouslySetInnerHTML={{ __html: post.content2 }} ></p>
-        </div>
-      </div>
-      {/* <Bormblog /> */}
     </div>
   );
 }

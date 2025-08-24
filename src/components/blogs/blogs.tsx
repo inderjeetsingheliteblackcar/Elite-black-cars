@@ -42,12 +42,19 @@ export type Thumbnail = {
   height: number;
 };
 
-
+function toSlug(text: string): string {
+  return text
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9\s-]/g, "") // remove special chars
+    .replace(/\s+/g, "-")         // replace spaces with "-"
+    .replace(/-+/g, "-");         // remove multiple "-"
+}
 export default function Blogs() {
   const [blogs, setBlogs] = useState<Blog[]>([]);
 
   useEffect(() => {
-    fetch("https://www.elitebcar.com/blog/airtable-get")
+    fetch("http://localhost:3000/blog/airtable-get")
       .then((res) => res.json())
       .then((data) => setBlogs(data.data))
       .catch((err) => console.error("Error fetching blogs:", err));
@@ -75,12 +82,9 @@ export default function Blogs() {
                 className="my-4 text-gray-700"
                 dangerouslySetInnerHTML={{ __html: post.fields.Description }}
               />
-              <a
-                // href={`/blog/${slugify(post.fields.Name, { lower: true })}`}
-                className="text-orange flex items-center gap-2"
-              >
-                Read More <HiArrowRight />
-              </a>
+             <Link href={`/blog/${toSlug(post.fields.Name)}`} className="text-orange flex items-center gap-2">
+  Read More <HiArrowRight />
+</Link>
             </div>
           </div>
         ))}
