@@ -4,7 +4,6 @@ import Link from "next/link";
 import { HiArrowRight } from "react-icons/hi2";
 import { useEffect, useState } from "react";
 
-
 export type BlogResponse = {
   success: boolean;
   data: Blog[];
@@ -50,44 +49,62 @@ function toSlug(text: string): string {
     .replace(/\s+/g, "-")         // replace spaces with "-"
     .replace(/-+/g, "-");         // remove multiple "-"
 }
-export default function Blogs() {
+
+type BlogsProps = {
+  limit?: number; 
+};
+
+export default function Blogs({ limit }: BlogsProps) {
   const [blogs, setBlogs] = useState<Blog[]>([]);
 
   useEffect(() => {
-    fetch("https://www.elitebcar.com/blog/airtable-get")
+    fetch("/blog/airtable-get")
       .then((res) => res.json())
       .then((data) => setBlogs(data.data))
       .catch((err) => console.error("Error fetching blogs:", err));
   }, []);
 
+  const visibleBlogs = limit ? blogs.slice(0, limit) : blogs;
+
   return (
     <div className="pt-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold mb-10">Blogs</h2>
-        {blogs.map((post) => (
-          <div
-            key={post.id}
-            className="grid md:grid-cols-2 gap-6 mb-16 bg-orange/20 rounded overflow-hidden"
-          >
-            <div>
-              <img
-                src={post.fields.Image?.[0]?.url}
-                alt={post.fields.Name}
-                className="w-full h-[400px] object-cover"
-              />
+        <div className="flex mb-10 items-center justify-between">
+          <h2 className=" ">Blogs</h2>
+          <Link href="/blog" className="text-orange flex items-center gap-2">
+            View All <HiArrowRight />
+          </Link>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          {visibleBlogs.map((post) => (
+            <div
+              key={post.id}
+              className="gap-6  bg-orange/20 rounded overflow-hidden"
+            >
+              <div>
+                <img
+                  src={post.fields.Image?.[0]?.url}
+                  alt={post.fields.Name}
+                  className="w-full h-[300px] object-cover"
+                />
+              </div>
+              <div className="p-6 flex flex-col justify-center">
+                <h3 className="text-2xl font-semibold">{post.fields.Name}</h3>
+                <p
+                  className="my-4 text-gray-700"
+                  dangerouslySetInnerHTML={{ __html: post.fields.Description }}
+                />
+                <Link
+                  href={`/blog/${toSlug(post.fields.Name)}`}
+                  className="text-orange flex items-center gap-2"
+                >
+                  Read More <HiArrowRight />
+                </Link>
+              </div>
             </div>
-            <div className="p-6 flex flex-col justify-center">
-              <h3 className="text-2xl font-semibold">{post.fields.Name}</h3>
-              <p
-                className="my-4 text-gray-700"
-                dangerouslySetInnerHTML={{ __html: post.fields.Description }}
-              />
-             <Link href={`/blog/${toSlug(post.fields.Name)}`} className="text-orange flex items-center gap-2">
-  Read More <HiArrowRight />
-</Link>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

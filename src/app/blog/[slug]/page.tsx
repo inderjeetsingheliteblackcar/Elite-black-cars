@@ -1,7 +1,5 @@
-// src/app/blog/[slug]/page.tsx
 import { notFound } from "next/navigation";
 
-// Blog type (simplify if you already have it elsewhere)
 type Blog = {
   id: string;
   fields: {
@@ -25,13 +23,12 @@ function toSlug(text: string): string {
 export default async function BlogPost({
   params,
 }: {
-  params: Promise<{ slug: string }>; // 👈 make params async
+  params: Promise<{ slug: string }>; 
 }) {
-  const { slug } = await params; // 👈 await params here
+  const { slug } = await params; 
 
-  // Fetch blogs from your API route
   const res = await fetch("https://www.elitebcar.com/blog/airtable-get", {
-    cache: "no-store", // always fresh
+    cache: "no-store", 
   });
 
   if (!res.ok) {
@@ -41,7 +38,6 @@ export default async function BlogPost({
   const data = await res.json();
   const blogs: Blog[] = data.data || [];
 
-  // Match blog by slug
   const post = blogs.find((item) => toSlug(item.fields.Name) === slug);
 
   if (!post) {

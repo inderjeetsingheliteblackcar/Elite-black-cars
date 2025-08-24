@@ -43,7 +43,7 @@ export default function Home() {
       {/* <News /> */}
       <Faq />
       <Toproutes />
-      <Blogs />
+      <Blogs limit={3}/>
       <Luxyslider />
     </>
   );
