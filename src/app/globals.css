@@ -179,7 +179,19 @@ transition: 0.5s all;
 .hideform{
   display: none;
 }
-@media (min-width: 768px) {
+.blogs-spacing h1{
+  margin-bottom: 40px;
+}
+.blogs-spacing h2{
+  margin-bottom: 25px;
+}
+.blogs-spacing p{
+  margin-bottom: 50px;
+}
+.blogs-spacing h4{
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 768px) {
   .button-1-front {
     font-size: 16px;
     padding: 8px 30px;
