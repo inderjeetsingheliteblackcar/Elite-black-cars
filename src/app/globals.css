@@ -179,18 +179,6 @@ transition: 0.5s all;
 .hideform{
   display: none;
 }
-.blogs-spacing h1{
-  margin-bottom: 40px;
-}
-.blogs-spacing h2{
-  margin-bottom: 25px;
-}
-.blogs-spacing p{
-  margin-bottom: 50px;
-}
-.blogs-spacing h4{
-  margin-bottom: 10px;
-}
 @media only screen and (min-width: 768px) {
   .button-1-front {
     font-size: 16px;
@@ -204,6 +192,18 @@ transition: 0.5s all;
   -webkit-filter: brightness(110%);
 }
 
+.blogs-spacing h1{
+  margin-bottom: 40px;
+}
+.blogs-spacing h2{
+  margin-bottom: 25px;
+}
+.blogs-spacing p{
+  margin-bottom: 50px;
+}
+.blogs-spacing h4{
+  margin-bottom: 10px;
+}
 .button-1:hover .button-1-front {
   transform: translateY(-6px);
   transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
