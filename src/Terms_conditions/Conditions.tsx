@@ -92,7 +92,7 @@ const Conditions = () => {
                 </ul>
                 <h4 className='my-4'><i>5. Potential Fee for SMS</i></h4>
                 Text messaging and data fees may be charged by your wireless provider, in line with your plan. These rates may vary for local and international messages
-                <h4 className='my-4'><i>5. Opt-In Methods</i></h4>
+                <h4 className='my-4'><i>6. Opt-In Methods</i></h4>
                 <p>To receive SMS updates, you can authorize us by:</p>
                 <ul className='ps-6 mt-4'>
                     <li className='list-disc mb-2'>  Submitting an online form</li>
