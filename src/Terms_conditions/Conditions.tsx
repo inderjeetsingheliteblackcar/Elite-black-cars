@@ -62,7 +62,7 @@ const Conditions = () => {
                                       target="_blank"
                                       rel="noopener noreferrer"
                                     >
-                                      SMS Terms and Conditions
+                                      Terms and Conditions
                                     </a> pages.
                                 </li>
                     <li className='list-disc mb-2'> Message frequency may vary.</li>
