@@ -37,10 +37,41 @@ const Conditions = () => {
                     Passengers are expected to behave respectfully, avoid intoxication, refrain from smoking inside the vehicle, and not engage in any activity that may compromise safety or damage the vehicle. You will be held financially responsible for any damages caused to the vehicle by you or your guests. <br /> <br />
                     Elite B Car reserves the right to refuse or terminate service to passengers who behave abusively, threaten the chauffeur’s safety, or violate company policies. Unfortunately, these cases fall outside our refund policy. </p>
                 <h4 className='my-4'>7. SMS Disclosure </h4>
+
                 <b>SMS Consent Communication:</b> By providing your phone number and opting in to receive SMS messages from Elite B Car, you agree to the following terms regarding text message communications:
-                <h4 className='my-4'><i>1. SMS Consent Communication</i></h4>
+
+            
+                <h4 className='my-4'><i>1. Standard Messaging Disclosure:</i></h4>
+                <ul className='ps-6 mt-4'>
+                    <li className='list-disc mb-2'>Messaging and data rates may apply.</li>
+                    <li className='list-disc mb-2'>You can opt out at any time by texting “STOP”.</li>
+                    <li className='list-disc mb-2'>For assistance, text “HELP” or visit our <a
+                                      href="/privacy_policy"
+                                      className="hover:underline"
+                                      style={{ color: "#e95440" }}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      Privacy Policy
+                                    </a>{" "}
+                                    and{" "}
+                                    <a
+                                      href="/terms_conditions"
+                                      className="hover:underline"
+                                      style={{ color: "#e95440" }}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      SMS Terms and Conditions
+                                    </a> pages.
+                                </li>
+                    <li className='list-disc mb-2'> Message frequency may vary.</li>
+                </ul>
+
+
+                <h4 className='my-4'><i>2. SMS Consent Communication</i></h4>
                 Your phone number, obtained as part of the SMS consent process, will be used solely for the purposes described in these terms. Rest assured, we will not sell or share your phone number with outside companies for marketing.
-                <h4 className='my-4'><i>2. Types of SMS Communications</i></h4>
+                <h4 className='my-4'><i>3. Types of SMS Communications</i></h4>
                 <p>By opting in, you agree to receive text messages concerning:</p>
                 <ul className='ps-6 mt-4'>
                     <li className='list-disc mb-2'>Appointment reminders</li>
@@ -54,29 +85,29 @@ const Conditions = () => {
                 <br /><br /><b>Example:</b><br /><br />
                 <p>This is a courtesy reminder for your appointment with Dr. [Name] at [Location], scheduled for [Date] at [Time]. Reply STOP to stop receiving texts</p>
 
-                <h4 className='my-4'><i>3. Message Frequency</i></h4>
+                <h4 className='my-4'><i>4. Message Frequency</i></h4>
                 Message frequency can change based on your activity or communication with us.  For example:
                 <ul className='ps-6 mt-4'>
                     <li className='list-disc mb-2'>You may receive up to<b> 2 SMS messages per week</b> regarding your Bookings, account status, or billing matters.</li>
                 </ul>
-                <h4 className='my-4'><i>4. Potential Fee for SMS</i></h4>
+                <h4 className='my-4'><i>5. Potential Fee for SMS</i></h4>
                 Text messaging and data fees may be charged by your wireless provider, in line with your plan. These rates may vary for local and international messages
                 <h4 className='my-4'><i>5. Opt-In Methods</i></h4>
                 <p>To receive SMS updates, you can authorize us by:</p>
                 <ul className='ps-6 mt-4'>
                     <li className='list-disc mb-2'>  Submitting an online form</li>
                 </ul>
-                <h4 className='my-4'><i>6. Opt-Out Instructions</i></h4>
+                <h4 className='my-4'><i>7. Opt-Out Instructions</i></h4>
                 <p> You have the option to unsubscribe from SMS messages at any time by</p>
                 <ul className='ps-6 mt-4'>
                     <li className='list-disc mb-2'> Replying “STOP” to any message</li>
                     <li className='list-disc mb-2'>Contact us directly to remove your name from our messaging list.</li>
                 </ul>
                 You’ll get a confirmation message from us once your opt-out request has been successfully received
-                <h4 className='my-4'><i>7. Help / Customer Support</i></h4>
+                <h4 className='my-4'><i>8. Help / Customer Support</i></h4>
                 For assistance, simply reply with the word HELP, or reach out to us directly at [insert link].”
                 Participation in our SMS program is optional — you may decline by leaving the SMS consent box unmarked on our forms.”
-                <h4 className='my-4'><i>8. Standard SMS Disclosures</i></h4>
+                <h4 className='my-4'><i>9. Standard SMS Disclosures</i></h4>
                 Your mobile provider’s standard text and data rates may apply based on your plan. You can opt out of these messages anytime by replying STOP. For assistance, reply HELP or visit our Privacy Policy and Terms of Service pages. Message frequency may fluctuate.
 
                 <h4 className='my-4'>8. Vehicle Availability and Substitution</h4>
