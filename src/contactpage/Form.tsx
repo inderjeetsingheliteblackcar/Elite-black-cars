@@ -143,7 +143,7 @@ const Form = () => {
   />
   <label htmlFor="consent" className="ml-2 text-sm text-dark leading-5">
     By checking this box, I consent to receive text messages related to
-    (message type) from (company name). You can reply “STOP” at any time to
+    information from Elite Black Car. You can reply “STOP” at any time to
     opt-out. Message and data rates may apply. Message frequency may vary,
     text HELP for assistance. For more information, please visit our{" "}
     <a
