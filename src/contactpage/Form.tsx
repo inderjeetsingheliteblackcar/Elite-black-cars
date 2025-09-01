@@ -142,10 +142,7 @@ const Form = () => {
     className="mt-1 h-4 w-4 text-orange border-gray-300 rounded focus:ring-orange"
   />
   <label htmlFor="consent" className="ml-2 text-sm text-dark leading-5">
-    By checking this box, I consent to receive text messages related to
-    information from Elite Black Car. You can reply “STOP” at any time to
-    opt-out. Message and data rates may apply. Message frequency may vary,
-    text HELP for assistance. For more information, please visit our{" "}
+    By checking this box, I consent to receive text messages related to (informative messages) from (Elite B Car). You can reply “STOP” at any time to opt out. Message and data rates may apply. Message frequency may vary. You may receive up to 2 SMS messages per week as per your bookings and your  payment cycle with us.Text HELP for assistance. For more information, please visit our Privacy Policy and SMS Terms and Conditions.{" "}
     <a
       href="/privacy_policy"
       className="hover:underline"
