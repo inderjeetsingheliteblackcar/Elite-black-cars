@@ -35,7 +35,7 @@ const Header = () => {
                         </Link>
                     </div>
                     <div className="flex items-center gap-8 lg:hidden me-4">
-                        <Link href="https://book.mylimobiz.com/v4/(S(3hk1vayurwuluomiaun0a0w1))/eliteblackcar" className="button-1">
+                        <Link href="https://book.mylimobiz.com/v4/eliteblackcar" className="button-1">
                             <span className="button-1-shadow"></span>
                             <span className="button-1-edge"></span>
                             <span className="button-1-front text">Book Now</span>
@@ -58,7 +58,7 @@ const Header = () => {
                     <div className="hidden items-center lg:flex lg:gap-x-12">
                         <Link href="/about" className="button-1 mb-2 text-white">About Us</Link>
                         <Link href="/contact" className="button-1 mb-2 text-white">Contact Us</Link>
-                        <Link href="https://book.mylimobiz.com/v4/(S(3hk1vayurwuluomiaun0a0w1))/eliteblackcar" className="button-1">
+                        <Link href="https://book.mylimobiz.com/v4/eliteblackcar" className="button-1">
                             <span className="button-1-shadow"></span>
                             <span className="button-1-edge"></span>
                             <span className="button-1-front text">Book Now</span>

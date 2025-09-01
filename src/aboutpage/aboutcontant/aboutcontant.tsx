@@ -30,7 +30,7 @@ const Aboutcontant = () => {
                             <h2 className='mb-6'>{item.title}</h2>
                             <p className='body-text mb-6' dangerouslySetInnerHTML={{ __html: item.description }} />
                          
-                        <Link href="https://book.mylimobiz.com/v4/(S(3hk1vayurwuluomiaun0a0w1))/eliteblackcar">    <Button text="Book Now" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" /></Link> 
+                        <Link href="https://book.mylimobiz.com/v4/eliteblackcar">    <Button text="Book Now" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" /></Link> 
 
                         </div>
                     </div>

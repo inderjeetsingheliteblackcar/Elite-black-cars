@@ -15,7 +15,7 @@ const Travelpartner = () => {
                         Our service is known for punctuality, professionalism, and customer satisfaction. With a team of highly trained drivers, well-maintained vehicles, and 24/7 availability, we guarantee that every journey is smooth, reliable, and enjoyable.
                     </p>
                     <div className='text-center flex justify-center'>
-                 <Link href="https://book.mylimobiz.com/v4/(S(3hk1vayurwuluomiaun0a0w1))/eliteblackcar">   <Button text="Book Now" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" /></Link>
+                 <Link href="https://book.mylimobiz.com/v4/eliteblackcar">   <Button text="Book Now" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" /></Link>
 
                     </div>
 
