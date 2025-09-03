@@ -57,6 +57,7 @@ const Header = () => {
 
                     <div className="hidden items-center lg:flex lg:gap-x-12">
                         <Link href="/about" className="button-1 mb-2 text-white">About Us</Link>
+                         <Link href="/service" className="button-1 mb-2 text-white">Services</Link>
                         <Link href="/contact" className="button-1 mb-2 text-white">Contact Us</Link>
                         <Link href="https://book.mylimobiz.com/v4/eliteblackcar" className="button-1">
                             <span className="button-1-shadow"></span>
@@ -125,6 +126,8 @@ const Header = () => {
                                 </div>
                                 <Link href="#" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">Home</Link>
                                 <Link href="/about" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">About Us</Link>
+                                                         <Link href="/service" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">Services</Link>
+
                                 <Link href="/contact" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">Contact Us</Link>
                             </div>
                         </div>
