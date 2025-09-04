@@ -3,39 +3,42 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const Services = () => {
-    const [activeSection, setActiveSection] = useState("airport-transfers");
+   const [activeSection, setActiveSection] = useState("airport-transfers");
+  const [fade, setFade] = useState(false);
 
-    // Map of section IDs to refs
-    const sectionIds = ["airport-transfers", "city-tours", "corporate-travel"];
+  const sectionIds = ["airport-transfers", "city-tours", "corporate-travel"];
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        // ✅ Always allow corporate-travel to activate
-                        setActiveSection(entry.target.id);
-                    }
-                });
-            },
-            {
-                threshold: [0.2, 0.5, 0.8], // multiple thresholds = more accurate
-                rootMargin: "0px 0px -5% 0px", // make last section trigger correctly
-            }
-        );
-
-        sectionIds.forEach((id) => {
-            const el = document.getElementById(id);
-            if (el) observer.observe(el);
+  // Intersection Observer
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setActiveSection(entry.target.id);
         });
+      },
+      { threshold: 0.4, rootMargin: "0px 0px -10% 0px" }
+    );
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+    return () => observer.disconnect();
+  }, []);
 
-        return () => observer.disconnect();
-    }, []);
-    const images: Record<string, string> = {
-        "airport-transfers": "/images/services1-min.png",
-        "city-tours": "/images/services2-min.png",
-        "corporate-travel": "/images/services3-min.png",
-    };
+  // toggle fade on section change
+  useEffect(() => {
+    // briefly set opacity 0 → will fade out, then fade in with new src
+    setFade(true);
+    const timeout = setTimeout(() => setFade(false), 50); // small delay triggers CSS transition
+    return () => clearTimeout(timeout);
+  }, [activeSection]);
+
+  const images: Record<string, string> = {
+    "airport-transfers": "/images/services1-min.png",
+    "city-tours": "/images/services2-min.png",
+    "corporate-travel": "/images/services3-min.png",
+  };
+
     return (
         <div className='md:py-40 py-20 relative px-4'>
             <div className='container'>
@@ -84,7 +87,7 @@ const Services = () => {
                                 <li className=''><b>Elite car service NYC   </b> </li>
                                 <li><b>Elite luxury car service NYC</b></li>
                             </ul>
-                            <img  className="md:hidden block" src="/images/services2-min.png" alt="" />
+                            <img className="md:hidden block" src="/images/services2-min.png" alt="" />
 
                         </div>
                         <div className='corporate-travel mt-20' id="corporate-travel">
@@ -105,22 +108,23 @@ const Services = () => {
                                 <li className=' mb-2'> <b>Corporate luxury car service in New York</b></li>
                                 <li className=' mb-2'><b>Elite car service New York</b></li>
                             </ul>
-                            <img  className="md:hidden block" src="/images/services3-min.png" alt="" />
+                            <img className="md:hidden block" src="/images/services3-min.png" alt="" />
 
                         </div>
                     </div>
-                    <div className="sticky top-32 md:block hidden">
-                        <img
-                            key={activeSection} // forces fade transition on change
-                            src={images[activeSection]}
-                            alt={activeSection}
-                            className="transition-opacity duration-700 ease-in-out opacity-100 rounded-2xl shadow-lg"
-                        />
+                     <div className="sticky top-0 w-[50vw] md:block hidden">
+            <img
+              src={images[activeSection]}
+              alt={activeSection}
+              className={`object-cover shadow-lg h-screen w-[50vw] will-change-[opacity] transition-opacity duration-700 ease-in-out ${
+                fade ? "opacity-0" : "opacity-100"
+              }`}
+            />
+          </div>
                     </div>
                 </div>
             </div>
-        </div>
-    );
+            );
 }
 
-export default Services;
+            export default Services;

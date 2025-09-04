@@ -45,19 +45,19 @@ const Header = () => {
                             onClick={toggleMenu}
                             className="button-1"
                         >
-                             <span className="button-1-shadow"></span>
+                            <span className="button-1-shadow"></span>
                             <span className="button-1-edge"></span>
                             <span className="button-1-front text">
-                            <svg className="size-6 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                            </svg>
+                                <svg className="size-6 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>
                             </span>
                         </button>
                     </div>
 
                     <div className="hidden items-center lg:flex lg:gap-x-12">
                         <Link href="/about" className="button-1 mb-2 text-white">About Us</Link>
-                         <Link href="/service" className="button-1 mb-2 text-white">Services</Link>
+                        <Link href="/service" className="button-1 mb-2 text-white">Services</Link>
                         <Link href="/contact" className="button-1 mb-2 text-white">Contact Us</Link>
                         <Link href="https://book.mylimobiz.com/v4/eliteblackcar" className="button-1">
                             <span className="button-1-shadow"></span>
@@ -77,9 +77,8 @@ const Header = () => {
 
                 {/* Mobile Menu with Slide Animation */}
                 <div
-                    className={`lg:hidden fixed inset-y-0 right-0 z-50 w-full sm:max-w-sm transform transition-transform duration-300 ease-in-out bg-dark px-6 py-6 ${
-                        isMenuOpen ? "translate-x-0" : "translate-x-full"
-                    }`}
+                    className={`lg:hidden fixed inset-y-0 right-0 z-50 w-full sm:max-w-sm transform transition-transform duration-300 ease-in-out bg-dark px-6 py-6 ${isMenuOpen ? "translate-x-0" : "translate-x-full"
+                        }`}
                     role="dialog"
                     aria-modal="true"
                 >
@@ -126,7 +125,7 @@ const Header = () => {
                                 </div>
                                 <Link href="#" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">Home</Link>
                                 <Link href="/about" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">About Us</Link>
-                                                         <Link href="/service" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">Services</Link>
+                                <Link href="/service" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">Services</Link>
 
                                 <Link href="/contact" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">Contact Us</Link>
                             </div>
