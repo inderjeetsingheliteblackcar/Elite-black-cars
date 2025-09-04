@@ -86,7 +86,7 @@ export default function Blogs({ limit }: BlogsProps) {
                 <img
                   src={post.fields.Image?.[0]?.url}
                   alt={post.fields.Name}
-                  className="w-full h-[300px] object-cover"
+                  className="w-full h-[360px] object-cover"
                 />
               </div>
               <div className="p-6 flex flex-col justify-center">
