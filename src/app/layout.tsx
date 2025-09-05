@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { DM_Sans, Geist, Geist_Mono } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { ReactLenis } from "../lenis/Lenis";
 import ScrollProgress from "@/scrollprogress/ScrollProgress";
 import Header from "@/header/Header";
 import Footer from "@/footer/Footer";
-import { useState, useEffect } from "react";
+
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
   subsets: ["latin"],
@@ -35,9 +35,41 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://elitebcar.com/#localbusiness",
+    name: "Elite B Car",
+    url: "https://elitebcar.com",
+    logo: "https://elitebcar.com/logo.png",
+    image: "https://elitebcar.com/fleet.jpg",
+    description:
+      "Elite B Car offers premium black car and chauffeur services across New York and nearby cities. Luxury sedans, SUVs, and limousines for airport transfers, corporate travel, city tours, and private events.",
+    telephone: "+1-866-835-1313",
+    email: "info@elitebcar.com",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "123 Example Street",
+      addressLocality: "New York",
+      addressRegion: "NY",
+      postalCode: "10001",
+      addressCountry: "US",
+    },
+    areaServed: [
+      { "@type": "City", name: "New York City" },
+      { "@type": "City", name: "Philadelphia" },
+      { "@type": "City", name: "Boston" },
+      { "@type": "City", name: "Washington D.C." },
+      { "@type": "City", name: "Baltimore" },
+    ],
+    sameAs: [
+      "https://www.instagram.com/elitebcar13/",
+      "https://www.facebook.com/elitebcar",
+      "https://x.com/elitebcar/",
+    ],
+  };
+
   return (
     <html lang="en">
       <head>
@@ -63,6 +95,12 @@ export default function RootLayout({
               });
             `,
           }}
+        />
+
+        {/* LocalBusiness JSON-LD */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       <ReactLenis root>
