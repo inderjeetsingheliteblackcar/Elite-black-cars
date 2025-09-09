@@ -1,7 +1,7 @@
 "use client"
 
 import Bannersall from '@/banners/Bannersall';
-import Services from '@/components/Servicespage/Services/Services';
+import Services from '@/components/services/Services';
 import React from 'react';
 
 const Page = () => {
@@ -9,6 +9,7 @@ const Page = () => {
         <div>
             <Bannersall pagename='Services ' bgimage='/images/aboutusbanner.jpg' />
             <Services />
+            
         </div>
     );
 }

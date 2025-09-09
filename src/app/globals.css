@@ -110,9 +110,11 @@ button.bg-white.button:hover {
 .top-move:hover {
   bottom: 10px;
 }
-.maketrip-box .icon{
-transition: 0.5s all;
+
+.maketrip-box .icon {
+  transition: 0.5s all;
 }
+
 .maketrip-box:hover svg {
   color: #fff;
 }
@@ -170,15 +172,19 @@ transition: 0.5s all;
   transform: translateY(-4px);
   transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
 }
-.show{
+
+.show {
   display: none;
 }
-.hide{
+
+.hide {
   display: none;
 }
-.hideform{
+
+.hideform {
   display: none;
 }
+
 @media only screen and (min-width: 768px) {
   .button-1-front {
     font-size: 16px;
@@ -192,17 +198,19 @@ transition: 0.5s all;
   -webkit-filter: brightness(110%);
 }
 
-.blogs-spacing h1{
+.blogs-spacing h1 {
   margin-bottom: 40px;
 }
-.blogs-spacing h2{
+
+.blogs-spacing h2 {
   margin-bottom: 25px;
 }
 
-.blogs-spacing h3{
+.blogs-spacing h3 {
   margin-bottom: 10px;
   margin-top: 30px;
 }
+
 .button-1:hover .button-1-front {
   transform: translateY(-6px);
   transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
@@ -227,9 +235,31 @@ transition: 0.5s all;
   outline: none;
 }
 
-.orange-text{
+.orange-text {
   color: #E95440;
 }
+
+.dropdowns {
+  display: none;
+  width: 200px;
+  left: -50px;
+  position: absolute;
+  padding-top: 20px;
+}
+
+.dropdowns-manu {
+  background: #e95440;
+  border-radius: 20px;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+ display: flex;
+}
+
+.Services:hover .dropdowns {
+  display: block;
+}
+
 @media only screen and (max-width: 768px) {
 
   h1 {
@@ -251,28 +281,33 @@ transition: 0.5s all;
     font-size: 20px;
     line-height: 30px;
   }
-.button-1-front{
-  padding: 11px 15px;
+
+  .button-1-front {
+    padding: 11px 15px;
+  }
 }
-}
+
 @media (max-height: 750px) {
-.Bookingform {
+  .Bookingform {
     overflow-y: scroll;
     height: 650px;
+  }
 }
-}
+
 @media (max-height: 650px) {
-.Bookingform {
+  .Bookingform {
     overflow-y: scroll;
     height: 500px;
+  }
 }
-}
+
 @media (max-width: 540px) {
-.Bookingform {
+  .Bookingform {
     overflow-y: scroll;
     height: auto !important;
+  }
 }
-}
+
 .Bookingform::-webkit-scrollbar {
   width: 2px;
 }
