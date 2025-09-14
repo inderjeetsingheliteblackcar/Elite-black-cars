@@ -1,4 +1,4 @@
-"use client";
+
 import Blogs from '@/components/blogs/blogs';
 import React from 'react';
 import type { Metadata } from "next";
