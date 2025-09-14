@@ -1,4 +1,4 @@
-"use client"
+
 
 import Aboutcontant from "@/aboutpage/aboutcontant/aboutcontant";
 import Choose from "@/aboutpage/Choose/Choose";
@@ -11,7 +11,16 @@ import Faq from "@/components/faq/Faq";
 import Maketrip from "@/components/maketrip/Maketrip";
 import Showcase from "@/components/showcase/Showcase";
 import Works from "@/components/works/Works";
+import type { Metadata } from "next";
 
+
+export const metadata: Metadata = {
+  title: "About Us | Elite B Car",
+  description: "Get in touch with Elite B Car for bookings, airport transfers, tours, or corporate travel inquiries.",
+  alternates: {
+    canonical: "https://www.elitebcar.com/about",
+  },
+};
 export default function About() {
     return (
         <div>

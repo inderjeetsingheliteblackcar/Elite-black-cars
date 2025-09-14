@@ -152,7 +152,7 @@ const LuxySlider: React.FC = () => {
                                         <p className="my-4">{slide.description}</p>
                                         {slide.features.map((feature, i) => (
                                             <p key={i} className="flex items-center gap-2 mb-2">
-                                                <img src="/images/svgviewer.svg" alt="" />
+                                                <img src="/images/svgviewer.svg" alt="svgviewer" />
                                                 {feature}
                                             </p>
                                         ))}

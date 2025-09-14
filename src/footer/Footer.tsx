@@ -74,8 +74,8 @@ const Footer = () => {
         <div className='md:flex text-white  md:pt-8 justify-between'>
           <a href="" className='mb-3 block'>© 2025 Elite Black Car</a>
           <div className='md:flex gap-3'>
-            <Link href='/terms_conditions' className='mb-3 block'>Terms</Link>
-            <Link href='/privacy_policy' className='mb-3 block'>Privacy policy</Link>
+            <Link href='/terms-conditions' className='mb-3 block'>Terms</Link>
+            <Link href='/privacy-policy' className='mb-3 block'>Privacy policy</Link>
             {/* <a className='mb-3 block'>Accessibility</a> */}
           </div>
         </div>

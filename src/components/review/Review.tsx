@@ -78,7 +78,7 @@ const Review = () => {
                 alt="Video play button"
               />
               <img src="/images/img-video.png" className="relative w-full md:w-auto z-10" alt="Video thumbnail" />
-              <img src="/images/bg-testimonials.png" className="bg-testimonials md:block hidden"  alt="" />
+              <img src="/images/bg-testimonials.png" className="bg-testimonials md:block hidden"  alt="testimonials" />
             </div>
           </div>
         </div>
