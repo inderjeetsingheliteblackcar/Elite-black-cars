@@ -115,7 +115,7 @@ const Services = () => {
                         </button>
                         <div className="grid md:gap-10 gap-6 md:grid-cols-12">
                             <div className="md:col-span-6">
-                            <img src={popupData.image} className="rounded-xl" alt="popupimage" />
+                            <img loading="lazy" src={popupData.image} className="rounded-xl" alt="popupimage" />
                             </div>
                             <div className="md:col-span-6 ">
                                 <h2 className="text-2xl font-semibold mb-4">{popupData.title}</h2>

@@ -72,13 +72,13 @@ const Review = () => {
 
           <div className="text-end mt-12 md:mt-0 col-span-12 md:col-span-1">
             <div className="ms-auto relative flex items-center justify-end">
-              <img
+              <img loading="lazy"
                 src="/images/videoplay.png"
                 className="md:me-[-40px] me-[-250px] relative z-20"
                 alt="Video play button"
               />
-              <img src="/images/img-video.png" className="relative w-full md:w-auto z-10" alt="Video thumbnail" />
-              <img src="/images/bg-testimonials.png" className="bg-testimonials md:block hidden"  alt="testimonials" />
+              <img loading="lazy" src="/images/img-video.png" className="relative w-full md:w-auto z-10" alt="Video thumbnail" />
+              <img loading="lazy" src="/images/bg-testimonials.png" className="bg-testimonials md:block hidden"  alt="testimonials" />
             </div>
           </div>
         </div>

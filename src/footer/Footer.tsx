@@ -30,7 +30,7 @@ const Footer = () => {
         <div className='footer-links border-b border-gary py-14'>
           <div className='grid text-white gap-10 md:grid-cols-4'>
             <div className='Top-cities px-2'>
-              <img className="h-[60px] w-auto max-w-[196px]" src="/images/Logo_main1.svg" alt="Logo" />
+              <img loading="lazy" className="h-[60px] w-auto max-w-[196px]" src="/images/Logo_main1.svg" alt="Logo" />
               <div className='icons flex flex-col gap-3 items-start text-white'>
                 <p className='body-text'><b>Follow Us</b></p>
                 <div className='icons-main flex gap-4 text-white'>
@@ -93,7 +93,7 @@ const Footer = () => {
             </button>
             <div className="grid md:grid-cols-12 gap-6 md:gap-10">
               <div className="md:col-span-6">
-                <img src={popupData.image} alt={popupData.title} className="rounded-xl w-full" />
+                <img loading="lazy" src={popupData.image} alt={popupData.title} className="rounded-xl w-full" />
               </div>
               <div className="md:col-span-6">
                 <h2 className="text-2xl font-semibold mb-4">{popupData.title}</h2>

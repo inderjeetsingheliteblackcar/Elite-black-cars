@@ -20,7 +20,7 @@ const Newsbox: React.FC<CardnewsProps> = ({
         <div>
             <div className="news-box text-white">
                 <div className="news-image rounded-md mb-4 relative">
-                    <img src={image} alt={name} className="w-full rounded-md" />
+                    <img loading="lazy" src={image} alt={name} className="w-full rounded-md" />
                     <div className="news-date rounded-md text-white absolute p-6 top-0 left-0 bottom-0 right-0">
                         <h2>
                             18 <span className="body-text block">April, 2024</span>

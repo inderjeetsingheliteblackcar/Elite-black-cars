@@ -16,7 +16,7 @@ const Comfort = () => {
 
                     </div>
                     <div className=''>
-                        <img src="/images/aboutusservice.jpg" className='rounded w-full' alt="About content" />
+                        <img loading="lazy" src="/images/aboutusservice.jpg" className='rounded w-full' alt="About content" />
                     </div>
                 </div>
             </div>

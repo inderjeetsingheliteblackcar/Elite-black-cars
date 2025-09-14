@@ -122,7 +122,7 @@ const LuxySlider: React.FC = () => {
 
                                     {/* Image */}
                                     <div className={`transition-opacity duration-700 ease-in-out ${isActive ? 'opacity-100' : 'opacity-0 pointer-events-none'} w-full md:w-1/3 mt-6 md:mt-0`}>
-                                        <img src={slide.image} alt={slide.title} className="h-full w-full object-cover object-left rounded-xl" />
+                                        <img loading="lazy" src={slide.image} alt={slide.title} className="h-full w-full object-cover object-left rounded-xl" />
                                     </div>
                                 </div>
                             </div>
@@ -152,7 +152,7 @@ const LuxySlider: React.FC = () => {
                                         <p className="my-4">{slide.description}</p>
                                         {slide.features.map((feature, i) => (
                                             <p key={i} className="flex items-center gap-2 mb-2">
-                                                <img src="/images/svgviewer.svg" alt="svgviewer" />
+                                                <img loading="lazy" src="/images/svgviewer.svg" alt="svgviewer" />
                                                 {feature}
                                             </p>
                                         ))}
@@ -164,7 +164,7 @@ const LuxySlider: React.FC = () => {
                                             </Link>
                                     </div>
                                     <div className="mt-4">
-                                        <img src={slide.image} alt={slide.title} className="h-[200px] w-full object-cover rounded-xl" />
+                                        <img loading="lazy" src={slide.image} alt={slide.title} className="h-[200px] w-full object-cover rounded-xl" />
                                     </div>
                                 </div>
                             </div>
@@ -200,7 +200,7 @@ const LuxySlider: React.FC = () => {
                         </button>
                         <div className="grid md:grid-cols-12 gap-6 md:gap-10">
                             <div className="md:col-span-6">
-                                <img src={popupData.image} className="rounded-xl object-cover md:h-[400px] h-[250px] w-full" alt={popupData.title} />
+                                <img loading="lazy" src={popupData.image} className="rounded-xl object-cover md:h-[400px] h-[250px] w-full" alt={popupData.title} />
                             </div>
                             <div className="md:col-span-6">
                                 <h2 className="text-2xl font-semibold mb-4">{popupData.title}</h2>

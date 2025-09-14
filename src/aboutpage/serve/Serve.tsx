@@ -25,7 +25,7 @@ const Serve = () => {
                 <div className='flex gap-4 flex-wrap justify-center items-center'>
                     {ServeList.map((Servedata, index) => (
                         <div key={index} className='flex gap-2 bg-orange/10 items-center pr-4 p-2 rounded-full'>
-                            <img src={Servedata.image} alt={Servedata.text} />
+                            <img loading="lazy" src={Servedata.image} alt={Servedata.text} />
                             <p className='body-text font-semibold'>{Servedata.text}</p>
                         </div>
                     ))}

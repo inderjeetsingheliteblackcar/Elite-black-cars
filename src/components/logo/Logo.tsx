@@ -50,14 +50,14 @@ const Logo2 = () => {
             {/* <Slider {...settings}> */}
             <div className="flex gap-10 items-center justify-center">
             <div >
-                <img
+                <img loading="lazy"
                   src="/images/luxy-logo.webp"
                   alt="Partner 1"
                   className="w-[100px] mx-auto"
                 />
               </div>
               <div>
-                <img
+                <img loading="lazy"
                   src="/images/blacklane.svg"
                   alt="Partner 2"
                   className="w-[150px] mx-auto"
@@ -66,14 +66,14 @@ const Logo2 = () => {
             </div>
               
               {/* <div>
-                <img
+                <img loading="lazy"
                   src="/images/logo3.svg"
                   alt="Partner 3"
                   className="w-[100px] mx-auto"
                 />
               </div>
               <div>
-                <img
+                <img loading="lazy"
                   src="/images/logo4.svg"
                   alt="Partner 4"
                   className="w-[100px] mx-auto"

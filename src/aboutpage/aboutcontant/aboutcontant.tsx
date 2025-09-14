@@ -24,7 +24,7 @@ const Aboutcontant = () => {
                         className={`flex flex-col container md:flex-row items-center gap-10 `}
                     >
                         <div className='md:w-1/2'>
-                            <img src={item.image} className='rounded w-full' alt="About content" />
+                            <img loading="lazy" src={item.image}  className='rounded w-full' alt="About content" />
                         </div>
                         <div className='md:w-1/2'>
                             <h2 className='mb-6'>{item.title}</h2>

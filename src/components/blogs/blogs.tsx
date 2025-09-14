@@ -45,9 +45,9 @@ function toSlug(text: string): string {
   return text
     .toLowerCase()
     .trim()
-    .replace(/[^a-z0-9\s-]/g, "") // remove special chars
-    .replace(/\s+/g, "-")         // replace spaces with "-"
-    .replace(/-+/g, "-");         // remove multiple "-"
+    .replace(/[^a-z0-9\s-]/g, "") 
+    .replace(/\s+/g, "-")         
+    .replace(/-+/g, "-");         
 }
 
 type BlogsProps = {
@@ -83,7 +83,7 @@ export default function Blogs({ limit }: BlogsProps) {
               className="gap-6  bg-orange/20 rounded overflow-hidden"
             >
               <div>
-                <img
+                <img loading="lazy"
                   src={post.fields.Image?.[0]?.url}
                   alt={post.fields.Name}
                   className="w-full h-[360px] object-cover"

@@ -49,7 +49,7 @@ export default async function BlogPost({
       <h1 className=" font-bold mb-6">{post.fields.Name}</h1>
 
       {post.fields.Image?.[0]?.url && (
-        <img
+        <img loading="lazy"
           src={post.fields.Image[0].url}
           alt={post.fields.Name}
           className="w-full h-[400px] object-cover mb-6 rounded"

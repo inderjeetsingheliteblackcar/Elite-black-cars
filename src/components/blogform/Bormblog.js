@@ -153,7 +153,7 @@ export default function Bormblog() {
           />
           {imagePreview && (
             <div className="mt-2">
-              <img
+              <img loading="lazy"
                 src={imagePreview}
                 alt="Preview"
                 className="max-w-full h-auto rounded-lg"

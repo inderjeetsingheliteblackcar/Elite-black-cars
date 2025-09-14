@@ -37,12 +37,12 @@ const Service: React.FC<ServiceProps> = ({ id, title, description, points, keywo
           ))}
         </ul>
 
-        <img className="md:hidden block" src={image} alt={title} />
+        <img loading="lazy" className="md:hidden block" src={image} alt={title} />
       </div>
 
       {/* Right side (Image sticky) */}
       <div className="sticky top-0 w-[50vw] md:block hidden">
-        <img src={image} className="h-screen w-[50vw]" alt={title} />
+        <img loading="lazy" src={image} className="h-screen w-[50vw]" alt={title} />
       </div>
     </div>
     </div>
