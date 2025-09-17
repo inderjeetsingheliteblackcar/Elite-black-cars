@@ -31,7 +31,7 @@ const Service: React.FC<ServiceProps> = ({ id, title, description, points, keywo
         </ul>
 
         <ul className="my-4">
-          <li className="mb-2"><b>Keywords I have used</b></li>
+    
           {keywords.map((word, i) => (
             <li key={i} className="mb-2"><b>{word}</b></li>
           ))}
