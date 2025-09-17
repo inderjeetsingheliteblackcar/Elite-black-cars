@@ -18,7 +18,6 @@ const Page = () => {
             "Luxury sedans and SUVs equipped for comfort and productivity."
         ],
         keywords: [
-            "Keywords I have used",
             "Corporate luxury car service in New York",
             "Trained professional ChauffeurElite car service New York",
            
