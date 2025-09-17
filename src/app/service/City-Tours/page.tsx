@@ -18,7 +18,6 @@ const Page = () => {
             "Reliable, punctual, and 24/7 available service."
         ],
         keywords: [
-            "Keywords I Have Used",
             "Elite B car Luxury city tour service",
             "Trained professional Chauffeur",
             "Elite car service NYC",
