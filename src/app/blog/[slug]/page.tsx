@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 type Blog = {
@@ -9,7 +10,13 @@ type Blog = {
     Image?: { url: string }[];
   };
 };
-
+ export const metadata: Metadata = {
+  title: "Blog | Elite B Car",
+  description: "Get in touch with Elite B Car for bookings, airport transfers, tours, or corporate travel inquiries.",
+  alternates: {
+    canonical: `https://www.elitebcar.com/blog`,
+  },
+};
 // ✅ Helper function to generate slugs
 function toSlug(text: string): string {
   return text

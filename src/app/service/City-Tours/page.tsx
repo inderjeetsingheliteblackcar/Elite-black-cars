@@ -1,6 +1,13 @@
 import Services from '@/components/Servicespage/Services/Services';
+import { Metadata } from 'next';
 import React from 'react';
-
+ export const metadata: Metadata = {
+  title: "Service | City-Tours",
+  description: "Get in touch with Elite B Car for bookings, airport transfers, tours, or corporate travel inquiries.",
+  alternates: {
+    canonical: "https://www.elitebcar.com/service/City-Tours",
+  },
+};
 const Page = () => {
     const airportTransferData = {
         id: "City-Tours",
