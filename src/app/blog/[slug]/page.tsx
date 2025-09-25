@@ -11,9 +11,6 @@ type Blog = {
   };
 };
 
-
-
-// ✅ Helper function to generate slugs
 function toSlug(text: string): string {
   return text
     .toLowerCase()
@@ -23,14 +20,79 @@ function toSlug(text: string): string {
     .replace(/-+/g, "-");
 }
 
+const API_URL = "https://www.elitebcar.com/blog/airtable-get";
+
+function shortDescription(text = "", max = 160) {
+  const clean = text.replace(/\s+/g, " ").trim();
+  if (!clean) return undefined;
+  if (clean.length <= max) return clean;
+  return clean.slice(0, max).replace(/\s+\S*$/, "") + "...";
+}
+
+/**
+ * Note: params may be a Promise in Next's dynamic APIs, so we await it.
+ */
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params; // <-- await here fixes the error
+
+  const res = await fetch(API_URL, { cache: "no-store" });
+
+  if (!res.ok) {
+    notFound();
+  }
+
+  const data = await res.json();
+  const blogs: Blog[] = data.data || [];
+
+  const post = blogs.find((item) => toSlug(item.fields.Name) === slug);
+
+  if (!post) {
+    notFound();
+  }
+
+  const title = post.fields.Name;
+  const description =
+    shortDescription(post.fields.Description || post.fields.Content || "");
+  const ogImage = post.fields.Image?.[0]?.url;
+
+  const metadata: Metadata = {
+    title,
+    description,
+    alternates: {
+      canonical: `https://www.elitebcar.com/blog/${slug}`,
+    },
+    openGraph: {
+      title,
+      description,
+      url: `https://www.elitebcar.com/blog/${slug}`,
+      siteName: "Elite B Car",
+      images: ogImage ? [{ url: ogImage, alt: title }] : undefined,
+      locale: "en_US",
+      type: "article",
+    },
+    twitter: {
+      card: ogImage ? "summary_large_image" : "summary",
+      title,
+      description,
+      images: ogImage ? [ogImage] : undefined,
+    },
+  };
+
+  return metadata;
+}
+
 export default async function BlogPost({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const { slug } = await params;
+  const { slug } = await params; // <-- await here too
 
-  const res = await fetch("https://www.elitebcar.com/blog/airtable-get", {
+  const res = await fetch(API_URL, {
     cache: "no-store",
   });
 
@@ -61,7 +123,6 @@ export default async function BlogPost({
       )}
 
       <div
-        //className="prose"
         className="prose prose-h1:mt-8 prose-h1:mb-4 prose-p:mb-6 prose-h2:mt-6 prose-h2:mb-3"
         dangerouslySetInnerHTML={{ __html: post.fields.Content || "" }}
       />
