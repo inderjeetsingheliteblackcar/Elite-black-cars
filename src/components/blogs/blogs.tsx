@@ -71,7 +71,7 @@ export default function Blogs({ limit }: BlogsProps) {
       <div className="max-w-6xl mx-auto">
         <div className="flex mb-10 items-center justify-between">
           <h2 className=" ">Blogs</h2>
-          <Link href="/blog" className="text-orange flex items-center gap-2">
+          <Link href="/blog" className="text-orange hide-onblog flex items-center gap-2">
             View All <HiArrowRight />
           </Link>
         </div>

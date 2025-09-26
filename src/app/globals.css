@@ -22,7 +22,7 @@ body {
   margin: 0 auto;
 }
 
-h1 {
+h1,.h1 {
   font-size: 52px;
   font-weight: 600;
   line-height: 62px;
@@ -259,10 +259,12 @@ button.bg-white.button:hover {
 .Services:hover .dropdowns {
   display: block;
 }
-
+.blogs-main .hide-onblog{
+display: none;
+}
 @media only screen and (max-width: 768px) {
 
-  h1 {
+  h1,.h1 {
     font-size: 35px;
     line-height: 45px;
   }

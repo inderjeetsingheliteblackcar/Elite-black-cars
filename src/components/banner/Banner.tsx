@@ -27,13 +27,13 @@ const TopBanner: React.FC<BannerProps & { isActive: boolean }> = ({
             style={{ backgroundImage: `url(${backgroundImage})` }}
         >
             <div className="container relative z-10 text-white">
-                <p className="mb-2 font-[18px] font-semibold">{subtitle}</p>
-                <h1
-                    className={`max-w-[500px] ${isActive ? "animate-slide-in" : "opacity-0"
+                <h1 className="mb-2 !text-[18px] !leading-tight !font-semibold">{subtitle}</h1>
+                <h2
+                    className={`max-w-[500px] h1 ${isActive ? "animate-slide-in" : "opacity-0"
                         } transition-all duration-700`}
                 >
                     {title}
-                </h1>
+                </h2>
                 {/* <div className="flex gap-4">
                     <Button text="Book Now" color="text-white hover:text-dark" bg="bg-orange" hoverbg="hover:bg-white" />
                     <Link href="/contact" >  <Button text="Contact Us" color="text-dark hover:text-white" bg="bg-white" hoverbg="hover:bg-orange" />

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 const Page = () => {
     return (
-        <div className='py-20 '>
+        <div className='py-20 blogs-main'>
             <Blogs />
         </div>
     );

@@ -4,25 +4,11 @@ import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
-import Servicesmain from "../components/services/servicesData.json";
 import './footer.css';
-import Button from '@/button/Button';
 import Link from 'next/link';
 
 const Footer = () => {
-  const [popupData, setPopupData] = useState<null | {
-    title: string;
-    popupdescription: string;
-    image: string;
-  }>(null);
 
-  const openPopup = (title: string, popupdescription: string, image: string) => {
-    setPopupData({ title, popupdescription, image });
-  };
-
-  const closePopup = () => {
-    setPopupData(null);
-  };
 
   return (
     <div className='footer bg-dark px-4 pt-14 pb-8'>
@@ -43,15 +29,10 @@ const Footer = () => {
 
             <div className='Explore px-2'>
               <h4 className='mb-6'>Services</h4>
-              {Servicesmain.map((data) => (
-                <a
-                  key={data.id}
-                  onClick={() => openPopup(data.title, data.popupdescription, data.image)}
-                  className='mb-3 block cursor-pointer hover:text-orange transition'
-                >
-                  {data.title}
-                </a>
-              ))}
+              <Link href="/service/Airport-Transfers" className="block mb-3">Airport Transfers</Link>
+              <Link href="/service/City-Tours" className="block mb-3">City Tours</Link>
+              <Link href="/service/Corporate-Travel" className="block">Corporate Travel</Link>
+
             </div>
 
             <div className='Classes px-2'>
@@ -81,32 +62,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Popup Modal */}
-      {popupData && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-          <div className="relative bg-white p-8 rounded-lg max-w-[900px] w-full">
-            <button
-              onClick={closePopup}
-              className="absolute top-0 right-2 text-orange hover:text-black text-[40px] leading-none"
-            >
-              ×
-            </button>
-            <div className="grid md:grid-cols-12 gap-6 md:gap-10">
-              <div className="md:col-span-6">
-                <img loading="lazy" src={popupData.image} alt={popupData.title} className="rounded-xl w-full" />
-              </div>
-              <div className="md:col-span-6">
-                <h2 className="text-2xl font-semibold mb-4">{popupData.title}</h2>
-                <div
-                  dangerouslySetInnerHTML={{ __html: popupData.popupdescription }}
-                  className="text-gray-700 mb-10"
-                />
-              <Link href="https://book.mylimobiz.com/v4/eliteblackcar"    onClick={closePopup}>  <Button text="Book Now" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" /></Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
+
     </div>
   );
 };

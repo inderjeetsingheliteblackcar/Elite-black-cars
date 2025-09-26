@@ -67,6 +67,7 @@ const Header = () => {
                             </div>
                         </div>
                         <Link href="/contact" className="button-1 mb-2 text-white">Contact Us</Link>
+                                                <Link href="/blog" className="button-1 mb-2 text-white">Blog</Link>
                         <Link href="https://book.mylimobiz.com/v4/eliteblackcar" className="button-1">
                             <span className="button-1-shadow"></span>
                             <span className="button-1-edge"></span>
@@ -141,6 +142,8 @@ const Header = () => {
                                 
                                 </div>
                                 <Link href="/contact" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">Contact Us</Link>
+                                                           <Link href="/blog" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">Blog</Link>
+
                             </div>
                         </div>
                     </div>
