@@ -4,6 +4,7 @@ import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
+import { FaEnvelope } from "react-icons/fa";
 import './footer.css';
 import Link from 'next/link';
 
@@ -46,7 +47,7 @@ const Footer = () => {
             <div className='Recent-Posts col-span-1'>
               <h4 className='mb-6'>Contact</h4>
               <a href="tel:+1 (866) - 835 - 1313" className='mb-3 block flex gap-2 items-center'><span className='text-lg'><FaPhoneAlt /></span>+1 (866) - 835 - 1313</a>
-             <a href="tel:+1 (332) - 232 - 1313" className='mb-3 block flex gap-2 items-center'><span className='text-lg'><FaSms /></span>+1 (332) - 232 - 1313</a>
+             <a href="tel:+1 (332) - 232 - 1313" className='mb-3 block flex gap-2 items-center'><span className='text-lg'><FaEnvelope /></span>+1 (332) - 232 - 1313</a>
               <a href='mailto:info@elitebcar.com' className='mb-3 block flex gap-2 items-center'><span className='text-2xl'><CgMail /></span> info@elitebcar.com</a>
               <a href='mailto:reservation@elitebcar.com' className='mb-3 block flex gap-2 items-center'><span className='text-2xl'><CgMail /></span> reservation@elitebcar.com</a>
             </div>
