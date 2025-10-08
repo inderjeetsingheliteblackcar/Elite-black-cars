@@ -22,15 +22,15 @@ const fleetData = [
     description: "Cadilac XT6 ",
     image: "/images/Ourfleet2-min.png",
     passengers: 3,
-    luggage: 3,
+    luggage: 4,
   },
   {
     id: 3,
     name: "Luxury Sedan",
     description: "Cadilac XTS ",
     image: "/images/Ourfleet3-min1.jpeg",
-    passengers: 3,
-    luggage: 4,
+    passengers: 2,
+    luggage: 2,
   },
   // {
   //   id: 4,
