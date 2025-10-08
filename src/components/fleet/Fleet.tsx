@@ -21,8 +21,8 @@ const fleetData = [
     name: "Small SUV",
     description: "Cadilac XT6 ",
     image: "/images/Ourfleet2-min.png",
-    passengers: 4,
-    luggage: 4,
+    passengers: 3,
+    luggage: 3,
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const fleetData = [
     description: "Cadilac XTS ",
     image: "/images/Ourfleet3-min1.jpeg",
     passengers: 3,
-    luggage: 2,
+    luggage: 4,
   },
   // {
   //   id: 4,
