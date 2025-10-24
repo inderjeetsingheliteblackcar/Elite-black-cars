@@ -2,11 +2,15 @@ import Services from '@/components/Servicespage/Services/Services';
 import { Metadata } from 'next';
 import React from 'react';
 export const metadata: Metadata = {
-    title: "Service | Corporate-Travel",
-    description: "Get in touch with Elite B Car for bookings, airport transfers, tours, or corporate travel inquiries.",
+    title: "Corporate Luxury Car Service in New York | Professional Chauffeurs | Elite B Car",
+    description: "Experience corporate luxury car service in New York with Elite B Car. Travel in style with trained professional chauffeurs who ensure comfort and reliability.",
     alternates: {
         canonical: "https://www.elitebcar.com/service/Corporate-Travel",
     },
+     keywords: [
+    "corporate luxury car service",
+    "trained professional chauffeur",
+  ],
 };
 const Page = () => {
     const airportTransferData = {

@@ -3,11 +3,15 @@ import { Metadata } from 'next';
 import React from 'react';
 
  export const metadata: Metadata = {
-  title: "Service | Airport-Transfers",
-  description: "Get in touch with Elite B Car for bookings, airport transfers, tours, or corporate travel inquiries.",
+  title: "Best Airport Car Service NYC | JFK Airport Chauffeur Service | Elite B Car",
+  description: "Book the best airport car service in NYC with Elite B Car. Enjoy smooth JFK airport chauffeur service and reliable luxury transfers across New York.",
   alternates: {
     canonical: "https://www.elitebcar.com/service/Airport-Transfers",
   },
+   keywords: [
+    "best airport car service nyc",
+    " jfk airport chauffeur service",
+  ],
 };
 
 const Page = () => {

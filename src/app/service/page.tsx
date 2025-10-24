@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     title: "Service ",
     description: "Get in touch with Elite B Car for bookings, airport transfers, tours, or corporate travel inquiries.",
     alternates: {
-        canonical: "https://www.elitebcar.com/service/",
+        canonical: "https://www.elitebcar.com/service",
     },
 };
 const Page = () => {
