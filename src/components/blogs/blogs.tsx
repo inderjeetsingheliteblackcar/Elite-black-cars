@@ -92,7 +92,7 @@ export default function Blogs({ limit }: BlogsProps) {
               <div className="p-6 flex flex-col justify-center">
                 <h3 className="text-2xl font-semibold">{post.fields.Name}</h3>
                 <p
-                  className="my-4 text-gray-700"
+                  className="my-4 text-gray-700 line-clamp-3"
                   dangerouslySetInnerHTML={{ __html: post.fields.Description }}
                 />
                 <Link

@@ -30,12 +30,12 @@ const Service: React.FC<ServiceProps> = ({ id, title, description, points, keywo
           ))}
         </ul>
 
-        <ul className="my-4">
+        {/* <ul className="my-4">
     
           {keywords.map((word, i) => (
             <li key={i} className="mb-2"><b>{word}</b></li>
           ))}
-        </ul>
+        </ul> */}
 
         <img loading="lazy" className="md:hidden block" src={image} alt={title} />
       </div>
