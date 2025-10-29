@@ -120,6 +120,9 @@ const Policy = () => {
     <h4 className='my-4'>Cookies and Advertising</h4>
     <p>For further details on how we use cookies and similar technologies, and to learn about the options available to you, please review our Cookie Policy.</p>
 
+          <h4 className='my-4'>Hourly Booking Policy</h4>
+    <p>For hourly rental bookings, customers are required to inform us on a prior basis if they wish to extend their duration beyond the initially reserved hours with us. It will help us to manage vehicle scheduling efficiently and ensure availability for your continued use. Please note thatrequests for extended hours are subject to vehicle availability and it also may incur additional charges based on the extended time required. We will recommend you to notify our team in advance to confirm your extended booking and enjoy a smooth, uninterrupted rental experience. </p>
+
     <h4 className='my-4'>Accessibility</h4>
     <p>
       At <b>Elite B Car,</b> we are committed to transparency and ensuring that our Privacy Policy is easily accessible to all users. You can review this Privacy Policy at any time on our official website. We strive to present the policy in a clear and user-friendly format, so you can understand how we collect, use, and protect your information.
