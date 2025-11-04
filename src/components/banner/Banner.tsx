@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useRef, useState } from "react";
-import { GoArrowRight } from "react-icons/go";
-import { GoArrowLeft } from "react-icons/go";
 import Slider from "react-slick";
 import './banner.css';
 import Bookingform from "./Bookingform";
