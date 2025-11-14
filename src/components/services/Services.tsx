@@ -94,7 +94,7 @@ const Services = () => {
                                     title={service.title}
                                     description={service.description}
                                     image={service.image}
-                                    onClick={() => openPopup(service.title, service.popupdescription, service.image)}
+                                    url={service.url}
                                 />
                             </div>
                         ))}
@@ -104,7 +104,7 @@ const Services = () => {
 
                 </div>
             </div>
-            {popupData && (
+            {/* {popupData && (
                 <div className="fixed inset-0 bg-black p-4 bg-opacity-50 flex items-center justify-center z-50">
                     <div className="relative bg-white p-8 rounded-lg max-w-[900px] w-full">
                         <button
@@ -126,7 +126,7 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
-            )}
+            )} */}
         </>
     );
 };

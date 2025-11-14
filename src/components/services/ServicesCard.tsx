@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 
@@ -5,15 +6,16 @@ type ServicesCardProps = {
   title: string;
   description: string;
   image: string;
-  onClick: () => void;
+  url:string
 };
 
-const ServicesCard: React.FC<ServicesCardProps> = ({ title, description, image, onClick }) => {
+const ServicesCard: React.FC<ServicesCardProps> = ({ title, description, image,url }) => {
   return (
+    <Link href={`/service${url}`} >
     <div
       className="h-[400px] relative flex justify-end items-end services-card bg-cover rounded-md cursor-pointer"
       style={{ backgroundImage: `url(${image})` }}
-      onClick={onClick}
+  
     >
       <div className="hover-bg absolute top-0 left-0 right-0 bottom-0 rounded-md"></div>
       <div className="card-text text-white p-4 relative z-10">
@@ -26,6 +28,7 @@ const ServicesCard: React.FC<ServicesCardProps> = ({ title, description, image, 
         </div>
       </div>
     </div>
+    </Link>
   );
 };
 
