@@ -5,7 +5,7 @@ import React from 'react';
   title: "Elite B Car | Rental Car Service Albany & Hamptons Car Service",
   description: "Explore New York, Albany, and the Hamptons with Elite B Car. Choose our rental car service in Albany or luxury Hamptons car service for comfortable city tours.",
   alternates: {
-    canonical: "https://www.elitebcar.com/service/City-Tours",
+    canonical: "https://www.elitebcar.com/service/city-tours",
   },
     keywords: [
     "rental car service albany",

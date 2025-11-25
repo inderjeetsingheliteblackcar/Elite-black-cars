@@ -6,7 +6,7 @@ import React from 'react';
   title: "Best Airport Car Service NYC | JFK Airport Chauffeur Service | Elite B Car",
   description: "Book the best airport car service in NYC with Elite B Car. Enjoy smooth JFK airport chauffeur service and reliable luxury transfers across New York.",
   alternates: {
-    canonical: "https://www.elitebcar.com/service/Airport-Transfers",
+    canonical: "https://www.elitebcar.com/service/airport-transfers",
   },
    keywords: [
     "best airport car service nyc",

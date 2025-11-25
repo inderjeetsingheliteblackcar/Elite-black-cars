@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: "Corporate Luxury Car Service in New York | Professional Chauffeurs | Elite B Car",
     description: "Experience corporate luxury car service in New York with Elite B Car. Travel in style with trained professional chauffeurs who ensure comfort and reliability.",
     alternates: {
-        canonical: "https://www.elitebcar.com/service/Corporate-Travel",
+        canonical: "https://www.elitebcar.com/service/corporate-travel",
     },
      keywords: [
     "corporate luxury car service",
