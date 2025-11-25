@@ -57,12 +57,12 @@ const Header = () => {
                     <div className="hidden items-center lg:flex lg:gap-x-12">
                         <Link href="/about" className="button-1 mb-2 text-white">About Us</Link>
                         <div className="button-1 Services mb-2 text-white">
-                            <Link href="/service" className="">Services</Link>
+                            <div  className="">Services</div>
                             <div className="dropdowns ">
                                 <div className="dropdowns-manu">
-                                    <Link href="/service/Airport-Transfers" className="button-1 mb-2 text-white">Airport Transfers</Link>
-                                    <Link href="/service/City-Tours" className="button-1 mb-2 text-white">City Tours</Link>
-                                    <Link href="/service/Corporate-Travel" className="button-1 mb-2 text-white">Corporate Travel</Link>
+                                    <Link href="/service/airport-transfers" className="button-1 mb-2 text-white">Airport Transfers</Link>
+                                    <Link href="/service/city-tours" className="button-1 mb-2 text-white">City Tours</Link>
+                                    <Link href="/service/corporate-travel" className="button-1 mb-2 text-white">Corporate Travel</Link>
                                 </div>
                             </div>
                         </div>
@@ -134,11 +134,11 @@ const Header = () => {
                                 </div>
                                 <Link href="#" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">Home</Link>
                                 <Link href="/about" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">About Us</Link>
-                                <Link href="/service" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">Services</Link>
+                                <div  className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">Services</div>
                                 <div className="ps-4 flex flex-col">
-                                     <Link href="/service/Airport-Transfers" className="button-1  mb-2 text-white">Airport Transfers</Link>
-                                    <Link href="/service/City-Tours" className="button-1 mb-2 text-white">City Tours</Link>
-                                    <Link href="/service/Corporate-Travel" className="button-1 mb-2 text-white">Corporate Travel</Link>
+                                     <Link href="/service/airport-transfers" className="button-1  mb-2 text-white">Airport Transfers</Link>
+                                    <Link href="/service/city-tours" className="button-1 mb-2 text-white">City Tours</Link>
+                                    <Link href="/service/corporate-travel" className="button-1 mb-2 text-white">Corporate Travel</Link>
                                 
                                 </div>
                                 <Link href="/contact" className="-mx-3 block rounded-lg text-white px-3 py-2 text-base font-semibold hover:bg-gray-50">Contact Us</Link>

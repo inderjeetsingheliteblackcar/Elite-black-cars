@@ -30,9 +30,9 @@ const Footer = () => {
 
             <div className='Explore px-2'>
               <h4 className='mb-6'>Services</h4>
-              <Link href="/service/Airport-Transfers" className="block mb-3">Airport Transfers</Link>
-              <Link href="/service/City-Tours" className="block mb-3">City Tours</Link>
-              <Link href="/service/Corporate-Travel" className="block">Corporate Travel</Link>
+              <Link href="/service/airport-transfers" className="block mb-3">Airport Transfers</Link>
+              <Link href="/service/city-tours" className="block mb-3">City Tours</Link>
+              <Link href="/service/corporate-travel" className="block">Corporate Travel</Link>
 
             </div>
 
