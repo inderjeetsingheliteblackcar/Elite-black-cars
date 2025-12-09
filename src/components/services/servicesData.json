@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Airport Transfers",
         "url":"/airport-transfers",
-        "description": "One of the joys of intercity travel is the opportunity to witness the beauty of...",
+        "description": "Travelling to and from the airport must be hassle-free...",
         "image": "/images/services1-min.png",
         "popupdescription": "At Elite B Car, we believe that luxury travel should be more than just a ride—an experience. That's why we've embraced innovative technology to ensure your black car journey is as smooth, efficient, and luxurious as possible."
     },
@@ -19,7 +19,7 @@
         "id": 3,
         "title": "Corporate Travel",
            "url":"/corporate-travel",
-        "description": "Business trips made easy with our seamless and comfortable services...",
+        "description": "At Elite B Car, we understand that business travel is not merely a trip...",
         "image": "/images/services3-min.png",
         "popupdescription": "Experience executive-class travel with our luxury fleet, ensuring punctual, comfortable, and professional rides for business meetings, conferences, and corporate events."
     }

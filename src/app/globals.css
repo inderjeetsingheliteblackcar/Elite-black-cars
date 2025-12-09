@@ -262,6 +262,9 @@ button.bg-white.button:hover {
 .blogs-main .hide-onblog{
 display: none;
 }
+.service-content h4{
+  margin-bottom: 15px;
+}
 @media only screen and (max-width: 768px) {
 
   h1,.h1 {
