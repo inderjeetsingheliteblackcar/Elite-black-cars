@@ -22,7 +22,8 @@ body {
   margin: 0 auto;
 }
 
-h1,.h1 {
+h1,
+.h1 {
   font-size: 52px;
   font-weight: 600;
   line-height: 62px;
@@ -253,21 +254,25 @@ button.bg-white.button:hover {
   flex-direction: column;
   padding: 20px;
   border-radius: 20px;
- display: flex;
+  display: flex;
 }
 
 .Services:hover .dropdowns {
   display: block;
 }
-.blogs-main .hide-onblog{
-display: none;
+
+.blogs-main .hide-onblog {
+  display: none;
 }
-.service-content h4{
+
+.service-content h4 {
   margin-bottom: 15px;
 }
+
 @media only screen and (max-width: 768px) {
 
-  h1,.h1 {
+  h1,
+  .h1 {
     font-size: 35px;
     line-height: 45px;
   }

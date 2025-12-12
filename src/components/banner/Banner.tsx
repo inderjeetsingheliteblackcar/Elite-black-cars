@@ -111,25 +111,7 @@ const Banner: React.FC = () => {
             </Slider>
 
 
-            {/* <div className="absolute container px-4 md:px-0  pt-[180px] md:pt-[170px]  top-1 left-0 right-0 flex items-center  gap-4">
-                <div className="btns-slider flex">
-                    <button
-                        className="w-[40px] h-[40px] me-2 rounded-full text-white flex items-center justify-center rounded shadow "
-                        onClick={() => sliderRef.current?.slickPrev()}
-                    >
-                        <GoArrowLeft />
-                    </button>
-                    <button
-                        className=" w-[40px] h-[40px] rounded-full text-white flex items-center justify-center rounded shadow "
-                        onClick={() => sliderRef.current?.slickNext()}
-                    >
-                        <GoArrowRight />
-                    </button>
-                </div>
-                <p className="text-white block">
-                    <strong>{currentSlide + 1} </strong> / {banners.length}
-                </p>
-            </div> */}
+            
             <div className="absolute container  w-[50%] px-4   pt-[150px] md:pt-[170px]  top-[250px] left-0 right-0 flex items-center  gap-4">
                 <div className="flex gap-4">
                   <Link href="https://book.mylimobiz.com/v4/eliteblackcar">  <Button text="Book Now" color="text-white hover:text-dark" bg="bg-orange" hoverbg="hover:bg-white" /> </Link>
