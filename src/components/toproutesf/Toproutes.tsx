@@ -12,21 +12,21 @@ const Toproutesdata = [
         id: 2,
         City1: "NYC",
         City2: "Hamptons",
-        image: "/images/Toproutes2.png"
+        image: "/images/Toproutes2.jpg"
 
     },
     {
         id: 3,
         City1: "NYC",
         City2: "Boston",
-        image: "/images/Toproutes3.png"
+        image: "/images/Toproutes3.jpg"
 
     },
     {
         id: 4,
         City1: "JKF",
         City2: "Philadelphia",
-        image: "/images/Toproutes4.png"
+        image: "/images/Toproutes4.jpg"
     }
 ]
 const Toproutes = () => {

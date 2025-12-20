@@ -35,13 +35,13 @@ const Region: React.FC = () => {
                         className={`region-images flex gap-4 transition-transform duration-500 h-[500px] md:h-[700px] `}
                     >
                         <div className="flex-1 w-full overflow-hidden rounded">
-                            <img loading="lazy" src="/images/region1.png " className={` object-cover rounded transition-transform duration-500 h-full ${scrollDirection === "down" ? "translate-y-5" : "-translate-y-5"
+                            <img loading="lazy" src="/images/region1.jpg " className={` object-cover rounded transition-transform duration-500 h-full ${scrollDirection === "down" ? "translate-y-5" : "-translate-y-5"
                                 }`} alt="d" />
                         </div>
                         <div className="region-image2 flex gap-4 overflow-hidden rounded flex-col flex-1">
-                            <img loading="lazy" src="/images/region2.png" className={` object-cover rounded transition-transform duration-500 h-full max-h-[50%] ${scrollDirection === "down" ? "translate-y-5" : "-translate-y-5"
+                            <img loading="lazy" src="/images/region2.jpg" className={` object-cover rounded transition-transform duration-500 h-full max-h-[50%] ${scrollDirection === "down" ? "translate-y-5" : "-translate-y-5"
                                 }`} alt="d" />
-                            <img loading="lazy" src="/images/region3.png" className={` object-cover rounded transition-transform duration-500 h-full max-h-[50%] ${scrollDirection === "down" ? "translate-y-5" : "-translate-y-5"
+                            <img loading="lazy" src="/images/region3.jpg" className={` object-cover rounded transition-transform duration-500 h-full max-h-[50%] ${scrollDirection === "down" ? "translate-y-5" : "-translate-y-5"
                                 }`} alt="d" />
                         </div>
                     </div>

@@ -26,7 +26,7 @@ const Bannersall: React.FC<BannersallProps> = ({pagename,bgimage}) => {
             <div className="text-white relative z-40 px-4  container">
                 <h2>{pagename}</h2>
                 <p className="flex mt-4 gap-3 items-center">
-                    Home <span className="text-sm">{'>'}</span> {pagename}
+                    Home <span className="text-sm">{'>'}</span>{pagename}
                 </p>
             </div>
 

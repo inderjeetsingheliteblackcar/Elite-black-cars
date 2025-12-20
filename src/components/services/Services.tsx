@@ -11,20 +11,20 @@ const servicedatamain = [
         "title": "Airport Transfers",
         "url":"/airport-transfers",
         "description": "Travelling to and from the airport must be hassle-free...",
-        "image": "/images/services1-min.png"
+        "image": "/images/services1-min.jpg"
     },
     {
         "id": 2,
         "title": "City Tours",
            "url":"/city-tours",
         "description": "Experience the beauty and culture of your city like never before...",
-        "image": "/images/services2-min.png" },
+        "image": "/images/services2-min.jpg" },
     {
         "id": 3,
         "title": "Corporate Travel",
            "url":"/corporate-travel",
         "description": "At Elite B Car, we understand that business travel is not merely a trip...",
-        "image": "/images/services3-min.png"}
+        "image": "/images/services3-min.jpg"}
 
     ]
 

@@ -1,3 +1,4 @@
+import Bannersall from '@/banners/Bannersall';
 import Services from '@/components/Servicespage/Services/Services';
 import { Metadata } from 'next';
 import React from 'react';
@@ -30,10 +31,11 @@ const Page = () => {
             "Elite car service NYC",
             "Elite luxury car service NYC"
         ],
-        image: "/images/services2-min.png"
+        image: "/images/services2-min.jpg"
     };
     return (
         <div>
+            <Bannersall pagename='City Tours' bgimage='/images/aboutusbanner.jpg' />
             <Services {...airportTransferData} />
         </div>
     );
