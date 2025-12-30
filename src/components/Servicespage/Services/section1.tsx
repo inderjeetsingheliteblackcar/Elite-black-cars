@@ -6,8 +6,9 @@ type DataSection = {
     orderText: string;
     heading: string;
     text: string
+    image:string
 }
-const Section1: FC<DataSection> = ({ order, orderText, heading, text }) => {
+const Section1: FC<DataSection> = ({ order, orderText, heading, text,image }) => {
     return (
         <div>
             <section className='px-4 '>
@@ -19,11 +20,11 @@ const Section1: FC<DataSection> = ({ order, orderText, heading, text }) => {
                             <div className='w-32 mt-4 h-1 bg-orange border-rounded'></div>
                             <div className='my-4' dangerouslySetInnerHTML={{ __html: text }}></div>
 
-                            <Link href="https://book.mylimobiz.com/v4/eliteblackcar">   <Button text="Book Now" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" /></Link>
+                            {/* <Link href="https://book.mylimobiz.com/v4/eliteblackcar">   <Button text="Book Now" color="text-white" bg="bg-dark" hoverbg="hover:bg-orange" /></Link> */}
 
                         </div>
-                        <div className={orderText}>
-                            <img src="/images/services1-min.jpg" className='rounded-xl' alt="image" />
+                        <div className={`${orderText} h-full `}>
+                            <img src={`/images/services/${image}`} className='rounded-xl h-full object-cover' alt="image" />
                         </div>
                     </div>
                 </div>
