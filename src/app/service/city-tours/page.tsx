@@ -35,7 +35,7 @@ const Page = () => {
     };
     return (
         <div>
-            <Bannersall pagename='City Tours' bgimage='/images/aboutusbanner.jpg' />
+            {/* <Bannersall pagename='City Tours' bgimage='/images/aboutusbanner.jpg' /> */}
             <Services {...airportTransferData} />
         </div>
     );
