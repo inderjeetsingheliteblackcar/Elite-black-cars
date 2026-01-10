@@ -34,7 +34,7 @@ const Page = () => {
         image: "/images/services2-min.jpg"
     };
     return (
-        <div>
+        <div className='service-page'>
             <Bannersall pagename='City Tours' bgimage='/images/aboutusbanner.jpg' />
             <Services {...airportTransferData} />
         </div>

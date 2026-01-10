@@ -79,7 +79,7 @@ Choose Elite for an Executive travel experience, which is defined by punctuality
         image: "/images/services3-min.jpg"
     };
     return (
-        <div>
+        <div className='service-page'>
             {/* <ServicesBanner pagename='Corporate Travel' bgimage='/images/Corporate_Travel1.png'
                 text=''
             /> */}

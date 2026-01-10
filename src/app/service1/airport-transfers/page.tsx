@@ -66,52 +66,52 @@ Book your <b> Elite airport transfer in NYC</b>  today. With the<b>  Elite B Car
     image: "/images/services1-min.jpg"
   };
   const cardsData = [
-  {
-    icon: MdDirectionsCar,
-    title: "Best Luxury Car Service in NYC ",
-    description:
-      "Only the latest models of Mercedes-Benz S-Class, V-Class, and E-Class vehicles, maintained to showroom standards.",
-  },
-  {
-    icon:  MdFlightTakeoff,
-    title: "JFK Luxury Car Service ",
-    description:
-      "Punctual airport pickups and drop-offs with real-time flight tracking.",
-  },
-  {
-    icon: MdLocationCity,
-    title: "Elite Car Service New York ",
-    description:
-      "Experienced, courteous, and multilingual chauffeurs for a smooth ride.",
-  },
-  {
-    icon: MdSupportAgent,
-    title: "Professional Chauffeurs ",
-    description:
-      "Thousands of happy customers trust Elite B Car for airport transfers.",
-  },
     {
-    icon: MdAccessTime,
-    title: "On-Time Guarantee  ",
-    description:
-      "Thousands of happy customers trust Elite B Car for airport transfers.",
-  },
+      icon: MdDirectionsCar,
+      title: "Best Luxury Car Service in NYC ",
+      description:
+        "Only the latest models of Mercedes-Benz S-Class, V-Class, and E-Class vehicles, maintained to showroom standards.",
+    },
     {
-    icon: MdSchedule,
-    title: "24/7 Availability ",
-    description:
-      "Thousands of happy customers trust Elite B Car for airport transfers.",
-  },
+      icon: MdFlightTakeoff,
+      title: "JFK Luxury Car Service ",
+      description:
+        "Punctual airport pickups and drop-offs with real-time flight tracking.",
+    },
     {
-    icon: MdSecurity,
-    title: "Safe & Comfortable Ride",
-    description:
-      "Thousands of happy customers trust Elite B Car for airport transfers.",
-  },
-];
+      icon: MdLocationCity,
+      title: "Elite Car Service New York ",
+      description:
+        "Experienced, courteous, and multilingual chauffeurs for a smooth ride.",
+    },
+    {
+      icon: MdSupportAgent,
+      title: "Professional Chauffeurs ",
+      description:
+        "Thousands of happy customers trust Elite B Car for airport transfers.",
+    },
+    {
+      icon: MdAccessTime,
+      title: "On-Time Guarantee  ",
+      description:
+        "Thousands of happy customers trust Elite B Car for airport transfers.",
+    },
+    {
+      icon: MdSchedule,
+      title: "24/7 Availability ",
+      description:
+        "Thousands of happy customers trust Elite B Car for airport transfers.",
+    },
+    {
+      icon: MdSecurity,
+      title: "Safe & Comfortable Ride",
+      description:
+        "Thousands of happy customers trust Elite B Car for airport transfers.",
+    },
+  ];
   return (
-    <div className='space-y-20'>
-<Bannersall pagename='Airport Transfers In New York' bgimage='/images/services/Airportservice4.png' />
+    <div className='space-y-20 service-page'>
+      <Bannersall pagename='Airport Transfers In New York' bgimage='/images/services/Airportservice4.png' />
 
       <Section1
         order="order-1"
@@ -125,14 +125,14 @@ Book your <b> Elite airport transfer in NYC</b>  today. With the<b>  Elite B Car
       <Section1
         order="md:order-2"
         orderText="md:order-1"
-         image='Airportservice3.png'
+        image='Airportservice3.png'
         heading="Reliable Airport Transfers Designed Around Your Schedule"
         text='Flight delays and early-morning departures are no problem for us.  Real-time flight tracking by our team ensures your chauffeur is ready the moment you arrive.With our dependable JFK and LaGuardia airport transfer services, travellers can easily enjoy a complete peace of mind with stress stress-free environment as Elite B Car removes the stress of long queues, all of sudden cancellations, and ride-hailing uncertainties. Available 24/7, we have become the trusted choice for international visitors, business professionals, and families.  '
       />
       <Section1
         order="order-1"
         orderText="order-2"
-         image='Airportservice1.png'
+        image='Airportservice1.png'
         heading="Luxury Fleet for a Comfortable Airport Journey"
         text='Whether you are travelling solo or in a big group, Elite B Car offers a refined collection of premium black cars, luxury sedans, executive SUVs, and comfortable vans that suit your style.  All our fleet is fully maintained andsanitised, and possess with modern features that providetop-class comfort.Experience the true meaning of comfort and elegance with our premium airport car service in NYC. From professional chauffeurs to sophisticated interiors, generous luggage space, and a soothing ride environment, it helps you just unwind your travel stress effortlessly.Our chauffeurs are expertly trained, impeccably polite, and well-versed with all New York airport routes. Our priority is to make your airport transfer journey a peaceful one. '
       />

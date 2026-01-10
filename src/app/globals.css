@@ -185,7 +185,9 @@ button.bg-white.button:hover {
 .hideform {
   display: none;
 }
-
+.service-page .bg-banners{
+  filter: brightness(0.6);
+}
 @media only screen and (min-width: 768px) {
   .button-1-front {
     font-size: 16px;
