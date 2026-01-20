@@ -50,11 +50,11 @@ const Works = () => {
         },
         { 
             title: "Choose a Vehicle For You", 
-            description: `Ride in unmatched style and comfort with our <a href="/about" class="text-orange"> luxury car services in JFK,</a> offering top-tier vehicles like Mercedes, BMW, and GMC. Our high-end sedans, SUVs, and limousines make every journey a first-class experience.`
+            description: `Ride in unmatched style and comfort with our <a href="/service/airport-transfers" class="text-orange"> luxury car services in JFK,</a> offering top-tier vehicles like Mercedes, BMW, and GMC. Our high-end sedans, SUVs, and limousines make every journey a first-class experience.`
         },
         { 
             title: "Enjoy The Journey", 
-            description: `Finalize your booking and enjoy a hassle-free ride with our  <a href="/about" class="text-orange"> luxury black car service CT.</a>` 
+            description: `Finalize your booking and enjoy a hassle-free ride with our  <a href="/service/city-tours" class="text-orange"> luxury black car service CT.</a>` 
         },
     ];
 
