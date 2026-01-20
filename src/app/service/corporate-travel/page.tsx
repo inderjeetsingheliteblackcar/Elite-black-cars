@@ -176,7 +176,7 @@ export const metadata: Metadata = {
     description:
         "Book the best airport car service in NYC with Elite B Car. Enjoy smooth JFK airport chauffeur service and reliable luxury transfers across New York.",
     alternates: {
-        canonical: "https://www.elitebcar.com/service/airport-transfers",
+        canonical: "https://www.elitebcar.com/service/corporate-travel",
     },
     keywords: [
         "best airport car service nyc",
